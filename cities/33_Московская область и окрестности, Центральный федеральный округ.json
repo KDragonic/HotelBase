@@ -1,0 +1,6339 @@
+{
+    "city": {
+        "city": "Московская область и окрестности, Центральный федеральный округ",
+        "slug": "russia/central_federal_district_moscow_region_and_vicinity_neighborhood"
+    },
+    "count": 791,
+    "hotels": [
+        {
+            "ota_hotel_id": "hotel_voznesenskaya",
+            "master_id": "hotel_voznesenskaya",
+            "latitude": 57.5292,
+            "longitude": 38.322277,
+            "rating": 8.3,
+            "price": 7130
+        },
+        {
+            "ota_hotel_id": "peresvet_komfort_otel",
+            "master_id": "peresvet_komfort_otel",
+            "latitude": 56.4176,
+            "longitude": 38.1678,
+            "rating": 8.4,
+            "price": 27729
+        },
+        {
+            "ota_hotel_id": "rybinsk_hotel_complex_",
+            "master_id": "rybinsk_hotel_complex_",
+            "latitude": 58.05055,
+            "longitude": 38.84995,
+            "rating": 7.4,
+            "price": 3800
+        },
+        {
+            "ota_hotel_id": "mark_mini_hotel",
+            "master_id": "mark_mini_hotel",
+            "latitude": 54.91438,
+            "longitude": 37.420544,
+            "rating": 9,
+            "price": 9563
+        },
+        {
+            "ota_hotel_id": "hotel_amfora_",
+            "master_id": "hotel_amfora_",
+            "latitude": 55.220474,
+            "longitude": 34.267487,
+            "rating": 8.5,
+            "price": 7600
+        },
+        {
+            "ota_hotel_id": "rozendorf_parkhotel",
+            "master_id": "rozendorf_parkhotel",
+            "latitude": 55.449455,
+            "longitude": 38.631474,
+            "rating": 9.9,
+            "price": 15845
+        },
+        {
+            "ota_hotel_id": "russia_4",
+            "master_id": "russia_4",
+            "latitude": 51.366505,
+            "longitude": 42.075966,
+            "rating": 9,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "ostrov_minihotel",
+            "master_id": "ostrov_minihotel",
+            "latitude": 56.395626,
+            "longitude": 38.722267,
+            "rating": 8.9,
+            "price": 10800
+        },
+        {
+            "ota_hotel_id": "izumrudnyij_les_hotel",
+            "master_id": "izumrudnyij_les_hotel",
+            "latitude": 56.14041,
+            "longitude": 36.49842,
+            "rating": 0,
+            "price": 90000
+        },
+        {
+            "ota_hotel_id": "golden_park_hotel_11",
+            "master_id": "golden_park_hotel_11",
+            "latitude": 56.339176,
+            "longitude": 36.725674,
+            "rating": 8.8,
+            "price": 9903
+        },
+        {
+            "ota_hotel_id": "small_hotel_",
+            "master_id": "small_hotel_",
+            "latitude": 54.79613,
+            "longitude": 32.05834,
+            "rating": 8.4,
+            "price": 7130
+        },
+        {
+            "ota_hotel_id": "volhov_hotel",
+            "master_id": "volhov_hotel",
+            "latitude": 58.523724,
+            "longitude": 31.265755,
+            "rating": 8.3,
+            "price": 12175
+        },
+        {
+            "ota_hotel_id": "kolomna",
+            "master_id": "kolomna",
+            "latitude": 55.094616,
+            "longitude": 38.765446,
+            "rating": 8.9,
+            "price": 14800
+        },
+        {
+            "ota_hotel_id": "na_kazanskoy",
+            "master_id": "na_kazanskoy",
+            "latitude": 58.046005,
+            "longitude": 38.86758,
+            "rating": 8.2,
+            "price": 8400
+        },
+        {
+            "ota_hotel_id": "volzhskaya_riviera_hotel",
+            "master_id": "volzhskaya_riviera_hotel",
+            "latitude": 57.528194,
+            "longitude": 38.313847,
+            "rating": 9.1,
+            "price": 16080
+        },
+        {
+            "ota_hotel_id": "hotel_nikolskaya",
+            "master_id": "hotel_nikolskaya",
+            "latitude": 56.257587,
+            "longitude": 34.330223,
+            "rating": 9.2,
+            "price": 3169
+        },
+        {
+            "ota_hotel_id": "maxi_hotel_2",
+            "master_id": "maxi_hotel_2",
+            "latitude": 55.433643,
+            "longitude": 37.549236,
+            "rating": 8.8,
+            "price": 10864
+        },
+        {
+            "ota_hotel_id": "hotel_azhur_2",
+            "master_id": "hotel_azhur_2",
+            "latitude": 56.421703,
+            "longitude": 40.44916,
+            "rating": 9.1,
+            "price": 19014
+        },
+        {
+            "ota_hotel_id": "minihotel_on_sergievskaya_street_6",
+            "master_id": "minihotel_on_sergievskaya_street_6",
+            "latitude": 56.307396,
+            "longitude": 38.1337,
+            "rating": 8.5,
+            "price": 9324
+        },
+        {
+            "ota_hotel_id": "tsargrad_hotel_7",
+            "master_id": "tsargrad_hotel_7",
+            "latitude": 54.838047,
+            "longitude": 37.57374,
+            "rating": 8.4,
+            "price": 30800
+        },
+        {
+            "ota_hotel_id": "myishk_inn_hotel",
+            "master_id": "myishk_inn_hotel",
+            "latitude": 57.785492,
+            "longitude": 38.456356,
+            "rating": 8,
+            "price": 9507
+        },
+        {
+            "ota_hotel_id": "valdayskie_zori_hotel",
+            "master_id": "valdayskie_zori_hotel",
+            "latitude": 57.979816,
+            "longitude": 33.25,
+            "rating": 7,
+            "price": 9274
+        },
+        {
+            "ota_hotel_id": "hotel_princess_frog",
+            "master_id": "hotel_princess_frog",
+            "latitude": 56.354496,
+            "longitude": 37.520214,
+            "rating": 8.4,
+            "price": 17532
+        },
+        {
+            "ota_hotel_id": "russkie_sezonyi_kongress_hotel_peresvet",
+            "master_id": "russkie_sezonyi_kongress_hotel_peresvet",
+            "latitude": 56.419136,
+            "longitude": 38.17017,
+            "rating": 7.4,
+            "price": 75265
+        },
+        {
+            "ota_hotel_id": "otel_sokol_2",
+            "master_id": "otel_sokol_2",
+            "latitude": 56.418785,
+            "longitude": 40.44988,
+            "rating": 8.3,
+            "price": 19152
+        },
+        {
+            "ota_hotel_id": "andersen_hotel_2",
+            "master_id": "andersen_hotel_2",
+            "latitude": 55.600384,
+            "longitude": 38.138824,
+            "rating": 8.7,
+            "price": 13864
+        },
+        {
+            "ota_hotel_id": "gostinitsa_parizh",
+            "master_id": "gostinitsa_parizh",
+            "latitude": 52.70555,
+            "longitude": 41.442814,
+            "rating": 8.9,
+            "price": 15200
+        },
+        {
+            "ota_hotel_id": "greenfeel_novgorod",
+            "master_id": "greenfeel_novgorod",
+            "latitude": 58.522823,
+            "longitude": 31.287683,
+            "rating": 7.5,
+            "price": 9350
+        },
+        {
+            "ota_hotel_id": "grand_hotel_megapolis",
+            "master_id": "grand_hotel_megapolis",
+            "latitude": 54.77115,
+            "longitude": 32.047398,
+            "rating": 9.3,
+            "price": 15053
+        },
+        {
+            "ota_hotel_id": "svyatogor_hotel",
+            "master_id": "svyatogor_hotel",
+            "latitude": 55.57058,
+            "longitude": 42.06835,
+            "rating": 8.1,
+            "price": 9600
+        },
+        {
+            "ota_hotel_id": "opochka_hotel",
+            "master_id": "opochka_hotel",
+            "latitude": 56.711246,
+            "longitude": 28.662302,
+            "rating": 7.6,
+            "price": 3961
+        },
+        {
+            "ota_hotel_id": "green_star_domodedovo_airport",
+            "master_id": "green_star_domodedovo_airport",
+            "latitude": 55.49621,
+            "longitude": 37.82598,
+            "rating": 8.5,
+            "price": 6400
+        },
+        {
+            "ota_hotel_id": "apartamenty_antik",
+            "master_id": "apartamenty_antik",
+            "latitude": 55.624077,
+            "longitude": 37.264664,
+            "rating": 7.2,
+            "price": 11400
+        },
+        {
+            "ota_hotel_id": "gostinitsa_vladimirskaya",
+            "master_id": "gostinitsa_vladimirskaya",
+            "latitude": 56.31345,
+            "longitude": 38.13888,
+            "rating": 9.1,
+            "price": 10400
+        },
+        {
+            "ota_hotel_id": "santa_russa_hotel",
+            "master_id": "santa_russa_hotel",
+            "latitude": 57.98889,
+            "longitude": 31.375898,
+            "rating": 9.4,
+            "price": 7922
+        },
+        {
+            "ota_hotel_id": "hotel_riverside_8",
+            "master_id": "hotel_riverside_8",
+            "latitude": 54.73841,
+            "longitude": 37.180523,
+            "rating": 7.4,
+            "price": 20994
+        },
+        {
+            "ota_hotel_id": "yubileynaya_4",
+            "master_id": "yubileynaya_4",
+            "latitude": 56.344048,
+            "longitude": 30.516624,
+            "rating": 7,
+            "price": 10299
+        },
+        {
+            "ota_hotel_id": "berezka_",
+            "master_id": "berezka_",
+            "latitude": 57.588776,
+            "longitude": 34.561092,
+            "rating": 7.3,
+            "price": 6772
+        },
+        {
+            "ota_hotel_id": "polist_hotel",
+            "master_id": "polist_hotel",
+            "latitude": 57.99141,
+            "longitude": 31.361614,
+            "rating": 7.4,
+            "price": 7598
+        },
+        {
+            "ota_hotel_id": "bazilik_chaplygin",
+            "master_id": "bazilik_chaplygin",
+            "latitude": 53.238625,
+            "longitude": 39.97189,
+            "rating": 8.1,
+            "price": 5177
+        },
+        {
+            "ota_hotel_id": "barskie_polati",
+            "master_id": "barskie_polati",
+            "latitude": 56.31068,
+            "longitude": 38.14185,
+            "rating": 8.4,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "gostinitsa_zavoda_promsvyaz",
+            "master_id": "gostinitsa_zavoda_promsvyaz",
+            "latitude": 56.493702,
+            "longitude": 39.674923,
+            "rating": 9,
+            "price": 9507
+        },
+        {
+            "ota_hotel_id": "rechnoj_prichal",
+            "master_id": "rechnoj_prichal",
+            "latitude": 54.790257,
+            "longitude": 32.031525,
+            "rating": 8.7,
+            "price": 5200
+        },
+        {
+            "ota_hotel_id": "hotel_vestnik",
+            "master_id": "hotel_vestnik",
+            "latitude": 57.98968,
+            "longitude": 31.37086,
+            "rating": 8.9,
+            "price": 5200
+        },
+        {
+            "ota_hotel_id": "volna_minihotel_2",
+            "master_id": "volna_minihotel_2",
+            "latitude": 55.577866,
+            "longitude": 42.062588,
+            "rating": 8.7,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "galereya_hotel",
+            "master_id": "galereya_hotel",
+            "latitude": 52.719482,
+            "longitude": 41.45556,
+            "rating": 8.2,
+            "price": 18200
+        },
+        {
+            "ota_hotel_id": "tkachi",
+            "master_id": "tkachi",
+            "latitude": 58.390038,
+            "longitude": 33.908024,
+            "rating": 9.1,
+            "price": 9903
+        },
+        {
+            "ota_hotel_id": "gerasimov_hotel",
+            "master_id": "gerasimov_hotel",
+            "latitude": 52.884575,
+            "longitude": 40.50652,
+            "rating": 9.4,
+            "price": 16000
+        },
+        {
+            "ota_hotel_id": "minihotel_chehovskij",
+            "master_id": "minihotel_chehovskij",
+            "latitude": 55.159527,
+            "longitude": 37.473904,
+            "rating": 8.3,
+            "price": 9903
+        },
+        {
+            "ota_hotel_id": "kristinaa_hotel",
+            "master_id": "kristinaa_hotel",
+            "latitude": 54.795635,
+            "longitude": 32.05106,
+            "rating": 8,
+            "price": 6000
+        },
+        {
+            "ota_hotel_id": "a10827km_minihotel",
+            "master_id": "a10827km_minihotel",
+            "latitude": 55.30918,
+            "longitude": 38.608818,
+            "rating": 8.8,
+            "price": 10262
+        },
+        {
+            "ota_hotel_id": "hotel_sherna",
+            "master_id": "hotel_sherna",
+            "latitude": 56.160675,
+            "longitude": 38.86862,
+            "rating": 7.4,
+            "price": 7526
+        },
+        {
+            "ota_hotel_id": "mirnaya_pristan_hotel",
+            "master_id": "mirnaya_pristan_hotel",
+            "latitude": 57.44561,
+            "longitude": 42.1681,
+            "rating": 8.9,
+            "price": 26000
+        },
+        {
+            "ota_hotel_id": "gostinitsa_rossiya_2",
+            "master_id": "gostinitsa_rossiya_2",
+            "latitude": 54.00982,
+            "longitude": 38.274204,
+            "rating": 6.8,
+            "price": 4383
+        },
+        {
+            "ota_hotel_id": "staraya_shuya_minihotel",
+            "master_id": "staraya_shuya_minihotel",
+            "latitude": 56.85065,
+            "longitude": 41.371113,
+            "rating": 5.2,
+            "price": 4753
+        },
+        {
+            "ota_hotel_id": "guest_house_piligrim_5",
+            "master_id": "guest_house_piligrim_5",
+            "latitude": 55.04902,
+            "longitude": 43.244423,
+            "rating": 8.7,
+            "price": 24000
+        },
+        {
+            "ota_hotel_id": "komfort_hotel_atrium",
+            "master_id": "komfort_hotel_atrium",
+            "latitude": 54.90108,
+            "longitude": 38.074078,
+            "rating": 8.9,
+            "price": 10800
+        },
+        {
+            "ota_hotel_id": "alkasar_hotel",
+            "master_id": "alkasar_hotel",
+            "latitude": 55.39115,
+            "longitude": 39.012566,
+            "rating": 7.8,
+            "price": 9408
+        },
+        {
+            "ota_hotel_id": "pereslavl_hotel",
+            "master_id": "pereslavl_hotel",
+            "latitude": 56.74272,
+            "longitude": 38.85692,
+            "rating": 8.2,
+            "price": 10357
+        },
+        {
+            "ota_hotel_id": "hotel_yekaterina",
+            "master_id": "hotel_yekaterina",
+            "latitude": 56.262363,
+            "longitude": 34.34809,
+            "rating": 8.6,
+            "price": 12000
+        },
+        {
+            "ota_hotel_id": "staroyamskaya",
+            "master_id": "staroyamskaya",
+            "latitude": 57.033035,
+            "longitude": 34.988194,
+            "rating": 9.1,
+            "price": 30000
+        },
+        {
+            "ota_hotel_id": "gostinitsa_kik7",
+            "master_id": "gostinitsa_kik7",
+            "latitude": 55.97526,
+            "longitude": 37.82865,
+            "rating": 8.2,
+            "price": 10800
+        },
+        {
+            "ota_hotel_id": "mini_studio_11_imr_tsipk_2",
+            "master_id": "mini_studio_11_imr_tsipk_2",
+            "latitude": 55.10757,
+            "longitude": 36.620354,
+            "rating": 9.5,
+            "price": 8318
+        },
+        {
+            "ota_hotel_id": "onix_hotel_torzhok",
+            "master_id": "onix_hotel_torzhok",
+            "latitude": 57.03887,
+            "longitude": 34.957516,
+            "rating": 8.4,
+            "price": 17528
+        },
+        {
+            "ota_hotel_id": "siti_1",
+            "master_id": "siti_1",
+            "latitude": 55.89969,
+            "longitude": 38.068985,
+            "rating": 8.8,
+            "price": 16637
+        },
+        {
+            "ota_hotel_id": "gostinyi_dvor_viktoriya",
+            "master_id": "gostinyi_dvor_viktoriya",
+            "latitude": 57.04605,
+            "longitude": 34.968925,
+            "rating": 8.9,
+            "price": 9200
+        },
+        {
+            "ota_hotel_id": "hotel_tikhiy_ugolok",
+            "master_id": "hotel_tikhiy_ugolok",
+            "latitude": 58.34546,
+            "longitude": 45.50234,
+            "rating": 7.9,
+            "price": 7200
+        },
+        {
+            "ota_hotel_id": "hotel_sergiev",
+            "master_id": "hotel_sergiev",
+            "latitude": 56.303738,
+            "longitude": 38.129715,
+            "rating": 8,
+            "price": 11600
+        },
+        {
+            "ota_hotel_id": "kornilov_",
+            "master_id": "kornilov_",
+            "latitude": 55.91865,
+            "longitude": 39.182148,
+            "rating": 9,
+            "price": 10200
+        },
+        {
+            "ota_hotel_id": "mo_ruza_gostinitsa_tsentralnaya",
+            "master_id": "mo_ruza_gostinitsa_tsentralnaya",
+            "latitude": 55.70068,
+            "longitude": 36.192795,
+            "rating": 8.3,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "xroom_hotel",
+            "master_id": "xroom_hotel",
+            "latitude": 55.575306,
+            "longitude": 42.02891,
+            "rating": 9.3,
+            "price": 14000
+        },
+        {
+            "ota_hotel_id": "shengen_minihotel",
+            "master_id": "shengen_minihotel",
+            "latitude": 55.7004,
+            "longitude": 36.193348,
+            "rating": 7.5,
+            "price": 13088
+        },
+        {
+            "ota_hotel_id": "gostinitsa_vip",
+            "master_id": "gostinitsa_vip",
+            "latitude": 56.321064,
+            "longitude": 36.732674,
+            "rating": 9.3,
+            "price": 10537
+        },
+        {
+            "ota_hotel_id": "uyutnoe_mesto_2",
+            "master_id": "uyutnoe_mesto_2",
+            "latitude": 58.743496,
+            "longitude": 29.850092,
+            "rating": 9.1,
+            "price": 7200
+        },
+        {
+            "ota_hotel_id": "otel_konakovo",
+            "master_id": "otel_konakovo",
+            "latitude": 56.712116,
+            "longitude": 36.77575,
+            "rating": 8,
+            "price": 5400
+        },
+        {
+            "ota_hotel_id": "sarov_2",
+            "master_id": "sarov_2",
+            "latitude": 54.927834,
+            "longitude": 43.348476,
+            "rating": 6,
+            "price": 9600
+        },
+        {
+            "ota_hotel_id": "meridian_domodedovo",
+            "master_id": "meridian_domodedovo",
+            "latitude": 55.479053,
+            "longitude": 37.82885,
+            "rating": 8.7,
+            "price": 9961
+        },
+        {
+            "ota_hotel_id": "miniotel_dubrovka",
+            "master_id": "miniotel_dubrovka",
+            "latitude": 56.378693,
+            "longitude": 28.63953,
+            "rating": 9.1,
+            "price": 6000
+        },
+        {
+            "ota_hotel_id": "toropa",
+            "master_id": "toropa",
+            "latitude": 56.499,
+            "longitude": 31.64013,
+            "rating": 7.2,
+            "price": 9936
+        },
+        {
+            "ota_hotel_id": "park_otel_grumant_",
+            "master_id": "park_otel_grumant_",
+            "latitude": 54.07291,
+            "longitude": 37.471535,
+            "rating": 8.6,
+            "price": 34000
+        },
+        {
+            "ota_hotel_id": "hotel_lukiservice",
+            "master_id": "hotel_lukiservice",
+            "latitude": 56.34452,
+            "longitude": 30.56445,
+            "rating": 8,
+            "price": 10400
+        },
+        {
+            "ota_hotel_id": "biznes_otel_hotel_komplex",
+            "master_id": "biznes_otel_hotel_komplex",
+            "latitude": 52.62034,
+            "longitude": 39.604683,
+            "rating": 8.9,
+            "price": 13692
+        },
+        {
+            "ota_hotel_id": "motelik_khutorok",
+            "master_id": "motelik_khutorok",
+            "latitude": 50.681248,
+            "longitude": 40.05026,
+            "rating": 6.8,
+            "price": 7000
+        },
+        {
+            "ota_hotel_id": "green_hotel_33",
+            "master_id": "green_hotel_33",
+            "latitude": 56.010777,
+            "longitude": 37.44471,
+            "rating": 8.5,
+            "price": 9507
+        },
+        {
+            "ota_hotel_id": "hotel_olimp_9",
+            "master_id": "hotel_olimp_9",
+            "latitude": 58.38582,
+            "longitude": 33.899357,
+            "rating": 8.4,
+            "price": 10200
+        },
+        {
+            "ota_hotel_id": "domodedovo_park_hotel",
+            "master_id": "domodedovo_park_hotel",
+            "latitude": 55.48634,
+            "longitude": 37.82572,
+            "rating": 8.1,
+            "price": 13700
+        },
+        {
+            "ota_hotel_id": "petrovsky_hotel_",
+            "master_id": "petrovsky_hotel_",
+            "latitude": 56.726006,
+            "longitude": 38.83867,
+            "rating": 8.8,
+            "price": 12400
+        },
+        {
+            "ota_hotel_id": "nadezhda_hotel_5",
+            "master_id": "nadezhda_hotel_5",
+            "latitude": 52.617393,
+            "longitude": 38.49741,
+            "rating": 10,
+            "price": 9903
+        },
+        {
+            "ota_hotel_id": "victoria_plaza_2",
+            "master_id": "victoria_plaza_2",
+            "latitude": 56.752304,
+            "longitude": 38.862026,
+            "rating": 8.2,
+            "price": 12300
+        },
+        {
+            "ota_hotel_id": "gostinichnyij_kompleks_schekino",
+            "master_id": "gostinichnyij_kompleks_schekino",
+            "latitude": 54.014107,
+            "longitude": 37.51463,
+            "rating": 8,
+            "price": 7922
+        },
+        {
+            "ota_hotel_id": "ecenin",
+            "master_id": "ecenin",
+            "latitude": 55.583473,
+            "longitude": 42.05422,
+            "rating": 9.2,
+            "price": 13000
+        },
+        {
+            "ota_hotel_id": "boutique_hotel_tri_bogatyrya",
+            "master_id": "boutique_hotel_tri_bogatyrya",
+            "latitude": 55.57815,
+            "longitude": 42.043842,
+            "rating": 9.2,
+            "price": 10800
+        },
+        {
+            "ota_hotel_id": "dmitrov_grad",
+            "master_id": "dmitrov_grad",
+            "latitude": 56.334534,
+            "longitude": 37.533604,
+            "rating": 7.9,
+            "price": 8714
+        },
+        {
+            "ota_hotel_id": "prestizh_hotel_6",
+            "master_id": "prestizh_hotel_6",
+            "latitude": 56.169773,
+            "longitude": 36.951714,
+            "rating": 8,
+            "price": 13049
+        },
+        {
+            "ota_hotel_id": "tsentralnaya_hotel_8",
+            "master_id": "tsentralnaya_hotel_8",
+            "latitude": 53.239777,
+            "longitude": 39.969517,
+            "rating": 7.6,
+            "price": 3600
+        },
+        {
+            "ota_hotel_id": "orange_hotel_6",
+            "master_id": "orange_hotel_6",
+            "latitude": 55.07493,
+            "longitude": 32.664783,
+            "rating": 8.3,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "park_hotel__5",
+            "master_id": "park_hotel__5",
+            "latitude": 56.75437,
+            "longitude": 37.125458,
+            "rating": 8.4,
+            "price": 9903
+        },
+        {
+            "ota_hotel_id": "standart_2",
+            "master_id": "standart_2",
+            "latitude": 54.75755,
+            "longitude": 32.076176,
+            "rating": 8.4,
+            "price": 12800
+        },
+        {
+            "ota_hotel_id": "vikonda_hotel__2",
+            "master_id": "vikonda_hotel__2",
+            "latitude": 58.056705,
+            "longitude": 38.767494,
+            "rating": 8.3,
+            "price": 13200
+        },
+        {
+            "ota_hotel_id": "selivanov_hotel",
+            "master_id": "selivanov_hotel",
+            "latitude": 57.19223,
+            "longitude": 39.418316,
+            "rating": 8.5,
+            "price": 8280
+        },
+        {
+            "ota_hotel_id": "luga",
+            "master_id": "luga",
+            "latitude": 58.736244,
+            "longitude": 29.849363,
+            "rating": 7.9,
+            "price": 6734
+        },
+        {
+            "ota_hotel_id": "hotel_triumf_korpus_3_2",
+            "master_id": "hotel_triumf_korpus_3_2",
+            "latitude": 55.117443,
+            "longitude": 36.593845,
+            "rating": 8.1,
+            "price": 12551
+        },
+        {
+            "ota_hotel_id": "sharya_hotel_",
+            "master_id": "sharya_hotel_",
+            "latitude": 58.37154,
+            "longitude": 45.515022,
+            "rating": 8.3,
+            "price": 3800
+        },
+        {
+            "ota_hotel_id": "otel_vokrug_sveta",
+            "master_id": "otel_vokrug_sveta",
+            "latitude": 56.740135,
+            "longitude": 37.22039,
+            "rating": 8.4,
+            "price": 11725
+        },
+        {
+            "ota_hotel_id": "motel_svetofor",
+            "master_id": "motel_svetofor",
+            "latitude": 56.221752,
+            "longitude": 42.133823,
+            "rating": 7.4,
+            "price": 4357
+        },
+        {
+            "ota_hotel_id": "muromskaya_usadba",
+            "master_id": "muromskaya_usadba",
+            "latitude": 55.549744,
+            "longitude": 42.086124,
+            "rating": 8.6,
+            "price": 18800
+        },
+        {
+            "ota_hotel_id": "gostinitsa_ostrovpark",
+            "master_id": "gostinitsa_ostrovpark",
+            "latitude": 57.341812,
+            "longitude": 28.364925,
+            "rating": 9.1,
+            "price": 14400
+        },
+        {
+            "ota_hotel_id": "mikron",
+            "master_id": "mikron",
+            "latitude": 55.990005,
+            "longitude": 37.22543,
+            "rating": 5,
+            "price": 6000
+        },
+        {
+            "ota_hotel_id": "lada_4",
+            "master_id": "lada_4",
+            "latitude": 52.620472,
+            "longitude": 38.498623,
+            "rating": 9.8,
+            "price": 13200
+        },
+        {
+            "ota_hotel_id": "ooo_vsok_garmoniya_plyus",
+            "master_id": "ooo_vsok_garmoniya_plyus",
+            "latitude": 56.322285,
+            "longitude": 30.542767,
+            "rating": 8.5,
+            "price": 5941
+        },
+        {
+            "ota_hotel_id": "marshal_kubinka_hotel",
+            "master_id": "marshal_kubinka_hotel",
+            "latitude": 55.575794,
+            "longitude": 36.699017,
+            "rating": 3.8,
+            "price": 11883
+        },
+        {
+            "ota_hotel_id": "gala_hotel_6",
+            "master_id": "gala_hotel_6",
+            "latitude": 57.857838,
+            "longitude": 39.528046,
+            "rating": 7.2,
+            "price": 7130
+        },
+        {
+            "ota_hotel_id": "hotel_korston_serpuhov",
+            "master_id": "hotel_korston_serpuhov",
+            "latitude": 54.917355,
+            "longitude": 37.425354,
+            "rating": 8.2,
+            "price": 18796
+        },
+        {
+            "ota_hotel_id": "minihotel_gostinitsa",
+            "master_id": "minihotel_gostinitsa",
+            "latitude": 55.382248,
+            "longitude": 36.739487,
+            "rating": 9.5,
+            "price": 7902
+        },
+        {
+            "ota_hotel_id": "hotel_staryi_gorod",
+            "master_id": "hotel_staryi_gorod",
+            "latitude": 56.370403,
+            "longitude": 41.305744,
+            "rating": 8.1,
+            "price": 7200
+        },
+        {
+            "ota_hotel_id": "bridzh_hotel",
+            "master_id": "bridzh_hotel",
+            "latitude": 54.796604,
+            "longitude": 32.048717,
+            "rating": 9.6,
+            "price": 10680
+        },
+        {
+            "ota_hotel_id": "gostinichnyij_kompleks_bravis",
+            "master_id": "gostinichnyij_kompleks_bravis",
+            "latitude": 57.175972,
+            "longitude": 39.396534,
+            "rating": 8.7,
+            "price": 17000
+        },
+        {
+            "ota_hotel_id": "gostinitsa_tsipk",
+            "master_id": "gostinitsa_tsipk",
+            "latitude": 55.105495,
+            "longitude": 36.618114,
+            "rating": 7.7,
+            "price": 9600
+        },
+        {
+            "ota_hotel_id": "ist_river_hotel",
+            "master_id": "ist_river_hotel",
+            "latitude": 55.19068,
+            "longitude": 36.681107,
+            "rating": 6.8,
+            "price": 3169
+        },
+        {
+            "ota_hotel_id": "medovo_hauz",
+            "master_id": "medovo_hauz",
+            "latitude": 55.482544,
+            "longitude": 37.83984,
+            "rating": 9,
+            "price": 11156
+        },
+        {
+            "ota_hotel_id": "bogorodsk_ekotel",
+            "master_id": "bogorodsk_ekotel",
+            "latitude": 55.87888,
+            "longitude": 38.4588,
+            "rating": 8.3,
+            "price": 20955
+        },
+        {
+            "ota_hotel_id": "miniotel_spasskaia_gorka",
+            "master_id": "miniotel_spasskaia_gorka",
+            "latitude": 56.433487,
+            "longitude": 40.42961,
+            "rating": 8.7,
+            "price": 14854
+        },
+        {
+            "ota_hotel_id": "minihotel_veselyij_bober",
+            "master_id": "minihotel_veselyij_bober",
+            "latitude": 57.125298,
+            "longitude": 33.204067,
+            "rating": 7.7,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "sadko_hotel",
+            "master_id": "sadko_hotel",
+            "latitude": 58.52165,
+            "longitude": 31.297115,
+            "rating": 7.9,
+            "price": 12676
+        },
+        {
+            "ota_hotel_id": "belgraviya_hotel",
+            "master_id": "belgraviya_hotel",
+            "latitude": 52.734795,
+            "longitude": 41.440773,
+            "rating": 8.5,
+            "price": 13200
+        },
+        {
+            "ota_hotel_id": "moskva_hotel_2",
+            "master_id": "moskva_hotel_2",
+            "latitude": 57.533176,
+            "longitude": 38.324303,
+            "rating": 7.6,
+            "price": 9800
+        },
+        {
+            "ota_hotel_id": "vyazma",
+            "master_id": "vyazma",
+            "latitude": 55.209457,
+            "longitude": 34.289375,
+            "rating": 8.4,
+            "price": 5700
+        },
+        {
+            "ota_hotel_id": "hotel_rozhdestvenskij",
+            "master_id": "hotel_rozhdestvenskij",
+            "latitude": 57.18667,
+            "longitude": 39.426636,
+            "rating": 8.5,
+            "price": 17000
+        },
+        {
+            "ota_hotel_id": "hotel_lyudinovo",
+            "master_id": "hotel_lyudinovo",
+            "latitude": 53.860348,
+            "longitude": 34.442604,
+            "rating": 7.3,
+            "price": 6000
+        },
+        {
+            "ota_hotel_id": "gostinitsa_vyrubovo",
+            "master_id": "gostinitsa_vyrubovo",
+            "latitude": 55.67551,
+            "longitude": 37.31638,
+            "rating": 8,
+            "price": 9961
+        },
+        {
+            "ota_hotel_id": "hotel_aviator_4",
+            "master_id": "hotel_aviator_4",
+            "latitude": 55.38671,
+            "longitude": 36.74806,
+            "rating": 0,
+            "price": 5050
+        },
+        {
+            "ota_hotel_id": "ganza_hotel",
+            "master_id": "ganza_hotel",
+            "latitude": 58.51994,
+            "longitude": 31.284824,
+            "rating": 8.4,
+            "price": 23907
+        },
+        {
+            "ota_hotel_id": "artbarin",
+            "master_id": "artbarin",
+            "latitude": 54.788837,
+            "longitude": 32.037067,
+            "rating": 9.4,
+            "price": 11600
+        },
+        {
+            "ota_hotel_id": "tsentralnaya_hotel_4",
+            "master_id": "tsentralnaya_hotel_4",
+            "latitude": 56.311184,
+            "longitude": 38.136066,
+            "rating": 8,
+            "price": 10400
+        },
+        {
+            "ota_hotel_id": "mini_hotel_kartushi",
+            "master_id": "mini_hotel_kartushi",
+            "latitude": 59.97376,
+            "longitude": 42.765182,
+            "rating": 9.4,
+            "price": 6000
+        },
+        {
+            "ota_hotel_id": "park_inn_by_radisson_sheremetyevo_airport_moscow",
+            "master_id": "park_inn_by_radisson_sheremetyevo_airport_moscow",
+            "latitude": 55.961075,
+            "longitude": 37.4129,
+            "rating": 8.6,
+            "price": 18400
+        },
+        {
+            "ota_hotel_id": "vesna_hotel_7",
+            "master_id": "vesna_hotel_7",
+            "latitude": 52.60153,
+            "longitude": 38.4786,
+            "rating": 8.2,
+            "price": 6338
+        },
+        {
+            "ota_hotel_id": "pobeda_hotel",
+            "master_id": "pobeda_hotel",
+            "latitude": 55.41954,
+            "longitude": 43.812386,
+            "rating": 9.1,
+            "price": 6400
+        },
+        {
+            "ota_hotel_id": "aviator_11",
+            "master_id": "aviator_11",
+            "latitude": 57.97325,
+            "longitude": 31.36521,
+            "rating": 9,
+            "price": 3961
+        },
+        {
+            "ota_hotel_id": "russian_seasons_parkhotel_peresvet",
+            "master_id": "russian_seasons_parkhotel_peresvet",
+            "latitude": 56.41796,
+            "longitude": 38.167957,
+            "rating": 7.8,
+            "price": 63381
+        },
+        {
+            "ota_hotel_id": "tgts_valdai_ooo_kroventekh",
+            "master_id": "tgts_valdai_ooo_kroventekh",
+            "latitude": 57.975967,
+            "longitude": 33.251797,
+            "rating": 6.5,
+            "price": 5578
+        },
+        {
+            "ota_hotel_id": "barin_hotel_3",
+            "master_id": "barin_hotel_3",
+            "latitude": 54.790794,
+            "longitude": 32.030308,
+            "rating": 9,
+            "price": 8800
+        },
+        {
+            "ota_hotel_id": "history_3",
+            "master_id": "history_3",
+            "latitude": 58.525,
+            "longitude": 31.273975,
+            "rating": 9.6,
+            "price": 19398
+        },
+        {
+            "ota_hotel_id": "lyuksson_hostel",
+            "master_id": "lyuksson_hostel",
+            "latitude": 56.365173,
+            "longitude": 41.307877,
+            "rating": 9,
+            "price": 1544
+        },
+        {
+            "ota_hotel_id": "hotel_la_confiture",
+            "master_id": "hotel_la_confiture",
+            "latitude": 56.698265,
+            "longitude": 38.822773,
+            "rating": 8.9,
+            "price": 14400
+        },
+        {
+            "ota_hotel_id": "triumf_hotel_2",
+            "master_id": "triumf_hotel_2",
+            "latitude": 55.42285,
+            "longitude": 37.52448,
+            "rating": 4.9,
+            "price": 8714
+        },
+        {
+            "ota_hotel_id": "hotel_edem_8",
+            "master_id": "hotel_edem_8",
+            "latitude": 55.815094,
+            "longitude": 38.94099,
+            "rating": 8.5,
+            "price": 17196
+        },
+        {
+            "ota_hotel_id": "myroom_2",
+            "master_id": "myroom_2",
+            "latitude": 58.52311,
+            "longitude": 31.255676,
+            "rating": 9.1,
+            "price": 8318
+        },
+        {
+            "ota_hotel_id": "sputnik_hotel_4",
+            "master_id": "sputnik_hotel_4",
+            "latitude": 52.604916,
+            "longitude": 39.574966,
+            "rating": 8.3,
+            "price": 8318
+        },
+        {
+            "ota_hotel_id": "vip_khostel_na_volge",
+            "master_id": "vip_khostel_na_volge",
+            "latitude": 56.718212,
+            "longitude": 36.77092,
+            "rating": 9.3,
+            "price": 9896
+        },
+        {
+            "ota_hotel_id": "vyazemgrad_hotel_",
+            "master_id": "vyazemgrad_hotel_",
+            "latitude": 55.630447,
+            "longitude": 36.978977,
+            "rating": 7,
+            "price": 7724
+        },
+        {
+            "ota_hotel_id": "chayka_hotel",
+            "master_id": "chayka_hotel",
+            "latitude": 57.5388,
+            "longitude": 38.334797,
+            "rating": 8.2,
+            "price": 7500
+        },
+        {
+            "ota_hotel_id": "aristokrat_2",
+            "master_id": "aristokrat_2",
+            "latitude": 56.307392,
+            "longitude": 38.136105,
+            "rating": 6,
+            "price": 9600
+        },
+        {
+            "ota_hotel_id": "bazilik_yelets_hotel",
+            "master_id": "bazilik_yelets_hotel",
+            "latitude": 52.62051,
+            "longitude": 38.501225,
+            "rating": 6.8,
+            "price": 6659
+        },
+        {
+            "ota_hotel_id": "hotel_na_svetloy",
+            "master_id": "hotel_na_svetloy",
+            "latitude": 56.009148,
+            "longitude": 37.445366,
+            "rating": 9,
+            "price": 8714
+        },
+        {
+            "ota_hotel_id": "safari_hostel_3",
+            "master_id": "safari_hostel_3",
+            "latitude": 52.6144,
+            "longitude": 38.469486,
+            "rating": 9.3,
+            "price": 7922
+        },
+        {
+            "ota_hotel_id": "art_hotel_52",
+            "master_id": "art_hotel_52",
+            "latitude": 57.440613,
+            "longitude": 42.166462,
+            "rating": 9.9,
+            "price": 27729
+        },
+        {
+            "ota_hotel_id": "alekseevskaia_usadba",
+            "master_id": "alekseevskaia_usadba",
+            "latitude": 56.42289,
+            "longitude": 40.432037,
+            "rating": 9.4,
+            "price": 16048
+        },
+        {
+            "ota_hotel_id": "rahmaninov_hotel",
+            "master_id": "rahmaninov_hotel",
+            "latitude": 58.517673,
+            "longitude": 31.28666,
+            "rating": 8.8,
+            "price": 11520
+        },
+        {
+            "ota_hotel_id": "otel_posadskii",
+            "master_id": "otel_posadskii",
+            "latitude": 56.31606,
+            "longitude": 38.136654,
+            "rating": 7.6,
+            "price": 13600
+        },
+        {
+            "ota_hotel_id": "grand_elets",
+            "master_id": "grand_elets",
+            "latitude": 52.62555,
+            "longitude": 38.504498,
+            "rating": 8.3,
+            "price": 12000
+        },
+        {
+            "ota_hotel_id": "apelsin_hotel_2",
+            "master_id": "apelsin_hotel_2",
+            "latitude": 55.80958,
+            "longitude": 38.427807,
+            "rating": 7.7,
+            "price": 10160
+        },
+        {
+            "ota_hotel_id": "grand",
+            "master_id": "grand",
+            "latitude": 52.731266,
+            "longitude": 41.44884,
+            "rating": 7.7,
+            "price": 14000
+        },
+        {
+            "ota_hotel_id": "klinskoe_podvorie",
+            "master_id": "klinskoe_podvorie",
+            "latitude": 56.339153,
+            "longitude": 36.71918,
+            "rating": 8.6,
+            "price": 16096
+        },
+        {
+            "ota_hotel_id": "gostinitsa_derzhavinskaia",
+            "master_id": "gostinitsa_derzhavinskaia",
+            "latitude": 52.7353,
+            "longitude": 41.450882,
+            "rating": 7.2,
+            "price": 11200
+        },
+        {
+            "ota_hotel_id": "ooo_literaturnyie_oteli",
+            "master_id": "ooo_literaturnyie_oteli",
+            "latitude": 57.041306,
+            "longitude": 28.913013,
+            "rating": 8.5,
+            "price": 32222
+        },
+        {
+            "ota_hotel_id": "mini_hotel_fleur_",
+            "master_id": "mini_hotel_fleur_",
+            "latitude": 57.535873,
+            "longitude": 38.331158,
+            "rating": 8.7,
+            "price": 6600
+        },
+        {
+            "ota_hotel_id": "otel_margo",
+            "master_id": "otel_margo",
+            "latitude": 55.996147,
+            "longitude": 37.4218,
+            "rating": 6.9,
+            "price": 10400
+        },
+        {
+            "ota_hotel_id": "eremina_gora",
+            "master_id": "eremina_gora",
+            "latitude": 57.9768,
+            "longitude": 33.075714,
+            "rating": 8.3,
+            "price": 28000
+        },
+        {
+            "ota_hotel_id": "hotel_don661",
+            "master_id": "hotel_don661",
+            "latitude": 50.53093,
+            "longitude": 40.08342,
+            "rating": 9.4,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "vizavi_",
+            "master_id": "vizavi_",
+            "latitude": 57.986183,
+            "longitude": 31.365297,
+            "rating": 8.4,
+            "price": 9269
+        },
+        {
+            "ota_hotel_id": "spavolga",
+            "master_id": "spavolga",
+            "latitude": 57.46629,
+            "longitude": 42.114414,
+            "rating": 7,
+            "price": 16000
+        },
+        {
+            "ota_hotel_id": "aviator",
+            "master_id": "aviator",
+            "latitude": 55.9542,
+            "longitude": 37.407494,
+            "rating": 8.2,
+            "price": 14162
+        },
+        {
+            "ota_hotel_id": "vernissage_hotel",
+            "master_id": "vernissage_hotel",
+            "latitude": 58.526646,
+            "longitude": 31.301409,
+            "rating": 8,
+            "price": 4400
+        },
+        {
+            "ota_hotel_id": "holiday_inn_express_moscow_sheremetyevo_airport",
+            "master_id": "holiday_inn_express_moscow_sheremetyevo_airport",
+            "latitude": 55.95996,
+            "longitude": 37.41357,
+            "rating": 9.1,
+            "price": 20000
+        },
+        {
+            "ota_hotel_id": "russkaya_piramida_2",
+            "master_id": "russkaya_piramida_2",
+            "latitude": 55.19898,
+            "longitude": 34.301586,
+            "rating": 9.2,
+            "price": 5400
+        },
+        {
+            "ota_hotel_id": "idillia_mini_hotel",
+            "master_id": "idillia_mini_hotel",
+            "latitude": 56.34606,
+            "longitude": 30.562904,
+            "rating": 9,
+            "price": 7526
+        },
+        {
+            "ota_hotel_id": "hotel_mstaborovichi",
+            "master_id": "hotel_mstaborovichi",
+            "latitude": 58.384514,
+            "longitude": 33.90396,
+            "rating": 6.5,
+            "price": 3961
+        },
+        {
+            "ota_hotel_id": "benedikt_hotel",
+            "master_id": "benedikt_hotel",
+            "latitude": 55.99484,
+            "longitude": 37.241653,
+            "rating": 9.8,
+            "price": 23371
+        },
+        {
+            "ota_hotel_id": "mini_hotel_agora",
+            "master_id": "mini_hotel_agora",
+            "latitude": 56.370953,
+            "longitude": 41.30478,
+            "rating": 7.7,
+            "price": 6800
+        },
+        {
+            "ota_hotel_id": "karelinn_hotel_2",
+            "master_id": "karelinn_hotel_2",
+            "latitude": 58.530994,
+            "longitude": 31.269173,
+            "rating": 9.1,
+            "price": 16013
+        },
+        {
+            "ota_hotel_id": "parfenon_minihotel",
+            "master_id": "parfenon_minihotel",
+            "latitude": 55.379353,
+            "longitude": 39.045815,
+            "rating": 7.8,
+            "price": 10695
+        },
+        {
+            "ota_hotel_id": "miniotel_veranda_suzdal",
+            "master_id": "miniotel_veranda_suzdal",
+            "latitude": 56.420662,
+            "longitude": 40.456276,
+            "rating": 9.6,
+            "price": 30820
+        },
+        {
+            "ota_hotel_id": "nova_hotel_14",
+            "master_id": "nova_hotel_14",
+            "latitude": 52.59087,
+            "longitude": 39.617023,
+            "rating": 7.9,
+            "price": 7200
+        },
+        {
+            "ota_hotel_id": "hotel_sovetskaya_49",
+            "master_id": "hotel_sovetskaya_49",
+            "latitude": 52.61828,
+            "longitude": 38.49758,
+            "rating": 8.9,
+            "price": 11883
+        },
+        {
+            "ota_hotel_id": "azhur_hotel_2",
+            "master_id": "azhur_hotel_2",
+            "latitude": 52.75017,
+            "longitude": 41.455776,
+            "rating": 9.3,
+            "price": 10800
+        },
+        {
+            "ota_hotel_id": "oliviia",
+            "master_id": "oliviia",
+            "latitude": 52.58872,
+            "longitude": 39.520355,
+            "rating": 9.1,
+            "price": 7922
+        },
+        {
+            "ota_hotel_id": "dom_na_vode",
+            "master_id": "dom_na_vode",
+            "latitude": 57.45769,
+            "longitude": 41.53367,
+            "rating": 8.5,
+            "price": 51497
+        },
+        {
+            "ota_hotel_id": "epos_2",
+            "master_id": "epos_2",
+            "latitude": 57.145687,
+            "longitude": 33.110554,
+            "rating": 8,
+            "price": 12000
+        },
+        {
+            "ota_hotel_id": "gostinitsa_rigaland",
+            "master_id": "gostinitsa_rigaland",
+            "latitude": 55.785263,
+            "longitude": 37.240284,
+            "rating": 7.5,
+            "price": 14400
+        },
+        {
+            "ota_hotel_id": "barinova_roshcha",
+            "master_id": "barinova_roshcha",
+            "latitude": 55.63348,
+            "longitude": 40.69635,
+            "rating": 8.8,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "amaks_rossia_hotel",
+            "master_id": "amaks_rossia_hotel",
+            "latitude": 58.516388,
+            "longitude": 31.284182,
+            "rating": 7.2,
+            "price": 15960
+        },
+        {
+            "ota_hotel_id": "korolev_hotel_",
+            "master_id": "korolev_hotel_",
+            "latitude": 55.91678,
+            "longitude": 37.829037,
+            "rating": 6.5,
+            "price": 8677
+        },
+        {
+            "ota_hotel_id": "mansarda_hotel",
+            "master_id": "mansarda_hotel",
+            "latitude": 55.67619,
+            "longitude": 37.88975,
+            "rating": 8.3,
+            "price": 14743
+        },
+        {
+            "ota_hotel_id": "motel_sofiya",
+            "master_id": "motel_sofiya",
+            "latitude": 55.901794,
+            "longitude": 36.80758,
+            "rating": 9.5,
+            "price": 14656
+        },
+        {
+            "ota_hotel_id": "miniotel_dvorik_na_stroitele",
+            "master_id": "miniotel_dvorik_na_stroitele",
+            "latitude": 52.604843,
+            "longitude": 38.47699,
+            "rating": 8.9,
+            "price": 7200
+        },
+        {
+            "ota_hotel_id": "spa_hotel_plaza",
+            "master_id": "spa_hotel_plaza",
+            "latitude": 52.90038,
+            "longitude": 40.48437,
+            "rating": 8.1,
+            "price": 12000
+        },
+        {
+            "ota_hotel_id": "meridian_hotel_",
+            "master_id": "meridian_hotel_",
+            "latitude": 55.174824,
+            "longitude": 37.467014,
+            "rating": 7.3,
+            "price": 13946
+        },
+        {
+            "ota_hotel_id": "minihotel_aviaotel",
+            "master_id": "minihotel_aviaotel",
+            "latitude": 55.428757,
+            "longitude": 37.81258,
+            "rating": 8.3,
+            "price": 8417
+        },
+        {
+            "ota_hotel_id": "hotel_hoteldomodedovo",
+            "master_id": "hotel_hoteldomodedovo",
+            "latitude": 55.45489,
+            "longitude": 37.743374,
+            "rating": 0,
+            "price": 9091
+        },
+        {
+            "ota_hotel_id": "hotel_boyarskij_dvor",
+            "master_id": "hotel_boyarskij_dvor",
+            "latitude": 57.18465,
+            "longitude": 39.413734,
+            "rating": 6.9,
+            "price": 10600
+        },
+        {
+            "ota_hotel_id": "hutorok_minihotel",
+            "master_id": "hutorok_minihotel",
+            "latitude": 52.91925,
+            "longitude": 40.434143,
+            "rating": 0,
+            "price": 4781
+        },
+        {
+            "ota_hotel_id": "pushkarskaya_sloboda_resort",
+            "master_id": "pushkarskaya_sloboda_resort",
+            "latitude": 56.413387,
+            "longitude": 40.447178,
+            "rating": 8.9,
+            "price": 24000
+        },
+        {
+            "ota_hotel_id": "uspenskaya_hotel",
+            "master_id": "uspenskaya_hotel",
+            "latitude": 57.5262,
+            "longitude": 38.30615,
+            "rating": 7.2,
+            "price": 10800
+        },
+        {
+            "ota_hotel_id": "greenfeel_smolensk_hotel",
+            "master_id": "greenfeel_smolensk_hotel",
+            "latitude": 54.815674,
+            "longitude": 32.04304,
+            "rating": 0,
+            "price": 7843
+        },
+        {
+            "ota_hotel_id": "parkotel_millenium",
+            "master_id": "parkotel_millenium",
+            "latitude": 54.69254,
+            "longitude": 37.256123,
+            "rating": 0,
+            "price": 11995
+        },
+        {
+            "ota_hotel_id": "park_inn_veliky_novgorod",
+            "master_id": "park_inn_veliky_novgorod",
+            "latitude": 58.536545,
+            "longitude": 31.29205,
+            "rating": 7.7,
+            "price": 18000
+        },
+        {
+            "ota_hotel_id": "astrohostel_reys_hostel",
+            "master_id": "astrohostel_reys_hostel",
+            "latitude": 55.608906,
+            "longitude": 37.299,
+            "rating": 9.7,
+            "price": 5644
+        },
+        {
+            "ota_hotel_id": "apartotel_hotel_zalesny",
+            "master_id": "apartotel_hotel_zalesny",
+            "latitude": 54.03202,
+            "longitude": 38.316673,
+            "rating": 9.4,
+            "price": 9412
+        },
+        {
+            "ota_hotel_id": "butikotel_istorii",
+            "master_id": "butikotel_istorii",
+            "latitude": 54.0052,
+            "longitude": 38.24779,
+            "rating": 9.4,
+            "price": 11487
+        },
+        {
+            "ota_hotel_id": "hotel_aravana",
+            "master_id": "hotel_aravana",
+            "latitude": 55.835175,
+            "longitude": 37.320732,
+            "rating": 8.9,
+            "price": 16000
+        },
+        {
+            "ota_hotel_id": "mercure_lipetsk_center",
+            "master_id": "mercure_lipetsk_center",
+            "latitude": 52.606213,
+            "longitude": 39.594116,
+            "rating": 8.5,
+            "price": 19410
+        },
+        {
+            "ota_hotel_id": "baltiya",
+            "master_id": "baltiya",
+            "latitude": 57.588417,
+            "longitude": 34.531937,
+            "rating": 10,
+            "price": 4800
+        },
+        {
+            "ota_hotel_id": "oktiabr",
+            "master_id": "oktiabr",
+            "latitude": 54.017254,
+            "longitude": 38.295647,
+            "rating": 8.4,
+            "price": 7801
+        },
+        {
+            "ota_hotel_id": "hotel_planeta_spa",
+            "master_id": "hotel_planeta_spa",
+            "latitude": 52.740044,
+            "longitude": 41.45653,
+            "rating": 7.8,
+            "price": 11800
+        },
+        {
+            "ota_hotel_id": "valdaj_prostranstvo_mechtyi",
+            "master_id": "valdaj_prostranstvo_mechtyi",
+            "latitude": 58.025078,
+            "longitude": 33.20047,
+            "rating": 8.2,
+            "price": 10380
+        },
+        {
+            "ota_hotel_id": "russkaya_trojka",
+            "master_id": "russkaya_trojka",
+            "latitude": 55.03059,
+            "longitude": 43.25098,
+            "rating": 7.7,
+            "price": 8057
+        },
+        {
+            "ota_hotel_id": "psb_patriot_cosmos_hotels_hotel",
+            "master_id": "psb_patriot_cosmos_hotels_hotel",
+            "latitude": 55.529724,
+            "longitude": 36.619278,
+            "rating": 8.1,
+            "price": 24650
+        },
+        {
+            "ota_hotel_id": "domino_hostel_3",
+            "master_id": "domino_hostel_3",
+            "latitude": 56.355686,
+            "longitude": 41.335434,
+            "rating": 6,
+            "price": 2376
+        },
+        {
+            "ota_hotel_id": "welcome_inn_hotel",
+            "master_id": "welcome_inn_hotel",
+            "latitude": 58.523235,
+            "longitude": 31.295929,
+            "rating": 8.4,
+            "price": 7717
+        },
+        {
+            "ota_hotel_id": "chemodan_minihotel_2",
+            "master_id": "chemodan_minihotel_2",
+            "latitude": 54.740353,
+            "longitude": 32.08673,
+            "rating": 8.9,
+            "price": 8800
+        },
+        {
+            "ota_hotel_id": "hotel_murom",
+            "master_id": "hotel_murom",
+            "latitude": 55.574635,
+            "longitude": 42.027462,
+            "rating": 9.6,
+            "price": 13300
+        },
+        {
+            "ota_hotel_id": "aerootel_domodedovo",
+            "master_id": "aerootel_domodedovo",
+            "latitude": 55.42015,
+            "longitude": 37.89609,
+            "rating": 7.6,
+            "price": 18620
+        },
+        {
+            "ota_hotel_id": "hotel_kupecheskiy",
+            "master_id": "hotel_kupecheskiy",
+            "latitude": 52.884903,
+            "longitude": 40.516544,
+            "rating": 8.7,
+            "price": 7600
+        },
+        {
+            "ota_hotel_id": "deliki_hostel",
+            "master_id": "deliki_hostel",
+            "latitude": 55.579002,
+            "longitude": 36.707085,
+            "rating": 9.8,
+            "price": 2320
+        },
+        {
+            "ota_hotel_id": "otel_burzhui",
+            "master_id": "otel_burzhui",
+            "latitude": 55.208168,
+            "longitude": 34.28438,
+            "rating": 9.5,
+            "price": 5200
+        },
+        {
+            "ota_hotel_id": "novotel_moskva_sheremetevo",
+            "master_id": "novotel_moskva_sheremetevo",
+            "latitude": 55.9622,
+            "longitude": 37.416237,
+            "rating": 8.5,
+            "price": 21280
+        },
+        {
+            "ota_hotel_id": "minihotel_kelarskaya_naberezhnaya",
+            "master_id": "minihotel_kelarskaya_naberezhnaya",
+            "latitude": 56.305492,
+            "longitude": 38.130203,
+            "rating": 9,
+            "price": 16800
+        },
+        {
+            "ota_hotel_id": "lafer_renaissance_hotel",
+            "master_id": "lafer_renaissance_hotel",
+            "latitude": 56.315228,
+            "longitude": 38.23016,
+            "rating": 7,
+            "price": 8800
+        },
+        {
+            "ota_hotel_id": "gostinitsa_tambovskaya",
+            "master_id": "gostinitsa_tambovskaya",
+            "latitude": 52.75783,
+            "longitude": 41.45637,
+            "rating": 7.9,
+            "price": 8800
+        },
+        {
+            "ota_hotel_id": "atmosfera_minihotel_3",
+            "master_id": "atmosfera_minihotel_3",
+            "latitude": 57.03976,
+            "longitude": 34.95642,
+            "rating": 9.8,
+            "price": 21787
+        },
+        {
+            "ota_hotel_id": "vizit_hotel_5",
+            "master_id": "vizit_hotel_5",
+            "latitude": 56.360558,
+            "longitude": 41.337524,
+            "rating": 7.8,
+            "price": 10800
+        },
+        {
+            "ota_hotel_id": "kvartira_posutochno_19",
+            "master_id": "kvartira_posutochno_19",
+            "latitude": 52.611423,
+            "longitude": 38.465664,
+            "rating": 7.9,
+            "price": 11760
+        },
+        {
+            "ota_hotel_id": "druzhba_aparthotel",
+            "master_id": "druzhba_aparthotel",
+            "latitude": 55.59473,
+            "longitude": 38.12339,
+            "rating": 8.7,
+            "price": 19331
+        },
+        {
+            "ota_hotel_id": "sheremetveo_hotel",
+            "master_id": "sheremetveo_hotel",
+            "latitude": 55.97912,
+            "longitude": 37.385975,
+            "rating": 8,
+            "price": 10920
+        },
+        {
+            "ota_hotel_id": "city_hotel_54",
+            "master_id": "city_hotel_54",
+            "latitude": 54.76799,
+            "longitude": 32.0617,
+            "rating": 9.1,
+            "price": 10480
+        },
+        {
+            "ota_hotel_id": "deltafly_hotel",
+            "master_id": "deltafly_hotel",
+            "latitude": 55.411495,
+            "longitude": 37.852646,
+            "rating": 5,
+            "price": 10695
+        },
+        {
+            "ota_hotel_id": "hotel_mgimo",
+            "master_id": "hotel_mgimo",
+            "latitude": 55.680645,
+            "longitude": 37.277317,
+            "rating": 8.4,
+            "price": 16735
+        },
+        {
+            "ota_hotel_id": "kristall_2",
+            "master_id": "kristall_2",
+            "latitude": 56.35666,
+            "longitude": 37.52669,
+            "rating": 8.3,
+            "price": 14656
+        },
+        {
+            "ota_hotel_id": "otel_garmoniia_2",
+            "master_id": "otel_garmoniia_2",
+            "latitude": 54.95446,
+            "longitude": 39.01758,
+            "rating": 9.2,
+            "price": 14045
+        },
+        {
+            "ota_hotel_id": "sleepers_avia_hotel_dme",
+            "master_id": "sleepers_avia_hotel_dme",
+            "latitude": 55.41172,
+            "longitude": 37.83979,
+            "rating": 8.7,
+            "price": 13200
+        },
+        {
+            "ota_hotel_id": "nash_elets_minihotel",
+            "master_id": "nash_elets_minihotel",
+            "latitude": 52.60913,
+            "longitude": 38.497135,
+            "rating": 7.8,
+            "price": 7200
+        },
+        {
+            "ota_hotel_id": "botik_minihotel",
+            "master_id": "botik_minihotel",
+            "latitude": 56.724804,
+            "longitude": 38.77744,
+            "rating": 6.2,
+            "price": 6400
+        },
+        {
+            "ota_hotel_id": "skver_minihotel",
+            "master_id": "skver_minihotel",
+            "latitude": 54.77191,
+            "longitude": 32.045605,
+            "rating": 9.3,
+            "price": 8600
+        },
+        {
+            "ota_hotel_id": "russkaya_izba_hotel",
+            "master_id": "russkaya_izba_hotel",
+            "latitude": 56.427177,
+            "longitude": 40.44197,
+            "rating": 8.1,
+            "price": 18000
+        },
+        {
+            "ota_hotel_id": "hotel_smart_hotel_kdo_tambov",
+            "master_id": "hotel_smart_hotel_kdo_tambov",
+            "latitude": 52.71855,
+            "longitude": 41.42713,
+            "rating": 8.2,
+            "price": 2852
+        },
+        {
+            "ota_hotel_id": "laguna_lipetsk",
+            "master_id": "laguna_lipetsk",
+            "latitude": 52.59052,
+            "longitude": 39.614708,
+            "rating": 7.2,
+            "price": 14800
+        },
+        {
+            "ota_hotel_id": "royal_palace_7",
+            "master_id": "royal_palace_7",
+            "latitude": 56.710724,
+            "longitude": 38.80843,
+            "rating": 6.7,
+            "price": 12800
+        },
+        {
+            "ota_hotel_id": "aeroclub_alpina_avia",
+            "master_id": "aeroclub_alpina_avia",
+            "latitude": 55.207153,
+            "longitude": 38.67531,
+            "rating": 8.7,
+            "price": 14260
+        },
+        {
+            "ota_hotel_id": "sands_of_time",
+            "master_id": "sands_of_time",
+            "latitude": 54.7596,
+            "longitude": 32.069576,
+            "rating": 9.3,
+            "price": 9760
+        },
+        {
+            "ota_hotel_id": "piramida_12",
+            "master_id": "piramida_12",
+            "latitude": 52.648052,
+            "longitude": 41.44284,
+            "rating": 8.7,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "ankor_hotel",
+            "master_id": "ankor_hotel",
+            "latitude": 55.99842,
+            "longitude": 37.21187,
+            "rating": 8.6,
+            "price": 12894
+        },
+        {
+            "ota_hotel_id": "hotel_imeni_lomonosova_domodedovo",
+            "master_id": "hotel_imeni_lomonosova_domodedovo",
+            "latitude": 55.41176,
+            "longitude": 37.845955,
+            "rating": 8.6,
+            "price": 8800
+        },
+        {
+            "ota_hotel_id": "valday_hunting_country_club_hotel",
+            "master_id": "valday_hunting_country_club_hotel",
+            "latitude": 58.018177,
+            "longitude": 33.46991,
+            "rating": 8.7,
+            "price": 11995
+        },
+        {
+            "ota_hotel_id": "slavyanskaya",
+            "master_id": "slavyanskaya",
+            "latitude": 52.72668,
+            "longitude": 41.425926,
+            "rating": 9.1,
+            "price": 13200
+        },
+        {
+            "ota_hotel_id": "hotel_derzhava",
+            "master_id": "hotel_derzhava",
+            "latitude": 54.795166,
+            "longitude": 32.042152,
+            "rating": 6.7,
+            "price": 8800
+        },
+        {
+            "ota_hotel_id": "yubileiny_hotel__restaurant",
+            "master_id": "yubileiny_hotel__restaurant",
+            "latitude": 55.09269,
+            "longitude": 36.61198,
+            "rating": 7.5,
+            "price": 7969
+        },
+        {
+            "ota_hotel_id": "skypoint_hotel",
+            "master_id": "skypoint_hotel",
+            "latitude": 55.947544,
+            "longitude": 37.419235,
+            "rating": 8.8,
+            "price": 10800
+        },
+        {
+            "ota_hotel_id": "palazzo_hotel_9",
+            "master_id": "palazzo_hotel_9",
+            "latitude": 58.520607,
+            "longitude": 31.285294,
+            "rating": 9.9,
+            "price": 20371
+        },
+        {
+            "ota_hotel_id": "matreshka_hostel_5",
+            "master_id": "matreshka_hostel_5",
+            "latitude": 56.299824,
+            "longitude": 38.132843,
+            "rating": 9.3,
+            "price": 2376
+        },
+        {
+            "ota_hotel_id": "torzhok_hotel_",
+            "master_id": "torzhok_hotel_",
+            "latitude": 57.043095,
+            "longitude": 34.973667,
+            "rating": 8.1,
+            "price": 11200
+        },
+        {
+            "ota_hotel_id": "best_western_nikolaevsky_posad_art_hotel",
+            "master_id": "best_western_nikolaevsky_posad_art_hotel",
+            "latitude": 56.430733,
+            "longitude": 40.444363,
+            "rating": 8.9,
+            "price": 29000
+        },
+        {
+            "ota_hotel_id": "bianki_lux_hotel",
+            "master_id": "bianki_lux_hotel",
+            "latitude": 58.520668,
+            "longitude": 31.289988,
+            "rating": 9.9,
+            "price": 21040
+        },
+        {
+            "ota_hotel_id": "gostevoj_dom_aist_2",
+            "master_id": "gostevoj_dom_aist_2",
+            "latitude": 58.551342,
+            "longitude": 31.21677,
+            "rating": 8.4,
+            "price": 8800
+        },
+        {
+            "ota_hotel_id": "myesto_hotel",
+            "master_id": "myesto_hotel",
+            "latitude": 52.604374,
+            "longitude": 38.46764,
+            "rating": 7.2,
+            "price": 5941
+        },
+        {
+            "ota_hotel_id": "vzlyotnaya",
+            "master_id": "vzlyotnaya",
+            "latitude": 55.39279,
+            "longitude": 37.805294,
+            "rating": 8.4,
+            "price": 7267
+        },
+        {
+            "ota_hotel_id": "voyazh_hotel",
+            "master_id": "voyazh_hotel",
+            "latitude": 55.41109,
+            "longitude": 36.71374,
+            "rating": 9.1,
+            "price": 13072
+        },
+        {
+            "ota_hotel_id": "aparthotel_belaya_vorona",
+            "master_id": "aparthotel_belaya_vorona",
+            "latitude": 51.38998,
+            "longitude": 42.09827,
+            "rating": 9.4,
+            "price": 15200
+        },
+        {
+            "ota_hotel_id": "dubrava_4",
+            "master_id": "dubrava_4",
+            "latitude": 54.788414,
+            "longitude": 31.911207,
+            "rating": 9.5,
+            "price": 10640
+        },
+        {
+            "ota_hotel_id": "veryazhsky_hotel",
+            "master_id": "veryazhsky_hotel",
+            "latitude": 58.52746,
+            "longitude": 31.210796,
+            "rating": 8.3,
+            "price": 7922
+        },
+        {
+            "ota_hotel_id": "nika_3",
+            "master_id": "nika_3",
+            "latitude": 54.759136,
+            "longitude": 32.044586,
+            "rating": 7.9,
+            "price": 7600
+        },
+        {
+            "ota_hotel_id": "arzamasskij",
+            "master_id": "arzamasskij",
+            "latitude": 55.413548,
+            "longitude": 43.840046,
+            "rating": 8.7,
+            "price": 7407
+        },
+        {
+            "ota_hotel_id": "velfa_hostel",
+            "master_id": "velfa_hostel",
+            "latitude": 56.340504,
+            "longitude": 30.495289,
+            "rating": 0,
+            "price": 3169
+        },
+        {
+            "ota_hotel_id": "gostinitsa_mescherino",
+            "master_id": "gostinitsa_mescherino",
+            "latitude": 55.49784,
+            "longitude": 37.82018,
+            "rating": 8.3,
+            "price": 4713
+        },
+        {
+            "ota_hotel_id": "koshkin_dom_hotel",
+            "master_id": "koshkin_dom_hotel",
+            "latitude": 57.78715,
+            "longitude": 38.453133,
+            "rating": 9.2,
+            "price": 11000
+        },
+        {
+            "ota_hotel_id": "hotel_pestrikov",
+            "master_id": "hotel_pestrikov",
+            "latitude": 54.79031,
+            "longitude": 32.047245,
+            "rating": 9.9,
+            "price": 26000
+        },
+        {
+            "ota_hotel_id": "silf",
+            "master_id": "silf",
+            "latitude": 53.128147,
+            "longitude": 38.11401,
+            "rating": 9.4,
+            "price": 10299
+        },
+        {
+            "ota_hotel_id": "praha",
+            "master_id": "praha",
+            "latitude": 54.759937,
+            "longitude": 32.06482,
+            "rating": 8.3,
+            "price": 6400
+        },
+        {
+            "ota_hotel_id": "ashkhen",
+            "master_id": "ashkhen",
+            "latitude": 57.139908,
+            "longitude": 33.1359,
+            "rating": 6.5,
+            "price": 11200
+        },
+        {
+            "ota_hotel_id": "pegas_club_",
+            "master_id": "pegas_club_",
+            "latitude": 54.2189,
+            "longitude": 37.62316,
+            "rating": 7.6,
+            "price": 10800
+        },
+        {
+            "ota_hotel_id": "gostinica_tsentralnaya",
+            "master_id": "gostinica_tsentralnaya",
+            "latitude": 57.79139,
+            "longitude": 36.68931,
+            "rating": 9.1,
+            "price": 7200
+        },
+        {
+            "ota_hotel_id": "miniotel_na_mirnom",
+            "master_id": "miniotel_na_mirnom",
+            "latitude": 55.101616,
+            "longitude": 36.59358,
+            "rating": 8.8,
+            "price": 9961
+        },
+        {
+            "ota_hotel_id": "gostinitsa_sovetskaya",
+            "master_id": "gostinitsa_sovetskaya",
+            "latitude": 55.090958,
+            "longitude": 38.7679,
+            "rating": 6.9,
+            "price": 7800
+        },
+        {
+            "ota_hotel_id": "podvore_2",
+            "master_id": "podvore_2",
+            "latitude": 56.285423,
+            "longitude": 30.507843,
+            "rating": 7.9,
+            "price": 7600
+        },
+        {
+            "ota_hotel_id": "russkiy_prichal_hotel",
+            "master_id": "russkiy_prichal_hotel",
+            "latitude": 59.970325,
+            "longitude": 42.770164,
+            "rating": 10,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "gostevoy_dom_v_suzdale",
+            "master_id": "gostevoy_dom_v_suzdale",
+            "latitude": 56.430782,
+            "longitude": 40.43433,
+            "rating": 9.4,
+            "price": 16835
+        },
+        {
+            "ota_hotel_id": "iris_hotel_8",
+            "master_id": "iris_hotel_8",
+            "latitude": 56.387344,
+            "longitude": 38.717735,
+            "rating": 8.8,
+            "price": 12000
+        },
+        {
+            "ota_hotel_id": "lesnoy_country_house_hotel",
+            "master_id": "lesnoy_country_house_hotel",
+            "latitude": 55.63378,
+            "longitude": 37.2115,
+            "rating": 9.7,
+            "price": 22000
+        },
+        {
+            "ota_hotel_id": "ogni_minihotel",
+            "master_id": "ogni_minihotel",
+            "latitude": 53.248074,
+            "longitude": 39.15231,
+            "rating": 9.4,
+            "price": 7600
+        },
+        {
+            "ota_hotel_id": "postoyalets_hotel",
+            "master_id": "postoyalets_hotel",
+            "latitude": 55.673252,
+            "longitude": 37.279613,
+            "rating": 8,
+            "price": 15449
+        },
+        {
+            "ota_hotel_id": "suzdal_2",
+            "master_id": "suzdal_2",
+            "latitude": 56.43057,
+            "longitude": 40.42784,
+            "rating": 7.5,
+            "price": 20400
+        },
+        {
+            "ota_hotel_id": "baza_otdykha_vetluga",
+            "master_id": "baza_otdykha_vetluga",
+            "latitude": 58.306328,
+            "longitude": 45.452717,
+            "rating": 8.9,
+            "price": 13200
+        },
+        {
+            "ota_hotel_id": "hotel_kasimov",
+            "master_id": "hotel_kasimov",
+            "latitude": 54.936245,
+            "longitude": 41.405167,
+            "rating": 8.9,
+            "price": 11200
+        },
+        {
+            "ota_hotel_id": "avrora_minihotel_4",
+            "master_id": "avrora_minihotel_4",
+            "latitude": 55.5915,
+            "longitude": 38.122883,
+            "rating": 0,
+            "price": 9903
+        },
+        {
+            "ota_hotel_id": "aprel_",
+            "master_id": "aprel_",
+            "latitude": 53.83707,
+            "longitude": 34.409645,
+            "rating": 8,
+            "price": 7130
+        },
+        {
+            "ota_hotel_id": "miniotel_noi_domodedovo",
+            "master_id": "miniotel_noi_domodedovo",
+            "latitude": 55.497345,
+            "longitude": 37.840267,
+            "rating": 8.8,
+            "price": 12200
+        },
+        {
+            "ota_hotel_id": "automotel_arneevo",
+            "master_id": "automotel_arneevo",
+            "latitude": 54.970276,
+            "longitude": 37.57766,
+            "rating": 8.6,
+            "price": 6734
+        },
+        {
+            "ota_hotel_id": "nerevskij_aparthotel",
+            "master_id": "nerevskij_aparthotel",
+            "latitude": 58.52634,
+            "longitude": 31.278477,
+            "rating": 7.7,
+            "price": 11883
+        },
+        {
+            "ota_hotel_id": "aparthotel_polet",
+            "master_id": "aparthotel_polet",
+            "latitude": 55.84268,
+            "longitude": 38.45191,
+            "rating": 9,
+            "price": 8622
+        },
+        {
+            "ota_hotel_id": "russian_seasons_eco_hotel_peresvet",
+            "master_id": "russian_seasons_eco_hotel_peresvet",
+            "latitude": 56.419136,
+            "longitude": 38.17017,
+            "rating": 8.9,
+            "price": 55458
+        },
+        {
+            "ota_hotel_id": "radisson_blu_hotel_moscow_sheremetyevo_airport_",
+            "master_id": "radisson_blu_hotel_moscow_sheremetyevo_airport_",
+            "latitude": 55.963028,
+            "longitude": 37.413322,
+            "rating": 8.4,
+            "price": 31200
+        },
+        {
+            "ota_hotel_id": "bunin_hostel",
+            "master_id": "bunin_hostel",
+            "latitude": 52.607452,
+            "longitude": 38.485184,
+            "rating": 5.7,
+            "price": 2154
+        },
+        {
+            "ota_hotel_id": "vnukovo_village_park_hotel_and_spa_hotel",
+            "master_id": "vnukovo_village_park_hotel_and_spa_hotel",
+            "latitude": 55.61614,
+            "longitude": 37.39355,
+            "rating": 7.2,
+            "price": 14292
+        },
+        {
+            "ota_hotel_id": "smolka",
+            "master_id": "smolka",
+            "latitude": 54.785362,
+            "longitude": 32.0435,
+            "rating": 9.3,
+            "price": 12280
+        },
+        {
+            "ota_hotel_id": "imperator_hotel",
+            "master_id": "imperator_hotel",
+            "latitude": 54.24288,
+            "longitude": 37.62429,
+            "rating": 7.6,
+            "price": 15200
+        },
+        {
+            "ota_hotel_id": "miniotel_marakanas",
+            "master_id": "miniotel_marakanas",
+            "latitude": 57.994392,
+            "longitude": 33.241474,
+            "rating": 7.9,
+            "price": 17775
+        },
+        {
+            "ota_hotel_id": "miniotel_nash",
+            "master_id": "miniotel_nash",
+            "latitude": 53.2398,
+            "longitude": 39.967754,
+            "rating": 7.2,
+            "price": 4683
+        },
+        {
+            "ota_hotel_id": "hantri_hotel",
+            "master_id": "hantri_hotel",
+            "latitude": 56.317337,
+            "longitude": 38.132202,
+            "rating": 7.8,
+            "price": 12000
+        },
+        {
+            "ota_hotel_id": "zadonsk_2",
+            "master_id": "zadonsk_2",
+            "latitude": 52.393105,
+            "longitude": 38.91979,
+            "rating": 7.5,
+            "price": 12000
+        },
+        {
+            "ota_hotel_id": "plavuchiy_dom",
+            "master_id": "plavuchiy_dom",
+            "latitude": 57.164127,
+            "longitude": 33.093452,
+            "rating": 8.2,
+            "price": 14000
+        },
+        {
+            "ota_hotel_id": "zamok_minihotel",
+            "master_id": "zamok_minihotel",
+            "latitude": 55.148903,
+            "longitude": 38.719868,
+            "rating": 0,
+            "price": 7150
+        },
+        {
+            "ota_hotel_id": "dvoryanskoe_gnezdo_hotel",
+            "master_id": "dvoryanskoe_gnezdo_hotel",
+            "latitude": 54.727425,
+            "longitude": 32.090298,
+            "rating": 8,
+            "price": 6773
+        },
+        {
+            "ota_hotel_id": "grand_hotel_104",
+            "master_id": "grand_hotel_104",
+            "latitude": 53.277897,
+            "longitude": 36.573315,
+            "rating": 8.3,
+            "price": 9903
+        },
+        {
+            "ota_hotel_id": "otel_sharm",
+            "master_id": "otel_sharm",
+            "latitude": 55.96309,
+            "longitude": 37.454853,
+            "rating": 8.7,
+            "price": 11091
+        },
+        {
+            "ota_hotel_id": "ekipazh_hotel_2",
+            "master_id": "ekipazh_hotel_2",
+            "latitude": 55.593365,
+            "longitude": 37.03109,
+            "rating": 9.4,
+            "price": 14000
+        },
+        {
+            "ota_hotel_id": "gostinyi_dvor_hotel",
+            "master_id": "gostinyi_dvor_hotel",
+            "latitude": 55.855473,
+            "longitude": 38.432945,
+            "rating": 8.8,
+            "price": 13000
+        },
+        {
+            "ota_hotel_id": "karoza",
+            "master_id": "karoza",
+            "latitude": 57.01179,
+            "longitude": 39.26147,
+            "rating": 9.1,
+            "price": 8627
+        },
+        {
+            "ota_hotel_id": "shuya_grand_hotel",
+            "master_id": "shuya_grand_hotel",
+            "latitude": 56.8541,
+            "longitude": 41.374397,
+            "rating": 8.2,
+            "price": 14400
+        },
+        {
+            "ota_hotel_id": "aristokrat_butikhotel_2",
+            "master_id": "aristokrat_butikhotel_2",
+            "latitude": 55.46529,
+            "longitude": 38.428886,
+            "rating": 8.7,
+            "price": 19608
+        },
+        {
+            "ota_hotel_id": "sherr_hotel",
+            "master_id": "sherr_hotel",
+            "latitude": 54.891148,
+            "longitude": 38.080296,
+            "rating": 8.4,
+            "price": 14400
+        },
+        {
+            "ota_hotel_id": "hotel_four_crowns",
+            "master_id": "hotel_four_crowns",
+            "latitude": 56.344067,
+            "longitude": 37.52477,
+            "rating": 8,
+            "price": 14800
+        },
+        {
+            "ota_hotel_id": "gostevoy_dom_alians",
+            "master_id": "gostevoy_dom_alians",
+            "latitude": 56.296703,
+            "longitude": 39.37441,
+            "rating": 9.3,
+            "price": 13864
+        },
+        {
+            "ota_hotel_id": "tamara_4",
+            "master_id": "tamara_4",
+            "latitude": 55.08784,
+            "longitude": 38.80359,
+            "rating": 9.2,
+            "price": 2376
+        },
+        {
+            "ota_hotel_id": "moskovsky_trakt_hotel",
+            "master_id": "moskovsky_trakt_hotel",
+            "latitude": 57.190052,
+            "longitude": 39.42237,
+            "rating": 7.8,
+            "price": 11200
+        },
+        {
+            "ota_hotel_id": "hotel_russkie_sezony_sport_hotel_peresvet",
+            "master_id": "hotel_russkie_sezony_sport_hotel_peresvet",
+            "latitude": 56.41692,
+            "longitude": 38.177177,
+            "rating": 8.5,
+            "price": 11883
+        },
+        {
+            "ota_hotel_id": "amaks_park_hotel",
+            "master_id": "amaks_park_hotel",
+            "latitude": 52.702736,
+            "longitude": 41.512848,
+            "rating": 6.6,
+            "price": 9600
+        },
+        {
+            "ota_hotel_id": "otel_md",
+            "master_id": "otel_md",
+            "latitude": 52.893402,
+            "longitude": 40.500015,
+            "rating": 9.6,
+            "price": 6734
+        },
+        {
+            "ota_hotel_id": "tri_zvezdy",
+            "master_id": "tri_zvezdy",
+            "latitude": 50.986412,
+            "longitude": 39.49047,
+            "rating": 9.4,
+            "price": 9111
+        },
+        {
+            "ota_hotel_id": "homehotel",
+            "master_id": "homehotel",
+            "latitude": 55.610615,
+            "longitude": 37.329735,
+            "rating": 7.5,
+            "price": 7401.6
+        },
+        {
+            "ota_hotel_id": "vnukovo_port_hotel",
+            "master_id": "vnukovo_port_hotel",
+            "latitude": 55.603752,
+            "longitude": 37.27829,
+            "rating": 3.7,
+            "price": 9440
+        },
+        {
+            "ota_hotel_id": "premer_hotel_kvarts",
+            "master_id": "premer_hotel_kvarts",
+            "latitude": 54.00837,
+            "longitude": 38.251236,
+            "rating": 9.2,
+            "price": 17588
+        },
+        {
+            "ota_hotel_id": "azimut_hotel_pereslavl",
+            "master_id": "azimut_hotel_pereslavl",
+            "latitude": 56.661568,
+            "longitude": 38.99154,
+            "rating": 8.3,
+            "price": 24200
+        },
+        {
+            "ota_hotel_id": "ooo_fordevind_hotel",
+            "master_id": "ooo_fordevind_hotel",
+            "latitude": 56.77331,
+            "longitude": 37.26288,
+            "rating": 0,
+            "price": 32977
+        },
+        {
+            "ota_hotel_id": "moy_god_aparthotel",
+            "master_id": "moy_god_aparthotel",
+            "latitude": 55.11303,
+            "longitude": 38.732292,
+            "rating": 8.9,
+            "price": 14973
+        },
+        {
+            "ota_hotel_id": "atmosfera_8",
+            "master_id": "atmosfera_8",
+            "latitude": 52.612064,
+            "longitude": 39.585728,
+            "rating": 10,
+            "price": 10400
+        },
+        {
+            "ota_hotel_id": "paustovskij_hotel",
+            "master_id": "paustovskij_hotel",
+            "latitude": 54.793987,
+            "longitude": 39.836895,
+            "rating": 7.9,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "blanc_minihotel",
+            "master_id": "blanc_minihotel",
+            "latitude": 55.420734,
+            "longitude": 43.820484,
+            "rating": 9,
+            "price": 10695
+        },
+        {
+            "ota_hotel_id": "solnechnaya_gorka",
+            "master_id": "solnechnaya_gorka",
+            "latitude": 57.711624,
+            "longitude": 34.1669,
+            "rating": 8.8,
+            "price": 5644
+        },
+        {
+            "ota_hotel_id": "motel_probka",
+            "master_id": "motel_probka",
+            "latitude": 55.228043,
+            "longitude": 36.589493,
+            "rating": 9.4,
+            "price": 7922
+        },
+        {
+            "ota_hotel_id": "provansotel_4_sezona_hotel",
+            "master_id": "provansotel_4_sezona_hotel",
+            "latitude": 54.997562,
+            "longitude": 37.389313,
+            "rating": 8.3,
+            "price": 21787
+        },
+        {
+            "ota_hotel_id": "yuzhnyij_dvorik",
+            "master_id": "yuzhnyij_dvorik",
+            "latitude": 55.555912,
+            "longitude": 42.045517,
+            "rating": 8.4,
+            "price": 2000
+        },
+        {
+            "ota_hotel_id": "akadem_vn_hostel",
+            "master_id": "akadem_vn_hostel",
+            "latitude": 58.540813,
+            "longitude": 31.258142,
+            "rating": 9,
+            "price": 2671
+        },
+        {
+            "ota_hotel_id": "vintazh_3",
+            "master_id": "vintazh_3",
+            "latitude": 52.621353,
+            "longitude": 38.49946,
+            "rating": 9.4,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "esquire_house",
+            "master_id": "esquire_house",
+            "latitude": 56.326824,
+            "longitude": 38.15097,
+            "rating": 0,
+            "price": 7930
+        },
+        {
+            "ota_hotel_id": "sheremetevo_gorodok",
+            "master_id": "sheremetevo_gorodok",
+            "latitude": 55.991455,
+            "longitude": 37.42261,
+            "rating": 8.1,
+            "price": 9903
+        },
+        {
+            "ota_hotel_id": "bumerang_hotel_4",
+            "master_id": "bumerang_hotel_4",
+            "latitude": 56.267902,
+            "longitude": 37.474236,
+            "rating": 0,
+            "price": 41177
+        },
+        {
+            "ota_hotel_id": "city_apart_hotel_3",
+            "master_id": "city_apart_hotel_3",
+            "latitude": 54.77379,
+            "longitude": 32.05772,
+            "rating": 9.1,
+            "price": 10640
+        },
+        {
+            "ota_hotel_id": "truvor_hotel",
+            "master_id": "truvor_hotel",
+            "latitude": 58.520287,
+            "longitude": 31.28587,
+            "rating": 9.3,
+            "price": 22280
+        },
+        {
+            "ota_hotel_id": "devyat_domodedovo",
+            "master_id": "devyat_domodedovo",
+            "latitude": 55.412,
+            "longitude": 37.8419,
+            "rating": 8.1,
+            "price": 2172
+        },
+        {
+            "ota_hotel_id": "kvartiryi_v_dome_kupchihi_morozovoj",
+            "master_id": "kvartiryi_v_dome_kupchihi_morozovoj",
+            "latitude": 55.09986,
+            "longitude": 38.757336,
+            "rating": 9.2,
+            "price": 10695
+        },
+        {
+            "ota_hotel_id": "40th_meridian_yacht_club",
+            "master_id": "40th_meridian_yacht_club",
+            "latitude": 55.072887,
+            "longitude": 38.85523,
+            "rating": 8.2,
+            "price": 15200
+        },
+        {
+            "ota_hotel_id": "livadiya",
+            "master_id": "livadiya",
+            "latitude": 55.919933,
+            "longitude": 36.857006,
+            "rating": 7.8,
+            "price": 11200
+        },
+        {
+            "ota_hotel_id": "artotel_pushkino",
+            "master_id": "artotel_pushkino",
+            "latitude": 55.98609,
+            "longitude": 37.81008,
+            "rating": 8.1,
+            "price": 18350
+        },
+        {
+            "ota_hotel_id": "four_lions_house",
+            "master_id": "four_lions_house",
+            "latitude": 56.302753,
+            "longitude": 38.128235,
+            "rating": 9.9,
+            "price": 12796
+        },
+        {
+            "ota_hotel_id": "baza_otdyiha_dubki",
+            "master_id": "baza_otdyiha_dubki",
+            "latitude": 55.81394,
+            "longitude": 38.57311,
+            "rating": 9.3,
+            "price": 23767
+        },
+        {
+            "ota_hotel_id": "marshal_hotel_2",
+            "master_id": "marshal_hotel_2",
+            "latitude": 52.61436,
+            "longitude": 39.58044,
+            "rating": 8.5,
+            "price": 3169
+        },
+        {
+            "ota_hotel_id": "atlanta_sheremetyevo_hotel",
+            "master_id": "atlanta_sheremetyevo_hotel",
+            "latitude": 55.993156,
+            "longitude": 37.490658,
+            "rating": 9.3,
+            "price": 10695
+        },
+        {
+            "ota_hotel_id": "maki_hotel_ul_9_maya",
+            "master_id": "maki_hotel_ul_9_maya",
+            "latitude": 52.904118,
+            "longitude": 40.469627,
+            "rating": 8,
+            "price": 12676
+        },
+        {
+            "ota_hotel_id": "uyut_hotel_",
+            "master_id": "uyut_hotel_",
+            "latitude": 56.311356,
+            "longitude": 38.137066,
+            "rating": 8.5,
+            "price": 9949
+        },
+        {
+            "ota_hotel_id": "gold_shark",
+            "master_id": "gold_shark",
+            "latitude": 55.989216,
+            "longitude": 37.42006,
+            "rating": 8.3,
+            "price": 12000
+        },
+        {
+            "ota_hotel_id": "gostinichnyij_kompleks_m2",
+            "master_id": "gostinichnyij_kompleks_m2",
+            "latitude": 52.937332,
+            "longitude": 36.137947,
+            "rating": 6.1,
+            "price": 7922
+        },
+        {
+            "ota_hotel_id": "usadba_parkotel",
+            "master_id": "usadba_parkotel",
+            "latitude": 55.55129,
+            "longitude": 37.693497,
+            "rating": 8.2,
+            "price": 10695
+        },
+        {
+            "ota_hotel_id": "profilaktorij_olgino_na_volge_hotel",
+            "master_id": "profilaktorij_olgino_na_volge_hotel",
+            "latitude": 56.718044,
+            "longitude": 36.77052,
+            "rating": 5.4,
+            "price": 9900
+        },
+        {
+            "ota_hotel_id": "valeriya_guest_house",
+            "master_id": "valeriya_guest_house",
+            "latitude": 58.511383,
+            "longitude": 31.253298,
+            "rating": 8.7,
+            "price": 15519
+        },
+        {
+            "ota_hotel_id": "otel_troika",
+            "master_id": "otel_troika",
+            "latitude": 56.735462,
+            "longitude": 38.850384,
+            "rating": 7.3,
+            "price": 13800
+        },
+        {
+            "ota_hotel_id": "otel_kommersant",
+            "master_id": "otel_kommersant",
+            "latitude": 55.405437,
+            "longitude": 43.82451,
+            "rating": 7.2,
+            "price": 6800
+        },
+        {
+            "ota_hotel_id": "rayskoe_naslazhdenie",
+            "master_id": "rayskoe_naslazhdenie",
+            "latitude": 55.176594,
+            "longitude": 36.632828,
+            "rating": 10,
+            "price": 9903
+        },
+        {
+            "ota_hotel_id": "galkino_hotel",
+            "master_id": "galkino_hotel",
+            "latitude": 51.946384,
+            "longitude": 39.21978,
+            "rating": 7.9,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "boutique_hotel_tatiana_provence_",
+            "master_id": "boutique_hotel_tatiana_provence_",
+            "latitude": 55.73002,
+            "longitude": 36.853443,
+            "rating": 9.2,
+            "price": 23767
+        },
+        {
+            "ota_hotel_id": "aparthotel_loft_apart",
+            "master_id": "aparthotel_loft_apart",
+            "latitude": 57.186398,
+            "longitude": 39.41795,
+            "rating": 9.7,
+            "price": 15845
+        },
+        {
+            "ota_hotel_id": "welcome_hostel_13",
+            "master_id": "welcome_hostel_13",
+            "latitude": 58.523396,
+            "longitude": 31.296541,
+            "rating": 7.8,
+            "price": 5545
+        },
+        {
+            "ota_hotel_id": "sofiya_aparthotel",
+            "master_id": "sofiya_aparthotel",
+            "latitude": 58.524,
+            "longitude": 31.27034,
+            "rating": 9,
+            "price": 20316
+        },
+        {
+            "ota_hotel_id": "sv_minihotel_3",
+            "master_id": "sv_minihotel_3",
+            "latitude": 50.67022,
+            "longitude": 40.042934,
+            "rating": 9,
+            "price": 5941
+        },
+        {
+            "ota_hotel_id": "fabrikant_aparthotel",
+            "master_id": "fabrikant_aparthotel",
+            "latitude": 55.386047,
+            "longitude": 36.730133,
+            "rating": 8.5,
+            "price": 15600
+        },
+        {
+            "ota_hotel_id": "hotel_metallurg_2",
+            "master_id": "hotel_metallurg_2",
+            "latitude": 55.34414,
+            "longitude": 42.157997,
+            "rating": 8.7,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "hotel_na_zarechnoj",
+            "master_id": "hotel_na_zarechnoj",
+            "latitude": 56.248325,
+            "longitude": 37.502895,
+            "rating": 6.9,
+            "price": 11883
+        },
+        {
+            "ota_hotel_id": "diana_5",
+            "master_id": "diana_5",
+            "latitude": 55.396408,
+            "longitude": 43.831223,
+            "rating": 8.7,
+            "price": 11343
+        },
+        {
+            "ota_hotel_id": "russian_seasons_spa_hotel_peresvet",
+            "master_id": "russian_seasons_spa_hotel_peresvet",
+            "latitude": 56.41763,
+            "longitude": 38.167843,
+            "rating": 8.9,
+            "price": 43574
+        },
+        {
+            "ota_hotel_id": "ibis_stupino_3",
+            "master_id": "ibis_stupino_3",
+            "latitude": 54.90027,
+            "longitude": 38.08229,
+            "rating": 7.8,
+            "price": 16000
+        },
+        {
+            "ota_hotel_id": "maxima_domodedovo",
+            "master_id": "maxima_domodedovo",
+            "latitude": 55.415146,
+            "longitude": 37.89685,
+            "rating": 9.6,
+            "price": 18700
+        },
+        {
+            "ota_hotel_id": "hotel_hotelcity_lobnya",
+            "master_id": "hotel_hotelcity_lobnya",
+            "latitude": 56.00575,
+            "longitude": 37.4816,
+            "rating": 6.9,
+            "price": 6734
+        },
+        {
+            "ota_hotel_id": "mayak_boutiquehotel",
+            "master_id": "mayak_boutiquehotel",
+            "latitude": 55.947464,
+            "longitude": 38.06193,
+            "rating": 8.8,
+            "price": 11091
+        },
+        {
+            "ota_hotel_id": "veranda_hotel_4",
+            "master_id": "veranda_hotel_4",
+            "latitude": 54.788536,
+            "longitude": 31.895649,
+            "rating": 9.7,
+            "price": 16043
+        },
+        {
+            "ota_hotel_id": "mednyi_vsadnik_boutique_hotel",
+            "master_id": "mednyi_vsadnik_boutique_hotel",
+            "latitude": 57.020794,
+            "longitude": 28.913076,
+            "rating": 8.8,
+            "price": 11527
+        },
+        {
+            "ota_hotel_id": "alexandrov_stromilovsky_turklass_building",
+            "master_id": "alexandrov_stromilovsky_turklass_building",
+            "latitude": 56.4014,
+            "longitude": 38.726997,
+            "rating": 7.9,
+            "price": 7600
+        },
+        {
+            "ota_hotel_id": "metro_hotel_14",
+            "master_id": "metro_hotel_14",
+            "latitude": 54.009533,
+            "longitude": 37.52552,
+            "rating": 8.8,
+            "price": 11156
+        },
+        {
+            "ota_hotel_id": "elotel",
+            "master_id": "elotel",
+            "latitude": 56.381744,
+            "longitude": 41.32455,
+            "rating": 9.1,
+            "price": 8400
+        },
+        {
+            "ota_hotel_id": "parkhotel_dobrograd",
+            "master_id": "parkhotel_dobrograd",
+            "latitude": 56.228554,
+            "longitude": 41.30006,
+            "rating": 8.4,
+            "price": 35001
+        },
+        {
+            "ota_hotel_id": "otel_palazzo",
+            "master_id": "otel_palazzo",
+            "latitude": 56.35155,
+            "longitude": 41.318092,
+            "rating": 7.9,
+            "price": 13200
+        },
+        {
+            "ota_hotel_id": "verkhniy_miz_",
+            "master_id": "verkhniy_miz_",
+            "latitude": 55.529404,
+            "longitude": 35.96979,
+            "rating": 7.7,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "hostelyirus_domodedovo",
+            "master_id": "hostelyirus_domodedovo",
+            "latitude": 55.41187,
+            "longitude": 37.841858,
+            "rating": 8.3,
+            "price": 2552
+        },
+        {
+            "ota_hotel_id": "hostel_zhuravli",
+            "master_id": "hostel_zhuravli",
+            "latitude": 50.983627,
+            "longitude": 39.480732,
+            "rating": 9.7,
+            "price": 3187
+        },
+        {
+            "ota_hotel_id": "riverside_by_welna_hotel",
+            "master_id": "riverside_by_welna_hotel",
+            "latitude": 54.738335,
+            "longitude": 37.180435,
+            "rating": 8,
+            "price": 22181
+        },
+        {
+            "ota_hotel_id": "antik_hotel_5",
+            "master_id": "antik_hotel_5",
+            "latitude": 55.62356,
+            "longitude": 37.26095,
+            "rating": 10,
+            "price": 11400
+        },
+        {
+            "ota_hotel_id": "zarechnaya_hotel_2",
+            "master_id": "zarechnaya_hotel_2",
+            "latitude": 55.041534,
+            "longitude": 43.230938,
+            "rating": 8.6,
+            "price": 5941
+        },
+        {
+            "ota_hotel_id": "dobryy_dom_hotel",
+            "master_id": "dobryy_dom_hotel",
+            "latitude": 55.44198,
+            "longitude": 39.08064,
+            "rating": 8.4,
+            "price": 8800
+        },
+        {
+            "ota_hotel_id": "aerotel_hotel",
+            "master_id": "aerotel_hotel",
+            "latitude": 55.6087,
+            "longitude": 37.330498,
+            "rating": 9.6,
+            "price": 10457
+        },
+        {
+            "ota_hotel_id": "hotel_balabanovo_",
+            "master_id": "hotel_balabanovo_",
+            "latitude": 55.17639,
+            "longitude": 36.661446,
+            "rating": 7.5,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "motel_parallel",
+            "master_id": "motel_parallel",
+            "latitude": 57.54755,
+            "longitude": 34.587566,
+            "rating": 8.4,
+            "price": 4753
+        },
+        {
+            "ota_hotel_id": "ajsberg_ugryi_hotel",
+            "master_id": "ajsberg_ugryi_hotel",
+            "latitude": 54.74144,
+            "longitude": 35.221073,
+            "rating": 7.1,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "west_hotel_10",
+            "master_id": "west_hotel_10",
+            "latitude": 54.771236,
+            "longitude": 31.986347,
+            "rating": 9.2,
+            "price": 7200
+        },
+        {
+            "ota_hotel_id": "premer",
+            "master_id": "premer",
+            "latitude": 54.760807,
+            "longitude": 32.066658,
+            "rating": 9.8,
+            "price": 10400
+        },
+        {
+            "ota_hotel_id": "minihotel_postoyalyij_dvor",
+            "master_id": "minihotel_postoyalyij_dvor",
+            "latitude": 52.38896,
+            "longitude": 38.92067,
+            "rating": 9.6,
+            "price": 19806
+        },
+        {
+            "ota_hotel_id": "otel_marsel",
+            "master_id": "otel_marsel",
+            "latitude": 52.74675,
+            "longitude": 41.466244,
+            "rating": 6.4,
+            "price": 5200
+        },
+        {
+            "ota_hotel_id": "donskoj_minihotel",
+            "master_id": "donskoj_minihotel",
+            "latitude": 55.563217,
+            "longitude": 37.574646,
+            "rating": 9.2,
+            "price": 13072
+        },
+        {
+            "ota_hotel_id": "xenia_city_hotel_zelenograd",
+            "master_id": "xenia_city_hotel_zelenograd",
+            "latitude": 56.006516,
+            "longitude": 37.202286,
+            "rating": 6.9,
+            "price": 12000
+        },
+        {
+            "ota_hotel_id": "kalinka_4",
+            "master_id": "kalinka_4",
+            "latitude": 58.59478,
+            "longitude": 35.82713,
+            "rating": 8,
+            "price": 6734
+        },
+        {
+            "ota_hotel_id": "hotel_druzhba_4",
+            "master_id": "hotel_druzhba_4",
+            "latitude": 56.295437,
+            "longitude": 39.37431,
+            "rating": 7.1,
+            "price": 8400
+        },
+        {
+            "ota_hotel_id": "parkhotel_millenium",
+            "master_id": "parkhotel_millenium",
+            "latitude": 54.692528,
+            "longitude": 37.256115,
+            "rating": 9.5,
+            "price": 11883
+        },
+        {
+            "ota_hotel_id": "avrora_sportivnogostinichnyij_kompleks",
+            "master_id": "avrora_sportivnogostinichnyij_kompleks",
+            "latitude": 55.79277,
+            "longitude": 37.931065,
+            "rating": 8.9,
+            "price": 9507
+        },
+        {
+            "ota_hotel_id": "kulturnorazvlekatelnyi_kompleks",
+            "master_id": "kulturnorazvlekatelnyi_kompleks",
+            "latitude": 56.753883,
+            "longitude": 38.87649,
+            "rating": 7.9,
+            "price": 2400
+        },
+        {
+            "ota_hotel_id": "noviy_bulvar_9_lodging_house",
+            "master_id": "noviy_bulvar_9_lodging_house",
+            "latitude": 55.93746,
+            "longitude": 37.503693,
+            "rating": 9.2,
+            "price": 14973
+        },
+        {
+            "ota_hotel_id": "grigorchikovo_resort",
+            "master_id": "grigorchikovo_resort",
+            "latitude": 55.512516,
+            "longitude": 37.902256,
+            "rating": 7.9,
+            "price": 27493
+        },
+        {
+            "ota_hotel_id": "mari_hotel_5",
+            "master_id": "mari_hotel_5",
+            "latitude": 55.544697,
+            "longitude": 37.724,
+            "rating": 8.3,
+            "price": 5173
+        },
+        {
+            "ota_hotel_id": "borovnitsa_hotel_",
+            "master_id": "borovnitsa_hotel_",
+            "latitude": 54.790874,
+            "longitude": 39.83536,
+            "rating": 9.4,
+            "price": 12874
+        },
+        {
+            "ota_hotel_id": "vysokovo_aparthotel_3",
+            "master_id": "vysokovo_aparthotel_3",
+            "latitude": 55.802917,
+            "longitude": 38.455585,
+            "rating": 9.6,
+            "price": 12030
+        },
+        {
+            "ota_hotel_id": "usadba_3",
+            "master_id": "usadba_3",
+            "latitude": 54.789143,
+            "longitude": 32.04197,
+            "rating": 8.9,
+            "price": 18600
+        },
+        {
+            "ota_hotel_id": "panorama_lux_2",
+            "master_id": "panorama_lux_2",
+            "latitude": 52.619526,
+            "longitude": 38.498238,
+            "rating": 9.3,
+            "price": 14800
+        },
+        {
+            "ota_hotel_id": "bizneshotel_mister_goodman",
+            "master_id": "bizneshotel_mister_goodman",
+            "latitude": 54.015507,
+            "longitude": 38.28043,
+            "rating": 9.3,
+            "price": 15845
+        },
+        {
+            "ota_hotel_id": "snegir",
+            "master_id": "snegir",
+            "latitude": 54.024235,
+            "longitude": 35.793453,
+            "rating": 9.3,
+            "price": 20000
+        },
+        {
+            "ota_hotel_id": "restorannogostinichnyij_kompleks",
+            "master_id": "restorannogostinichnyij_kompleks",
+            "latitude": 52.490513,
+            "longitude": 39.956814,
+            "rating": 9.1,
+            "price": 12400
+        },
+        {
+            "ota_hotel_id": "solnechnyi_minihotel",
+            "master_id": "solnechnyi_minihotel",
+            "latitude": 55.604813,
+            "longitude": 38.089027,
+            "rating": 8.1,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "denis_nikolaevich",
+            "master_id": "denis_nikolaevich",
+            "latitude": 55.525543,
+            "longitude": 37.80245,
+            "rating": 8.8,
+            "price": 10400
+        },
+        {
+            "ota_hotel_id": "petrovsky_dvorik",
+            "master_id": "petrovsky_dvorik",
+            "latitude": 56.20063,
+            "longitude": 38.066013,
+            "rating": 7.5,
+            "price": 14141
+        },
+        {
+            "ota_hotel_id": "port_vesiegonsk_hotel",
+            "master_id": "port_vesiegonsk_hotel",
+            "latitude": 58.654217,
+            "longitude": 37.275494,
+            "rating": 8.9,
+            "price": 18500
+        },
+        {
+            "ota_hotel_id": "zhiloye_pomeschenie_2kh_komnatnaya_kvartira_u_peshekhodnogo_mosta",
+            "master_id": "zhiloye_pomeschenie_2kh_komnatnaya_kvartira_u_peshekhodnogo_mosta",
+            "latitude": 58.520943,
+            "longitude": 31.28436,
+            "rating": 10,
+            "price": 12379
+        },
+        {
+            "ota_hotel_id": "tri_lva",
+            "master_id": "tri_lva",
+            "latitude": 55.189888,
+            "longitude": 36.638985,
+            "rating": 8.1,
+            "price": 9200
+        },
+        {
+            "ota_hotel_id": "apartotel_kaiut_kompaniia",
+            "master_id": "apartotel_kaiut_kompaniia",
+            "latitude": 56.857098,
+            "longitude": 37.36513,
+            "rating": 8.5,
+            "price": 11883
+        },
+        {
+            "ota_hotel_id": "like_at_hotel_apartments",
+            "master_id": "like_at_hotel_apartments",
+            "latitude": 55.918575,
+            "longitude": 37.862747,
+            "rating": 10,
+            "price": 11698
+        },
+        {
+            "ota_hotel_id": "raduga_9",
+            "master_id": "raduga_9",
+            "latitude": 50.986652,
+            "longitude": 39.4895,
+            "rating": 9.7,
+            "price": 8714
+        },
+        {
+            "ota_hotel_id": "brigantina_9",
+            "master_id": "brigantina_9",
+            "latitude": 53.869717,
+            "longitude": 34.449387,
+            "rating": 9.3,
+            "price": 9903
+        },
+        {
+            "ota_hotel_id": "kongresshotel_aleksandrov",
+            "master_id": "kongresshotel_aleksandrov",
+            "latitude": 56.40111,
+            "longitude": 38.726887,
+            "rating": 6.4,
+            "price": 12000
+        },
+        {
+            "ota_hotel_id": "amaks_staraya_russa_hotel_",
+            "master_id": "amaks_staraya_russa_hotel_",
+            "latitude": 57.986637,
+            "longitude": 31.365812,
+            "rating": 7.8,
+            "price": 14371
+        },
+        {
+            "ota_hotel_id": "hotel_ekipage",
+            "master_id": "hotel_ekipage",
+            "latitude": 55.6128,
+            "longitude": 37.300964,
+            "rating": 7,
+            "price": 12280
+        },
+        {
+            "ota_hotel_id": "shatura_holl_hotel",
+            "master_id": "shatura_holl_hotel",
+            "latitude": 55.574795,
+            "longitude": 39.548233,
+            "rating": 8.1,
+            "price": 12800
+        },
+        {
+            "ota_hotel_id": "john_gold",
+            "master_id": "john_gold",
+            "latitude": 51.479576,
+            "longitude": 40.415348,
+            "rating": 9.1,
+            "price": 11200
+        },
+        {
+            "ota_hotel_id": "sera_loft_hostel",
+            "master_id": "sera_loft_hostel",
+            "latitude": 54.766235,
+            "longitude": 32.060062,
+            "rating": 10,
+            "price": 2758
+        },
+        {
+            "ota_hotel_id": "triumph_hotel_7",
+            "master_id": "triumph_hotel_7",
+            "latitude": 55.116917,
+            "longitude": 36.593296,
+            "rating": 9,
+            "price": 19800
+        },
+        {
+            "ota_hotel_id": "new",
+            "master_id": "new",
+            "latitude": 54.821655,
+            "longitude": 32.054188,
+            "rating": 7.5,
+            "price": 12800
+        },
+        {
+            "ota_hotel_id": "motel_uyut_2",
+            "master_id": "motel_uyut_2",
+            "latitude": 56.02458,
+            "longitude": 35.94903,
+            "rating": 8.5,
+            "price": 9330
+        },
+        {
+            "ota_hotel_id": "premium_apart_hotel",
+            "master_id": "premium_apart_hotel",
+            "latitude": 55.92466,
+            "longitude": 37.99024,
+            "rating": 7.1,
+            "price": 14000
+        },
+        {
+            "ota_hotel_id": "etilia_hotel",
+            "master_id": "etilia_hotel",
+            "latitude": 56.69422,
+            "longitude": 36.735687,
+            "rating": 8.4,
+            "price": 7130
+        },
+        {
+            "ota_hotel_id": "smolenskhotel",
+            "master_id": "smolenskhotel",
+            "latitude": 54.78296,
+            "longitude": 32.048367,
+            "rating": 7.7,
+            "price": 12800
+        },
+        {
+            "ota_hotel_id": "iaroslav_khostel",
+            "master_id": "iaroslav_khostel",
+            "latitude": 58.517323,
+            "longitude": 31.283758,
+            "rating": 8,
+            "price": 3537
+        },
+        {
+            "ota_hotel_id": "mini_studiya_72_mrnts_im_tsyiba_tsipk",
+            "master_id": "mini_studiya_72_mrnts_im_tsyiba_tsipk",
+            "latitude": 55.10757,
+            "longitude": 36.620354,
+            "rating": 8.4,
+            "price": 7526
+        },
+        {
+            "ota_hotel_id": "otel_iskra",
+            "master_id": "otel_iskra",
+            "latitude": 55.902554,
+            "longitude": 37.424892,
+            "rating": 7.8,
+            "price": 13600
+        },
+        {
+            "ota_hotel_id": "dzhungli_hotel_suburban_club_ivengo",
+            "master_id": "dzhungli_hotel_suburban_club_ivengo",
+            "latitude": 55.40135,
+            "longitude": 37.601246,
+            "rating": 8.4,
+            "price": 11953
+        },
+        {
+            "ota_hotel_id": "hotel_ermitazh_2",
+            "master_id": "hotel_ermitazh_2",
+            "latitude": 55.10086,
+            "longitude": 38.77505,
+            "rating": 7.8,
+            "price": 12600
+        },
+        {
+            "ota_hotel_id": "v_ugliche_hostel",
+            "master_id": "v_ugliche_hostel",
+            "latitude": 57.529068,
+            "longitude": 38.32281,
+            "rating": 8.8,
+            "price": 2988
+        },
+        {
+            "ota_hotel_id": "fat_cat_hotel_domodedovo",
+            "master_id": "fat_cat_hotel_domodedovo",
+            "latitude": 55.533497,
+            "longitude": 37.81605,
+            "rating": 9.2,
+            "price": 14656
+        },
+        {
+            "ota_hotel_id": "nebo_guest_house",
+            "master_id": "nebo_guest_house",
+            "latitude": 55.977833,
+            "longitude": 37.382835,
+            "rating": 8.2,
+            "price": 14688
+        },
+        {
+            "ota_hotel_id": "bakinskij_bulvar",
+            "master_id": "bakinskij_bulvar",
+            "latitude": 55.917446,
+            "longitude": 37.75744,
+            "rating": 8.8,
+            "price": 13864
+        },
+        {
+            "ota_hotel_id": "kalina_aparthotel",
+            "master_id": "kalina_aparthotel",
+            "latitude": 55.175644,
+            "longitude": 36.63235,
+            "rating": 9.9,
+            "price": 12800
+        },
+        {
+            "ota_hotel_id": "tropikana_park_hotel",
+            "master_id": "tropikana_park_hotel",
+            "latitude": 55.9167,
+            "longitude": 37.158165,
+            "rating": 8.4,
+            "price": 15400
+        },
+        {
+            "ota_hotel_id": "romashka_minihotel",
+            "master_id": "romashka_minihotel",
+            "latitude": 55.566025,
+            "longitude": 42.01914,
+            "rating": 9.8,
+            "price": 12359
+        },
+        {
+            "ota_hotel_id": "otel_forest_inn",
+            "master_id": "otel_forest_inn",
+            "latitude": 55.91786,
+            "longitude": 37.871006,
+            "rating": 7.9,
+            "price": 9903
+        },
+        {
+            "ota_hotel_id": "viktoriya_29",
+            "master_id": "viktoriya_29",
+            "latitude": 58.386456,
+            "longitude": 33.908604,
+            "rating": 9.3,
+            "price": 15610
+        },
+        {
+            "ota_hotel_id": "piramida_borisovka",
+            "master_id": "piramida_borisovka",
+            "latitude": 55.486713,
+            "longitude": 37.59959,
+            "rating": 8,
+            "price": 9507
+        },
+        {
+            "ota_hotel_id": "aragats_2",
+            "master_id": "aragats_2",
+            "latitude": 54.81448,
+            "longitude": 31.981075,
+            "rating": 7.9,
+            "price": 11600
+        },
+        {
+            "ota_hotel_id": "reavil",
+            "master_id": "reavil",
+            "latitude": 55.38839,
+            "longitude": 43.817314,
+            "rating": 9.2,
+            "price": 14204
+        },
+        {
+            "ota_hotel_id": "gostinitsa_tsarskaya_derevnya_gosudarev_dom_4",
+            "master_id": "gostinitsa_tsarskaya_derevnya_gosudarev_dom_4",
+            "latitude": 56.308956,
+            "longitude": 38.137375,
+            "rating": 8.9,
+            "price": 34400
+        },
+        {
+            "ota_hotel_id": "noj_hotel_3",
+            "master_id": "noj_hotel_3",
+            "latitude": 56.30361,
+            "longitude": 38.13484,
+            "rating": 5.7,
+            "price": 9600
+        },
+        {
+            "ota_hotel_id": "park_hotel_zvenigorod",
+            "master_id": "park_hotel_zvenigorod",
+            "latitude": 55.74494,
+            "longitude": 36.85294,
+            "rating": 8,
+            "price": 34325
+        },
+        {
+            "ota_hotel_id": "grandotel_aristokrat",
+            "master_id": "grandotel_aristokrat",
+            "latitude": 57.640774,
+            "longitude": 41.091797,
+            "rating": 9,
+            "price": 58000
+        },
+        {
+            "ota_hotel_id": "green_park_hotel_12",
+            "master_id": "green_park_hotel_12",
+            "latitude": 55.421192,
+            "longitude": 37.777966,
+            "rating": 7.2,
+            "price": 10160
+        },
+        {
+            "ota_hotel_id": "bell_hotel_18",
+            "master_id": "bell_hotel_18",
+            "latitude": 53.805416,
+            "longitude": 36.136063,
+            "rating": 7.2,
+            "price": 14510
+        },
+        {
+            "ota_hotel_id": "rassvet_hotel",
+            "master_id": "rassvet_hotel",
+            "latitude": 59.975594,
+            "longitude": 42.753468,
+            "rating": 8,
+            "price": 6000
+        },
+        {
+            "ota_hotel_id": "lipetsk_hotel",
+            "master_id": "lipetsk_hotel",
+            "latitude": 52.612827,
+            "longitude": 39.605717,
+            "rating": 7,
+            "price": 13300
+        },
+        {
+            "ota_hotel_id": "otel_randevu_kurkino",
+            "master_id": "otel_randevu_kurkino",
+            "latitude": 55.911003,
+            "longitude": 37.388416,
+            "rating": 7.9,
+            "price": 21391
+        },
+        {
+            "ota_hotel_id": "arion_hotel_8",
+            "master_id": "arion_hotel_8",
+            "latitude": 55.57014,
+            "longitude": 37.907173,
+            "rating": 9.3,
+            "price": 9655
+        },
+        {
+            "ota_hotel_id": "hotel_eklips",
+            "master_id": "hotel_eklips",
+            "latitude": 55.516308,
+            "longitude": 37.576645,
+            "rating": 7.8,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "zolotoy_uley_hotel_",
+            "master_id": "zolotoy_uley_hotel_",
+            "latitude": 55.208687,
+            "longitude": 34.290615,
+            "rating": 7,
+            "price": 5600
+        },
+        {
+            "ota_hotel_id": "meshcherino_hotel",
+            "master_id": "meshcherino_hotel",
+            "latitude": 55.497215,
+            "longitude": 37.820854,
+            "rating": 7.2,
+            "price": 8400
+        },
+        {
+            "ota_hotel_id": "diamant_3",
+            "master_id": "diamant_3",
+            "latitude": 55.433224,
+            "longitude": 38.043972,
+            "rating": 8.2,
+            "price": 14000
+        },
+        {
+            "ota_hotel_id": "miniotel_diana",
+            "master_id": "miniotel_diana",
+            "latitude": 56.33685,
+            "longitude": 41.30047,
+            "rating": 8.1,
+            "price": 8318
+        },
+        {
+            "ota_hotel_id": "bishotel",
+            "master_id": "bishotel",
+            "latitude": 52.627365,
+            "longitude": 39.642715,
+            "rating": 8.6,
+            "price": 15245
+        },
+        {
+            "ota_hotel_id": "avshar_club_hotel_3",
+            "master_id": "avshar_club_hotel_3",
+            "latitude": 55.83656,
+            "longitude": 37.263206,
+            "rating": 7.9,
+            "price": 23283
+        },
+        {
+            "ota_hotel_id": "moi_otel_2",
+            "master_id": "moi_otel_2",
+            "latitude": 51.366646,
+            "longitude": 42.08344,
+            "rating": 9,
+            "price": 8714
+        },
+        {
+            "ota_hotel_id": "lut_hotel",
+            "master_id": "lut_hotel",
+            "latitude": 56.022762,
+            "longitude": 37.4761,
+            "rating": 8.8,
+            "price": 7922
+        },
+        {
+            "ota_hotel_id": "baza_otdyiha_ladya",
+            "master_id": "baza_otdyiha_ladya",
+            "latitude": 57.21479,
+            "longitude": 32.997536,
+            "rating": 8.7,
+            "price": 12000
+        },
+        {
+            "ota_hotel_id": "art_hotel_kutuzov",
+            "master_id": "art_hotel_kutuzov",
+            "latitude": 54.81825,
+            "longitude": 32.048378,
+            "rating": 8.9,
+            "price": 13049
+        },
+        {
+            "ota_hotel_id": "parkhotel_vozdvizhenskoe",
+            "master_id": "parkhotel_vozdvizhenskoe",
+            "latitude": 54.963448,
+            "longitude": 37.457867,
+            "rating": 8.2,
+            "price": 40000
+        },
+        {
+            "ota_hotel_id": "balaram_hotel",
+            "master_id": "balaram_hotel",
+            "latitude": 54.234863,
+            "longitude": 37.62565,
+            "rating": 8.7,
+            "price": 13072
+        },
+        {
+            "ota_hotel_id": "fiztehotel",
+            "master_id": "fiztehotel",
+            "latitude": 55.92637,
+            "longitude": 37.52229,
+            "rating": 9.1,
+            "price": 11883
+        },
+        {
+            "ota_hotel_id": "economy_hotel_dinamo",
+            "master_id": "economy_hotel_dinamo",
+            "latitude": 52.60271,
+            "longitude": 39.607845,
+            "rating": 7.3,
+            "price": 1584
+        },
+        {
+            "ota_hotel_id": "gostinichny_kompleks_almaz_hotel",
+            "master_id": "gostinichny_kompleks_almaz_hotel",
+            "latitude": 56.373863,
+            "longitude": 38.58599,
+            "rating": 8.7,
+            "price": 7130
+        },
+        {
+            "ota_hotel_id": "parkl",
+            "master_id": "parkl",
+            "latitude": 52.60286,
+            "longitude": 39.598232,
+            "rating": 8.1,
+            "price": 11091
+        },
+        {
+            "ota_hotel_id": "planeta_iq_hotel",
+            "master_id": "planeta_iq_hotel",
+            "latitude": 55.9567,
+            "longitude": 38.04241,
+            "rating": 8.5,
+            "price": 17429
+        },
+        {
+            "ota_hotel_id": "baza_otdykha_krushinov_rog",
+            "master_id": "baza_otdykha_krushinov_rog",
+            "latitude": 57.78742,
+            "longitude": 33.722626,
+            "rating": 8.7,
+            "price": 3961
+        },
+        {
+            "ota_hotel_id": "yut_elektro",
+            "master_id": "yut_elektro",
+            "latitude": 55.80016,
+            "longitude": 38.456425,
+            "rating": 10,
+            "price": 1244
+        },
+        {
+            "ota_hotel_id": "grin_hotel",
+            "master_id": "grin_hotel",
+            "latitude": 55.435158,
+            "longitude": 37.55214,
+            "rating": 6.6,
+            "price": 11200
+        },
+        {
+            "ota_hotel_id": "guberniya",
+            "master_id": "guberniya",
+            "latitude": 54.779087,
+            "longitude": 32.04309,
+            "rating": 9.3,
+            "price": 12200
+        },
+        {
+            "ota_hotel_id": "resident_hotel_2",
+            "master_id": "resident_hotel_2",
+            "latitude": 56.75329,
+            "longitude": 37.165318,
+            "rating": 7.6,
+            "price": 14225
+        },
+        {
+            "ota_hotel_id": "gostinitsa_bunin",
+            "master_id": "gostinitsa_bunin",
+            "latitude": 55.39489,
+            "longitude": 43.82881,
+            "rating": 8.3,
+            "price": 14084
+        },
+        {
+            "ota_hotel_id": "belladzhio_hotel",
+            "master_id": "belladzhio_hotel",
+            "latitude": 55.31696,
+            "longitude": 38.685925,
+            "rating": 7.8,
+            "price": 10160
+        },
+        {
+            "ota_hotel_id": "polyot_hotel_3",
+            "master_id": "polyot_hotel_3",
+            "latitude": 55.411808,
+            "longitude": 37.846004,
+            "rating": 8.3,
+            "price": 7820
+        },
+        {
+            "ota_hotel_id": "kapital_3",
+            "master_id": "kapital_3",
+            "latitude": 58.881226,
+            "longitude": 40.250984,
+            "rating": 9.5,
+            "price": 7600
+        },
+        {
+            "ota_hotel_id": "monami_hotel",
+            "master_id": "monami_hotel",
+            "latitude": 55.905598,
+            "longitude": 37.48467,
+            "rating": 8.5,
+            "price": 9200
+        },
+        {
+            "ota_hotel_id": "ibis_moscow_domodedovo_airport",
+            "master_id": "ibis_moscow_domodedovo_airport",
+            "latitude": 55.451786,
+            "longitude": 37.859547,
+            "rating": 8.2,
+            "price": 16560
+        },
+        {
+            "ota_hotel_id": "otel_mon_plezir",
+            "master_id": "otel_mon_plezir",
+            "latitude": 55.920265,
+            "longitude": 37.36638,
+            "rating": 9,
+            "price": 8677
+        },
+        {
+            "ota_hotel_id": "borisoglebsk_",
+            "master_id": "borisoglebsk_",
+            "latitude": 51.36599,
+            "longitude": 42.08017,
+            "rating": 8.1,
+            "price": 13149
+        },
+        {
+            "ota_hotel_id": "gostinitsa_agat",
+            "master_id": "gostinitsa_agat",
+            "latitude": 56.182514,
+            "longitude": 37.005444,
+            "rating": 6.6,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "marafon_hotel_club",
+            "master_id": "marafon_hotel_club",
+            "latitude": 52.620533,
+            "longitude": 39.581425,
+            "rating": 7.3,
+            "price": 8556
+        },
+        {
+            "ota_hotel_id": "miniotel_v_belkino",
+            "master_id": "miniotel_v_belkino",
+            "latitude": 55.129475,
+            "longitude": 36.594265,
+            "rating": 8.6,
+            "price": 6800
+        },
+        {
+            "ota_hotel_id": "hostel_na_ulitse_chelyuskintsev_23",
+            "master_id": "hostel_na_ulitse_chelyuskintsev_23",
+            "latitude": 56.261528,
+            "longitude": 34.361797,
+            "rating": 10,
+            "price": 14023
+        },
+        {
+            "ota_hotel_id": "hostel_sleepgo",
+            "master_id": "hostel_sleepgo",
+            "latitude": 58.52848,
+            "longitude": 31.292301,
+            "rating": 7.7,
+            "price": 4198
+        },
+        {
+            "ota_hotel_id": "vnukovo_village_3",
+            "master_id": "vnukovo_village_3",
+            "latitude": 55.61665,
+            "longitude": 37.39251,
+            "rating": 0,
+            "price": 13563
+        },
+        {
+            "ota_hotel_id": "faraon_hotel_4",
+            "master_id": "faraon_hotel_4",
+            "latitude": 52.705704,
+            "longitude": 41.43908,
+            "rating": 8,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "art_hotel_19",
+            "master_id": "art_hotel_19",
+            "latitude": 56.73111,
+            "longitude": 38.85429,
+            "rating": 8.3,
+            "price": 13666
+        },
+        {
+            "ota_hotel_id": "diva_minihotel",
+            "master_id": "diva_minihotel",
+            "latitude": 55.40042,
+            "longitude": 37.55176,
+            "rating": 7.4,
+            "price": 10800
+        },
+        {
+            "ota_hotel_id": "kupecheskij_dvor",
+            "master_id": "kupecheskij_dvor",
+            "latitude": 55.578514,
+            "longitude": 42.052937,
+            "rating": 8.7,
+            "price": 9200
+        },
+        {
+            "ota_hotel_id": "vechniy_zov",
+            "master_id": "vechniy_zov",
+            "latitude": 53.94081,
+            "longitude": 32.821655,
+            "rating": 9.3,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "gostinitsa_amaris",
+            "master_id": "gostinitsa_amaris",
+            "latitude": 56.352253,
+            "longitude": 30.56431,
+            "rating": 9.3,
+            "price": 13750
+        },
+        {
+            "ota_hotel_id": "voskresensk_bizneshotel",
+            "master_id": "voskresensk_bizneshotel",
+            "latitude": 55.285397,
+            "longitude": 38.744965,
+            "rating": 8.9,
+            "price": 11914
+        },
+        {
+            "ota_hotel_id": "gold_8",
+            "master_id": "gold_8",
+            "latitude": 56.362736,
+            "longitude": 41.30891,
+            "rating": 8.1,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "loft_apartments_10",
+            "master_id": "loft_apartments_10",
+            "latitude": 55.797897,
+            "longitude": 37.964176,
+            "rating": 6.2,
+            "price": 13428
+        },
+        {
+            "ota_hotel_id": "inside_moskovskiy",
+            "master_id": "inside_moskovskiy",
+            "latitude": 55.59387,
+            "longitude": 37.351894,
+            "rating": 9,
+            "price": 15800
+        },
+        {
+            "ota_hotel_id": "kremlevskaya_hotel",
+            "master_id": "kremlevskaya_hotel",
+            "latitude": 55.570213,
+            "longitude": 42.025574,
+            "rating": 6.6,
+            "price": 8800
+        },
+        {
+            "ota_hotel_id": "fabrica_hotel_",
+            "master_id": "fabrica_hotel_",
+            "latitude": 53.943066,
+            "longitude": 32.837284,
+            "rating": 6.9,
+            "price": 8800
+        },
+        {
+            "ota_hotel_id": "leman_inn",
+            "master_id": "leman_inn",
+            "latitude": 54.042053,
+            "longitude": 37.510357,
+            "rating": 8.1,
+            "price": 9600
+        },
+        {
+            "ota_hotel_id": "310_hotel",
+            "master_id": "310_hotel",
+            "latitude": 52.887768,
+            "longitude": 40.514153,
+            "rating": 8.4,
+            "price": 7200
+        },
+        {
+            "ota_hotel_id": "muzey_kartofelnogo_bunta_minihotel",
+            "master_id": "muzey_kartofelnogo_bunta_minihotel",
+            "latitude": 57.3508,
+            "longitude": 39.769146,
+            "rating": 9.6,
+            "price": 9903
+        },
+        {
+            "ota_hotel_id": "rich__2",
+            "master_id": "rich__2",
+            "latitude": 55.612038,
+            "longitude": 37.256794,
+            "rating": 7.8,
+            "price": 13864
+        },
+        {
+            "ota_hotel_id": "goodtime_2",
+            "master_id": "goodtime_2",
+            "latitude": 55.91366,
+            "longitude": 37.77193,
+            "rating": 8.8,
+            "price": 15449
+        },
+        {
+            "ota_hotel_id": "boxing_academy_of_alebzyak",
+            "master_id": "boxing_academy_of_alebzyak",
+            "latitude": 55.908035,
+            "longitude": 37.36079,
+            "rating": 10,
+            "price": 16000
+        },
+        {
+            "ota_hotel_id": "pansionat_lunevo_hotel",
+            "master_id": "pansionat_lunevo_hotel",
+            "latitude": 57.539898,
+            "longitude": 41.094772,
+            "rating": 7.7,
+            "price": 27300
+        },
+        {
+            "ota_hotel_id": "park_otel_bukhta_koprino",
+            "master_id": "park_otel_bukhta_koprino",
+            "latitude": 58.063812,
+            "longitude": 38.349136,
+            "rating": 9.7,
+            "price": 19000
+        },
+        {
+            "ota_hotel_id": "dobriye_sutki_43armii_19",
+            "master_id": "dobriye_sutki_43armii_19",
+            "latitude": 55.41872,
+            "longitude": 37.490818,
+            "rating": 0,
+            "price": 11460
+        },
+        {
+            "ota_hotel_id": "hotel_siti",
+            "master_id": "hotel_siti",
+            "latitude": 55.534657,
+            "longitude": 37.500954,
+            "rating": 9.8,
+            "price": 11883
+        },
+        {
+            "ota_hotel_id": "hotel_grand_tambov",
+            "master_id": "hotel_grand_tambov",
+            "latitude": 52.721252,
+            "longitude": 41.380928,
+            "rating": 7.8,
+            "price": 12800
+        },
+        {
+            "ota_hotel_id": "podspot_hostel",
+            "master_id": "podspot_hostel",
+            "latitude": 58.517185,
+            "longitude": 31.271208,
+            "rating": 7.3,
+            "price": 3476
+        },
+        {
+            "ota_hotel_id": "uyut_hotel_5",
+            "master_id": "uyut_hotel_5",
+            "latitude": 55.609486,
+            "longitude": 37.326748,
+            "rating": 5.3,
+            "price": 10800
+        },
+        {
+            "ota_hotel_id": "zvyozdnaya_hotel",
+            "master_id": "zvyozdnaya_hotel",
+            "latitude": 55.411797,
+            "longitude": 37.845955,
+            "rating": 7.2,
+            "price": 8503
+        },
+        {
+            "ota_hotel_id": "hotel_xlcomplex",
+            "master_id": "hotel_xlcomplex",
+            "latitude": 56.278236,
+            "longitude": 37.486317,
+            "rating": 8,
+            "price": 11500
+        },
+        {
+            "ota_hotel_id": "sheraton_moscow_sheremetyevo_airport_hotel",
+            "master_id": "sheraton_moscow_sheremetyevo_airport_hotel",
+            "latitude": 55.948917,
+            "longitude": 37.41606,
+            "rating": 8.5,
+            "price": 27600
+        },
+        {
+            "ota_hotel_id": "olivkovyij_oazis",
+            "master_id": "olivkovyij_oazis",
+            "latitude": 55.770027,
+            "longitude": 38.43608,
+            "rating": 9.9,
+            "price": 14058
+        },
+        {
+            "ota_hotel_id": "stilnaya_studiya_v_odintsovo_lodging_house",
+            "master_id": "stilnaya_studiya_v_odintsovo_lodging_house",
+            "latitude": 55.69772,
+            "longitude": 37.321712,
+            "rating": 5,
+            "price": 11782
+        },
+        {
+            "ota_hotel_id": "eko_lyubimka_hotel",
+            "master_id": "eko_lyubimka_hotel",
+            "latitude": 57.09799,
+            "longitude": 32.987965,
+            "rating": 10,
+            "price": 26990
+        },
+        {
+            "ota_hotel_id": "centre_300_2",
+            "master_id": "centre_300_2",
+            "latitude": 54.94105,
+            "longitude": 43.32808,
+            "rating": 0,
+            "price": 17825
+        },
+        {
+            "ota_hotel_id": "mini_studio_duplex_4_imr_tsipk",
+            "master_id": "mini_studio_duplex_4_imr_tsipk",
+            "latitude": 55.10757,
+            "longitude": 36.620354,
+            "rating": 9.5,
+            "price": 8318
+        },
+        {
+            "ota_hotel_id": "skazka_vostoka",
+            "master_id": "skazka_vostoka",
+            "latitude": 55.92178,
+            "longitude": 37.719536,
+            "rating": 9.2,
+            "price": 4000
+        },
+        {
+            "ota_hotel_id": "vizit_hotel_8",
+            "master_id": "vizit_hotel_8",
+            "latitude": 55.79757,
+            "longitude": 38.18638,
+            "rating": 9,
+            "price": 2721
+        },
+        {
+            "ota_hotel_id": "sky_hostel_sheremetyevo",
+            "master_id": "sky_hostel_sheremetyevo",
+            "latitude": 55.948547,
+            "longitude": 37.418777,
+            "rating": 7.5,
+            "price": 1579
+        },
+        {
+            "ota_hotel_id": "alexandriya_vnukovo_mini_hotel",
+            "master_id": "alexandriya_vnukovo_mini_hotel",
+            "latitude": 55.609154,
+            "longitude": 37.33154,
+            "rating": 8.6,
+            "price": 11843
+        },
+        {
+            "ota_hotel_id": "sokol_aparthotel",
+            "master_id": "sokol_aparthotel",
+            "latitude": 55.590412,
+            "longitude": 37.367786,
+            "rating": 9.2,
+            "price": 12636
+        },
+        {
+            "ota_hotel_id": "zolotaya_7",
+            "master_id": "zolotaya_7",
+            "latitude": 55.492714,
+            "longitude": 37.896458,
+            "rating": 8.9,
+            "price": 13200
+        },
+        {
+            "ota_hotel_id": "green_garden_hotel_9",
+            "master_id": "green_garden_hotel_9",
+            "latitude": 56.298656,
+            "longitude": 39.39178,
+            "rating": 8.3,
+            "price": 16327
+        },
+        {
+            "ota_hotel_id": "lesnaya_skazka_hotel",
+            "master_id": "lesnaya_skazka_hotel",
+            "latitude": 56.696213,
+            "longitude": 38.7773,
+            "rating": 6.5,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "raketostroiteley_51_lodging_house",
+            "master_id": "raketostroiteley_51_lodging_house",
+            "latitude": 55.932922,
+            "longitude": 37.50061,
+            "rating": 10,
+            "price": 14973
+        },
+        {
+            "ota_hotel_id": "park_inn_by_radisson_odintsovo",
+            "master_id": "park_inn_by_radisson_odintsovo",
+            "latitude": 55.67922,
+            "longitude": 37.267193,
+            "rating": 8.5,
+            "price": 19550
+        },
+        {
+            "ota_hotel_id": "vtoroj_yarus_aparthotel",
+            "master_id": "vtoroj_yarus_aparthotel",
+            "latitude": 55.917953,
+            "longitude": 37.746464,
+            "rating": 8.2,
+            "price": 14112
+        },
+        {
+            "ota_hotel_id": "dacha_6",
+            "master_id": "dacha_6",
+            "latitude": 57.580208,
+            "longitude": 41.079105,
+            "rating": 9.4,
+            "price": 37038
+        },
+        {
+            "ota_hotel_id": "hotel1812",
+            "master_id": "hotel1812",
+            "latitude": 55.012207,
+            "longitude": 36.472294,
+            "rating": 8.7,
+            "price": 8800
+        },
+        {
+            "ota_hotel_id": "otel_vishniovyi_sad",
+            "master_id": "otel_vishniovyi_sad",
+            "latitude": 55.637394,
+            "longitude": 37.3669,
+            "rating": 8.1,
+            "price": 16637
+        },
+        {
+            "ota_hotel_id": "dachnyi_poselok_nagornoe",
+            "master_id": "dachnyi_poselok_nagornoe",
+            "latitude": 55.895916,
+            "longitude": 37.363304,
+            "rating": 8.1,
+            "price": 14800
+        },
+        {
+            "ota_hotel_id": "prival_hotel_5",
+            "master_id": "prival_hotel_5",
+            "latitude": 52.618587,
+            "longitude": 38.461456,
+            "rating": 8.8,
+            "price": 7200
+        },
+        {
+            "ota_hotel_id": "batashevvyksa",
+            "master_id": "batashevvyksa",
+            "latitude": 55.31674,
+            "longitude": 42.18096,
+            "rating": 8.6,
+            "price": 27600
+        },
+        {
+            "ota_hotel_id": "solnechnaya_hotel_5",
+            "master_id": "solnechnaya_hotel_5",
+            "latitude": 58.767914,
+            "longitude": 30.100882,
+            "rating": 8.8,
+            "price": 13998
+        },
+        {
+            "ota_hotel_id": "otel_record",
+            "master_id": "otel_record",
+            "latitude": 55.9762,
+            "longitude": 37.15694,
+            "rating": 7.4,
+            "price": 14000
+        },
+        {
+            "ota_hotel_id": "yelets_hotel",
+            "master_id": "yelets_hotel",
+            "latitude": 52.625675,
+            "longitude": 38.494495,
+            "rating": 6.4,
+            "price": 5592
+        },
+        {
+            "ota_hotel_id": "globus_group_fitness_hotel",
+            "master_id": "globus_group_fitness_hotel",
+            "latitude": 52.64207,
+            "longitude": 39.651924,
+            "rating": 9,
+            "price": 13072
+        },
+        {
+            "ota_hotel_id": "koleso_resort",
+            "master_id": "koleso_resort",
+            "latitude": 54.7523,
+            "longitude": 32.074203,
+            "rating": 8.3,
+            "price": 6400
+        },
+        {
+            "ota_hotel_id": "graf_hotel",
+            "master_id": "graf_hotel",
+            "latitude": 55.609764,
+            "longitude": 38.093315,
+            "rating": 8.2,
+            "price": 15845
+        },
+        {
+            "ota_hotel_id": "miniotel_lira_2",
+            "master_id": "miniotel_lira_2",
+            "latitude": 56.383324,
+            "longitude": 41.323475,
+            "rating": 10,
+            "price": 4674
+        },
+        {
+            "ota_hotel_id": "gostinitsa_vintazh",
+            "master_id": "gostinitsa_vintazh",
+            "latitude": 58.387222,
+            "longitude": 33.922733,
+            "rating": 0,
+            "price": 8057
+        },
+        {
+            "ota_hotel_id": "hostel_dom_kolhoznika",
+            "master_id": "hostel_dom_kolhoznika",
+            "latitude": 57.0315,
+            "longitude": 34.944473,
+            "rating": 7.6,
+            "price": 2352
+        },
+        {
+            "ota_hotel_id": "oskar_2",
+            "master_id": "oskar_2",
+            "latitude": 56.75095,
+            "longitude": 38.86828,
+            "rating": 7.7,
+            "price": 7890
+        },
+        {
+            "ota_hotel_id": "minihotel_v_yahtklube_spartak",
+            "master_id": "minihotel_v_yahtklube_spartak",
+            "latitude": 55.955593,
+            "longitude": 37.510975,
+            "rating": 10,
+            "price": 10767
+        },
+        {
+            "ota_hotel_id": "central_hotel_85",
+            "master_id": "central_hotel_85",
+            "latitude": 55.523846,
+            "longitude": 37.71723,
+            "rating": 8.5,
+            "price": 9200
+        },
+        {
+            "ota_hotel_id": "sputnik_11",
+            "master_id": "sputnik_11",
+            "latitude": 56.15686,
+            "longitude": 38.865906,
+            "rating": 8.4,
+            "price": 12800
+        },
+        {
+            "ota_hotel_id": "vizittsentr_hotel",
+            "master_id": "vizittsentr_hotel",
+            "latitude": 55.507725,
+            "longitude": 37.76798,
+            "rating": 8.3,
+            "price": 8318
+        },
+        {
+            "ota_hotel_id": "north_star_hotel",
+            "master_id": "north_star_hotel",
+            "latitude": 55.921326,
+            "longitude": 37.476437,
+            "rating": 7.1,
+            "price": 12715
+        },
+        {
+            "ota_hotel_id": "radonezh_diveevo_guest_house",
+            "master_id": "radonezh_diveevo_guest_house",
+            "latitude": 55.036045,
+            "longitude": 43.238228,
+            "rating": 8.7,
+            "price": 21000
+        },
+        {
+            "ota_hotel_id": "romashkovo_farm",
+            "master_id": "romashkovo_farm",
+            "latitude": 55.73472,
+            "longitude": 37.345306,
+            "rating": 7.6,
+            "price": 14600
+        },
+        {
+            "ota_hotel_id": "u_svyatogo_ozera_saint_lake",
+            "master_id": "u_svyatogo_ozera_saint_lake",
+            "latitude": 55.593338,
+            "longitude": 39.549786,
+            "rating": 9.3,
+            "price": 22777
+        },
+        {
+            "ota_hotel_id": "hostelyi_rus_sergiev_posad",
+            "master_id": "hostelyi_rus_sergiev_posad",
+            "latitude": 56.30137,
+            "longitude": 38.14736,
+            "rating": 7,
+            "price": 1800
+        },
+        {
+            "ota_hotel_id": "gostinyij_dvor_boutiquehotel",
+            "master_id": "gostinyij_dvor_boutiquehotel",
+            "latitude": 52.889404,
+            "longitude": 40.512268,
+            "rating": 9.7,
+            "price": 14000
+        },
+        {
+            "ota_hotel_id": "novahoff_geospa",
+            "master_id": "novahoff_geospa",
+            "latitude": 55.79588,
+            "longitude": 37.20142,
+            "rating": 6.7,
+            "price": 49880
+        },
+        {
+            "ota_hotel_id": "staroe_ruslo_",
+            "master_id": "staroe_ruslo_",
+            "latitude": 55.079563,
+            "longitude": 32.750404,
+            "rating": 0,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "otel_garden_house",
+            "master_id": "otel_garden_house",
+            "latitude": 55.954304,
+            "longitude": 37.399597,
+            "rating": 7.6,
+            "price": 9997
+        },
+        {
+            "ota_hotel_id": "znamenskaia_sloboda",
+            "master_id": "znamenskaia_sloboda",
+            "latitude": 55.472996,
+            "longitude": 37.547215,
+            "rating": 8.5,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "hotel_dom_otdykha_pod_plesom",
+            "master_id": "hotel_dom_otdykha_pod_plesom",
+            "latitude": 57.35769,
+            "longitude": 41.460323,
+            "rating": 8.2,
+            "price": 7723
+        },
+        {
+            "ota_hotel_id": "miniotel_khata",
+            "master_id": "miniotel_khata",
+            "latitude": 55.965366,
+            "longitude": 37.447693,
+            "rating": 9.4,
+            "price": 14680
+        },
+        {
+            "ota_hotel_id": "kroshka_enot_hotel_4",
+            "master_id": "kroshka_enot_hotel_4",
+            "latitude": 55.818466,
+            "longitude": 37.33578,
+            "rating": 7.7,
+            "price": 16800
+        },
+        {
+            "ota_hotel_id": "zhiloye_pomeschenie_2kh_komnatnaya_kvartira_ryadom_s_desyatinnym_monastyrem",
+            "master_id": "zhiloye_pomeschenie_2kh_komnatnaya_kvartira_ryadom_s_desyatinnym_monastyrem",
+            "latitude": 58.520138,
+            "longitude": 31.264004,
+            "rating": 9.7,
+            "price": 16092
+        },
+        {
+            "ota_hotel_id": "gostinitsa_king",
+            "master_id": "gostinitsa_king",
+            "latitude": 59.964745,
+            "longitude": 42.742527,
+            "rating": 8.1,
+            "price": 5600
+        },
+        {
+            "ota_hotel_id": "otel_vezendorf_2",
+            "master_id": "otel_vezendorf_2",
+            "latitude": 55.9191,
+            "longitude": 37.4219,
+            "rating": 7.7,
+            "price": 10497
+        },
+        {
+            "ota_hotel_id": "goryachie_klyuchi_hotel",
+            "master_id": "goryachie_klyuchi_hotel",
+            "latitude": 56.437542,
+            "longitude": 40.43214,
+            "rating": 8.4,
+            "price": 30000
+        },
+        {
+            "ota_hotel_id": "uyutnaya_odnokomnatnaya_kvartira_lodging_house_2",
+            "master_id": "uyutnaya_odnokomnatnaya_kvartira_lodging_house_2",
+            "latitude": 58.511066,
+            "longitude": 31.230299,
+            "rating": 10,
+            "price": 10192
+        },
+        {
+            "ota_hotel_id": "sokolniki",
+            "master_id": "sokolniki",
+            "latitude": 52.65402,
+            "longitude": 39.631992,
+            "rating": 6.9,
+            "price": 6773
+        },
+        {
+            "ota_hotel_id": "hotel_parkotel_dobrograd_korpus_grand",
+            "master_id": "hotel_parkotel_dobrograd_korpus_grand",
+            "latitude": 56.227703,
+            "longitude": 41.30187,
+            "rating": 8.7,
+            "price": 32175
+        },
+        {
+            "ota_hotel_id": "skolkovskaya_5_a_lodging_house",
+            "master_id": "skolkovskaya_5_a_lodging_house",
+            "latitude": 55.69772,
+            "longitude": 37.321712,
+            "rating": 9.4,
+            "price": 9524
+        },
+        {
+            "ota_hotel_id": "viktoriya_hotel__2",
+            "master_id": "viktoriya_hotel__2",
+            "latitude": 52.488422,
+            "longitude": 39.98221,
+            "rating": 8.1,
+            "price": 10653
+        },
+        {
+            "ota_hotel_id": "chernaya_zhenchuzhina_minihotel",
+            "master_id": "chernaya_zhenchuzhina_minihotel",
+            "latitude": 54.758904,
+            "longitude": 32.03691,
+            "rating": 7.6,
+            "price": 6000
+        },
+        {
+            "ota_hotel_id": "usadyba_rozamariya_vnukovo_hotel",
+            "master_id": "usadyba_rozamariya_vnukovo_hotel",
+            "latitude": 55.61076,
+            "longitude": 37.32815,
+            "rating": 5.4,
+            "price": 17301
+        },
+        {
+            "ota_hotel_id": "voronovoklub_minihotel",
+            "master_id": "voronovoklub_minihotel",
+            "latitude": 55.319054,
+            "longitude": 37.154633,
+            "rating": 7.2,
+            "price": 2000
+        },
+        {
+            "ota_hotel_id": "malinki",
+            "master_id": "malinki",
+            "latitude": 55.931747,
+            "longitude": 37.814373,
+            "rating": 8.6,
+            "price": 10893
+        },
+        {
+            "ota_hotel_id": "incity_minihotel",
+            "master_id": "incity_minihotel",
+            "latitude": 56.015007,
+            "longitude": 37.485226,
+            "rating": 5.3,
+            "price": 9246
+        },
+        {
+            "ota_hotel_id": "cherkasskij_zaton",
+            "master_id": "cherkasskij_zaton",
+            "latitude": 51.330616,
+            "longitude": 42.026093,
+            "rating": 9,
+            "price": 11883
+        },
+        {
+            "ota_hotel_id": "odnokomnatnaya_kvartira_na_kaberovlasyevskaya_17_lodging_house",
+            "master_id": "odnokomnatnaya_kvartira_na_kaberovlasyevskaya_17_lodging_house",
+            "latitude": 58.515408,
+            "longitude": 31.266205,
+            "rating": 0,
+            "price": 10646
+        },
+        {
+            "ota_hotel_id": "motel_vysokoe",
+            "master_id": "motel_vysokoe",
+            "latitude": 54.76646,
+            "longitude": 39.39524,
+            "rating": 7.8,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "otel_vill",
+            "master_id": "otel_vill",
+            "latitude": 55.92669,
+            "longitude": 37.857452,
+            "rating": 8.9,
+            "price": 12000
+        },
+        {
+            "ota_hotel_id": "muzeon_minihotel",
+            "master_id": "muzeon_minihotel",
+            "latitude": 55.967007,
+            "longitude": 37.92062,
+            "rating": 8.5,
+            "price": 11883
+        },
+        {
+            "ota_hotel_id": "versailles_hotel_",
+            "master_id": "versailles_hotel_",
+            "latitude": 55.115753,
+            "longitude": 36.622475,
+            "rating": 7.8,
+            "price": 10400
+        },
+        {
+            "ota_hotel_id": "super_minihotel",
+            "master_id": "super_minihotel",
+            "latitude": 54.54263,
+            "longitude": 39.84045,
+            "rating": 7.5,
+            "price": 2800
+        },
+        {
+            "ota_hotel_id": "savanna_2",
+            "master_id": "savanna_2",
+            "latitude": 54.68956,
+            "longitude": 39.636967,
+            "rating": 9,
+            "price": 8400
+        },
+        {
+            "ota_hotel_id": "staryi_dvorik_minihotel",
+            "master_id": "staryi_dvorik_minihotel",
+            "latitude": 55.79084,
+            "longitude": 37.03873,
+            "rating": 5.2,
+            "price": 9903
+        },
+        {
+            "ota_hotel_id": "gagarina_32aparthotel",
+            "master_id": "gagarina_32aparthotel",
+            "latitude": 56.331104,
+            "longitude": 46.546726,
+            "rating": 7.5,
+            "price": 8714
+        },
+        {
+            "ota_hotel_id": "veshki_park_hotel",
+            "master_id": "veshki_park_hotel",
+            "latitude": 55.92039,
+            "longitude": 37.571163,
+            "rating": 8.1,
+            "price": 16000
+        },
+        {
+            "ota_hotel_id": "amaks_krasnaia_pakhra",
+            "master_id": "amaks_krasnaia_pakhra",
+            "latitude": 55.42839,
+            "longitude": 37.294308,
+            "rating": 7.6,
+            "price": 19800
+        },
+        {
+            "ota_hotel_id": "mirra_aparthotel",
+            "master_id": "mirra_aparthotel",
+            "latitude": 56.717373,
+            "longitude": 36.780403,
+            "rating": 6.6,
+            "price": 14000
+        },
+        {
+            "ota_hotel_id": "kovcheg_hotel_3",
+            "master_id": "kovcheg_hotel_3",
+            "latitude": 56.331306,
+            "longitude": 38.14353,
+            "rating": 7.9,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "hotel_orange_5",
+            "master_id": "hotel_orange_5",
+            "latitude": 55.817593,
+            "longitude": 37.854496,
+            "rating": 9.3,
+            "price": 11126
+        },
+        {
+            "ota_hotel_id": "art_hotel_46",
+            "master_id": "art_hotel_46",
+            "latitude": 55.62659,
+            "longitude": 37.310684,
+            "rating": 7.9,
+            "price": 16278
+        },
+        {
+            "ota_hotel_id": "dobriye_sutki_g_vaerennikova_2",
+            "master_id": "dobriye_sutki_g_vaerennikova_2",
+            "latitude": 55.41872,
+            "longitude": 37.490818,
+            "rating": 0,
+            "price": 11460
+        },
+        {
+            "ota_hotel_id": "gostinichno_razvlekatelnyij_kompleks_kontinent",
+            "master_id": "gostinichno_razvlekatelnyij_kompleks_kontinent",
+            "latitude": 55.34972,
+            "longitude": 38.62012,
+            "rating": 8.9,
+            "price": 10299
+        },
+        {
+            "ota_hotel_id": "vintage_hotel_2",
+            "master_id": "vintage_hotel_2",
+            "latitude": 55.94808,
+            "longitude": 37.3523,
+            "rating": 5.5,
+            "price": 7600
+        },
+        {
+            "ota_hotel_id": "inn_zhara",
+            "master_id": "inn_zhara",
+            "latitude": 51.36603,
+            "longitude": 42.078964,
+            "rating": 7.7,
+            "price": 8586
+        },
+        {
+            "ota_hotel_id": "staryi_gorod_7",
+            "master_id": "staryi_gorod_7",
+            "latitude": 53.818485,
+            "longitude": 36.146957,
+            "rating": 0,
+            "price": 11026
+        },
+        {
+            "ota_hotel_id": "aurora_13",
+            "master_id": "aurora_13",
+            "latitude": 54.774673,
+            "longitude": 32.02557,
+            "rating": 7.9,
+            "price": 14800
+        },
+        {
+            "ota_hotel_id": "malvida_hotel",
+            "master_id": "malvida_hotel",
+            "latitude": 55.548355,
+            "longitude": 37.743313,
+            "rating": 8.1,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "east_gate_hotel",
+            "master_id": "east_gate_hotel",
+            "latitude": 55.7978,
+            "longitude": 37.93853,
+            "rating": 8.5,
+            "price": 19200
+        },
+        {
+            "ota_hotel_id": "chaplin_mini_hotel",
+            "master_id": "chaplin_mini_hotel",
+            "latitude": 54.759792,
+            "longitude": 32.065464,
+            "rating": 8.6,
+            "price": 11883
+        },
+        {
+            "ota_hotel_id": "vysokovo_aparthotel",
+            "master_id": "vysokovo_aparthotel",
+            "latitude": 55.802917,
+            "longitude": 38.455585,
+            "rating": 4.6,
+            "price": 12030
+        },
+        {
+            "ota_hotel_id": "smirnov_hotel_3",
+            "master_id": "smirnov_hotel_3",
+            "latitude": 56.001072,
+            "longitude": 37.848125,
+            "rating": 5.5,
+            "price": 14000
+        },
+        {
+            "ota_hotel_id": "guest_house_kolomna",
+            "master_id": "guest_house_kolomna",
+            "latitude": 55.107845,
+            "longitude": 38.747707,
+            "rating": 7.9,
+            "price": 10695
+        },
+        {
+            "ota_hotel_id": "congress_hotel_alexandrov",
+            "master_id": "congress_hotel_alexandrov",
+            "latitude": 56.40135,
+            "longitude": 38.727104,
+            "rating": 5.7,
+            "price": 8244
+        },
+        {
+            "ota_hotel_id": "wish_minihotel",
+            "master_id": "wish_minihotel",
+            "latitude": 57.101357,
+            "longitude": 33.25535,
+            "rating": 8.8,
+            "price": 18222
+        },
+        {
+            "ota_hotel_id": "zastava_u_oki",
+            "master_id": "zastava_u_oki",
+            "latitude": 54.698406,
+            "longitude": 37.24342,
+            "rating": 9,
+            "price": 15449
+        },
+        {
+            "ota_hotel_id": "v_odintsovo_lodging_house",
+            "master_id": "v_odintsovo_lodging_house",
+            "latitude": 55.69772,
+            "longitude": 37.321712,
+            "rating": 8.1,
+            "price": 9408
+        },
+        {
+            "ota_hotel_id": "dobrye_sutki_loft_in_podolsk_centre",
+            "master_id": "dobrye_sutki_loft_in_podolsk_centre",
+            "latitude": 55.430733,
+            "longitude": 37.55556,
+            "rating": 10,
+            "price": 13683
+        },
+        {
+            "ota_hotel_id": "uninn_hotel_vnukovo",
+            "master_id": "uninn_hotel_vnukovo",
+            "latitude": 55.630314,
+            "longitude": 37.323673,
+            "rating": 7.5,
+            "price": 13081
+        },
+        {
+            "ota_hotel_id": "usadba_yamshchika",
+            "master_id": "usadba_yamshchika",
+            "latitude": 56.41986,
+            "longitude": 40.465446,
+            "rating": 9.5,
+            "price": 64119
+        },
+        {
+            "ota_hotel_id": "solyaris_park_hotel",
+            "master_id": "solyaris_park_hotel",
+            "latitude": 55.910603,
+            "longitude": 37.629528,
+            "rating": 7.8,
+            "price": 14161
+        },
+        {
+            "ota_hotel_id": "gostinichny_komplex_ostafyevo",
+            "master_id": "gostinichny_komplex_ostafyevo",
+            "latitude": 55.502182,
+            "longitude": 37.516464,
+            "rating": 9.4,
+            "price": 10695
+        },
+        {
+            "ota_hotel_id": "solotcha_sanatorium",
+            "master_id": "solotcha_sanatorium",
+            "latitude": 54.78903,
+            "longitude": 39.833504,
+            "rating": 8.7,
+            "price": 13400
+        },
+        {
+            "ota_hotel_id": "hotel_alpina_spa_rezort",
+            "master_id": "hotel_alpina_spa_rezort",
+            "latitude": 56.232044,
+            "longitude": 37.96851,
+            "rating": 9.8,
+            "price": 46603
+        },
+        {
+            "ota_hotel_id": "xlandmoblast_tsentr_aktivnogo_otdykha",
+            "master_id": "xlandmoblast_tsentr_aktivnogo_otdykha",
+            "latitude": 56.27205,
+            "longitude": 37.58773,
+            "rating": 9.3,
+            "price": 19806
+        },
+        {
+            "ota_hotel_id": "minihotel_kompleksa_russkij_par",
+            "master_id": "minihotel_kompleksa_russkij_par",
+            "latitude": 54.238827,
+            "longitude": 37.668507,
+            "rating": 9.4,
+            "price": 14270
+        },
+        {
+            "ota_hotel_id": "yupiter_hotel_3",
+            "master_id": "yupiter_hotel_3",
+            "latitude": 52.41685,
+            "longitude": 37.57449,
+            "rating": 7.1,
+            "price": 28000
+        },
+        {
+            "ota_hotel_id": "poeticheskij_hotel_vtoroe_dyihanie",
+            "master_id": "poeticheskij_hotel_vtoroe_dyihanie",
+            "latitude": 54.730946,
+            "longitude": 37.17192,
+            "rating": 6.6,
+            "price": 19806
+        },
+        {
+            "ota_hotel_id": "sheremotel_2",
+            "master_id": "sheremotel_2",
+            "latitude": 55.977177,
+            "longitude": 37.478256,
+            "rating": 6.6,
+            "price": 6000
+        },
+        {
+            "ota_hotel_id": "hotel_sokol_4",
+            "master_id": "hotel_sokol_4",
+            "latitude": 55.626057,
+            "longitude": 37.311283,
+            "rating": 7.1,
+            "price": 10655
+        },
+        {
+            "ota_hotel_id": "sadko_",
+            "master_id": "sadko_",
+            "latitude": 55.863464,
+            "longitude": 38.20904,
+            "rating": 8.5,
+            "price": 13468
+        },
+        {
+            "ota_hotel_id": "lira_3",
+            "master_id": "lira_3",
+            "latitude": 55.381153,
+            "longitude": 36.72047,
+            "rating": 8.7,
+            "price": 9507
+        },
+        {
+            "ota_hotel_id": "parkotel_tsarskii_les",
+            "master_id": "parkotel_tsarskii_les",
+            "latitude": 55.657223,
+            "longitude": 36.81633,
+            "rating": 4.8,
+            "price": 16637
+        },
+        {
+            "ota_hotel_id": "lesnoj_hotel_3",
+            "master_id": "lesnoj_hotel_3",
+            "latitude": 55.637836,
+            "longitude": 37.225475,
+            "rating": 6.6,
+            "price": 9232
+        },
+        {
+            "ota_hotel_id": "astoria_69",
+            "master_id": "astoria_69",
+            "latitude": 55.93987,
+            "longitude": 37.307827,
+            "rating": 0,
+            "price": 10369
+        },
+        {
+            "ota_hotel_id": "rozhdestvenskaya_33_lodging_house",
+            "master_id": "rozhdestvenskaya_33_lodging_house",
+            "latitude": 55.703186,
+            "longitude": 37.931713,
+            "rating": 9,
+            "price": 9171
+        },
+        {
+            "ota_hotel_id": "gorodskie_apartamentyi_v_rasskazovke",
+            "master_id": "gorodskie_apartamentyi_v_rasskazovke",
+            "latitude": 55.634235,
+            "longitude": 37.33217,
+            "rating": 9.7,
+            "price": 9699
+        },
+        {
+            "ota_hotel_id": "portal_aparthotel",
+            "master_id": "portal_aparthotel",
+            "latitude": 55.445004,
+            "longitude": 37.565273,
+            "rating": 10,
+            "price": 12062
+        },
+        {
+            "ota_hotel_id": "motel_django_",
+            "master_id": "motel_django_",
+            "latitude": 55.941833,
+            "longitude": 36.839993,
+            "rating": 8.1,
+            "price": 12676
+        },
+        {
+            "ota_hotel_id": "melnitsa_3",
+            "master_id": "melnitsa_3",
+            "latitude": 54.89597,
+            "longitude": 38.0495,
+            "rating": 0,
+            "price": 7200
+        },
+        {
+            "ota_hotel_id": "hotel_etalon_2",
+            "master_id": "hotel_etalon_2",
+            "latitude": 55.49373,
+            "longitude": 37.56841,
+            "rating": 8.4,
+            "price": 14023
+        },
+        {
+            "ota_hotel_id": "globusl",
+            "master_id": "globusl",
+            "latitude": 52.62321,
+            "longitude": 39.563248,
+            "rating": 8.9,
+            "price": 8800
+        },
+        {
+            "ota_hotel_id": "gostinitsa_komfort",
+            "master_id": "gostinitsa_komfort",
+            "latitude": 52.61392,
+            "longitude": 39.607647,
+            "rating": 7,
+            "price": 10800
+        },
+        {
+            "ota_hotel_id": "volskie_dachi_2",
+            "master_id": "volskie_dachi_2",
+            "latitude": 55.242184,
+            "longitude": 34.294487,
+            "rating": 8.2,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "sovetskaya_",
+            "master_id": "sovetskaya_",
+            "latitude": 52.60471,
+            "longitude": 39.589043,
+            "rating": 7.3,
+            "price": 6000
+        },
+        {
+            "ota_hotel_id": "vnukovo_otel_green_palace",
+            "master_id": "vnukovo_otel_green_palace",
+            "latitude": 55.593555,
+            "longitude": 37.23215,
+            "rating": 6.2,
+            "price": 19172
+        },
+        {
+            "ota_hotel_id": "planernoe_hotel",
+            "master_id": "planernoe_hotel",
+            "latitude": 55.91396,
+            "longitude": 37.359135,
+            "rating": 7.8,
+            "price": 17231
+        },
+        {
+            "ota_hotel_id": "lazurnyij_bereg_na_oke_guest_house",
+            "master_id": "lazurnyij_bereg_na_oke_guest_house",
+            "latitude": 54.819595,
+            "longitude": 37.238262,
+            "rating": 8.1,
+            "price": 42800
+        },
+        {
+            "ota_hotel_id": "hotel_vnukovo_resort",
+            "master_id": "hotel_vnukovo_resort",
+            "latitude": 55.647205,
+            "longitude": 37.277676,
+            "rating": 6.6,
+            "price": 11400
+        },
+        {
+            "ota_hotel_id": "hotel_kosta_rika",
+            "master_id": "hotel_kosta_rika",
+            "latitude": 55.925934,
+            "longitude": 38.010128,
+            "rating": 6,
+            "price": 1980
+        },
+        {
+            "ota_hotel_id": "uiut_8",
+            "master_id": "uiut_8",
+            "latitude": 56.385967,
+            "longitude": 41.317387,
+            "rating": 8,
+            "price": 8800
+        },
+        {
+            "ota_hotel_id": "vnukovo",
+            "master_id": "vnukovo",
+            "latitude": 55.647526,
+            "longitude": 37.26438,
+            "rating": 6.2,
+            "price": 9408
+        },
+        {
+            "ota_hotel_id": "hotel_sheremetyevo_express",
+            "master_id": "hotel_sheremetyevo_express",
+            "latitude": 55.95433,
+            "longitude": 37.399624,
+            "rating": 7.9,
+            "price": 9997
+        },
+        {
+            "ota_hotel_id": "dobrye_sutki_na_prde_elektromontazhnyj_d_7",
+            "master_id": "dobrye_sutki_na_prde_elektromontazhnyj_d_7",
+            "latitude": 55.408825,
+            "longitude": 37.560257,
+            "rating": 0,
+            "price": 13103
+        },
+        {
+            "ota_hotel_id": "yamskoy_hotel",
+            "master_id": "yamskoy_hotel",
+            "latitude": 55.4886,
+            "longitude": 37.75087,
+            "rating": 8,
+            "price": 10800
+        },
+        {
+            "ota_hotel_id": "butikotel_oliva",
+            "master_id": "butikotel_oliva",
+            "latitude": 55.85296,
+            "longitude": 37.360016,
+            "rating": 0,
+            "price": 13020
+        },
+        {
+            "ota_hotel_id": "olive_3",
+            "master_id": "olive_3",
+            "latitude": 55.852978,
+            "longitude": 37.36006,
+            "rating": 8,
+            "price": 15686
+        },
+        {
+            "ota_hotel_id": "hotel_mescherskiy_kray",
+            "master_id": "hotel_mescherskiy_kray",
+            "latitude": 55.626945,
+            "longitude": 40.694374,
+            "rating": 8,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "soyuz_notel",
+            "master_id": "soyuz_notel",
+            "latitude": 54.742596,
+            "longitude": 35.251354,
+            "rating": 0,
+            "price": 9408
+        },
+        {
+            "ota_hotel_id": "boulingotel_novye_gorki",
+            "master_id": "boulingotel_novye_gorki",
+            "latitude": 55.942604,
+            "longitude": 37.908955,
+            "rating": 7.4,
+            "price": 12478
+        },
+        {
+            "ota_hotel_id": "hotel_forvard",
+            "master_id": "hotel_forvard",
+            "latitude": 55.66166,
+            "longitude": 36.270126,
+            "rating": 5.3,
+            "price": 11883
+        },
+        {
+            "ota_hotel_id": "hotel_major_10",
+            "master_id": "hotel_major_10",
+            "latitude": 55.90599,
+            "longitude": 37.481647,
+            "rating": 8.1,
+            "price": 9111
+        },
+        {
+            "ota_hotel_id": "andreevka_otel",
+            "master_id": "andreevka_otel",
+            "latitude": 55.981262,
+            "longitude": 37.136173,
+            "rating": 8.1,
+            "price": 11200
+        },
+        {
+            "ota_hotel_id": "sanatorii_valuevo",
+            "master_id": "sanatorii_valuevo",
+            "latitude": 55.573307,
+            "longitude": 37.355648,
+            "rating": 7.5,
+            "price": 12280
+        },
+        {
+            "ota_hotel_id": "happy_people_lodging_house",
+            "master_id": "happy_people_lodging_house",
+            "latitude": 55.54563,
+            "longitude": 37.698997,
+            "rating": 9.5,
+            "price": 9900
+        },
+        {
+            "ota_hotel_id": "teplitsa_park",
+            "master_id": "teplitsa_park",
+            "latitude": 55.656986,
+            "longitude": 37.215225,
+            "rating": 9.1,
+            "price": 80000
+        },
+        {
+            "ota_hotel_id": "moskovskij_sokolhotel",
+            "master_id": "moskovskij_sokolhotel",
+            "latitude": 55.590412,
+            "longitude": 37.367786,
+            "rating": 0,
+            "price": 13777
+        },
+        {
+            "ota_hotel_id": "atlas_park",
+            "master_id": "atlas_park",
+            "latitude": 55.370586,
+            "longitude": 37.744003,
+            "rating": 8,
+            "price": 23200
+        },
+        {
+            "ota_hotel_id": "zagorodniy_klub_relax",
+            "master_id": "zagorodniy_klub_relax",
+            "latitude": 55.492725,
+            "longitude": 37.5819,
+            "rating": 0,
+            "price": 12032
+        },
+        {
+            "ota_hotel_id": "hotel_kassandra_2",
+            "master_id": "hotel_kassandra_2",
+            "latitude": 55.790848,
+            "longitude": 37.888935,
+            "rating": 8.2,
+            "price": 14141
+        },
+        {
+            "ota_hotel_id": "ray_dscd",
+            "master_id": "ray_dscd",
+            "latitude": 54.705166,
+            "longitude": 32.02186,
+            "rating": 9.8,
+            "price": 17867
+        },
+        {
+            "ota_hotel_id": "bazilik_dankov",
+            "master_id": "bazilik_dankov",
+            "latitude": 53.248528,
+            "longitude": 39.125103,
+            "rating": 7,
+            "price": 5550
+        },
+        {
+            "ota_hotel_id": "marshal_narofominsk_hotel",
+            "master_id": "marshal_narofominsk_hotel",
+            "latitude": 55.41851,
+            "longitude": 36.70279,
+            "rating": 7.9,
+            "price": 10299
+        },
+        {
+            "ota_hotel_id": "fud_siti_hotel",
+            "master_id": "fud_siti_hotel",
+            "latitude": 55.5964,
+            "longitude": 37.464375,
+            "rating": 7.6,
+            "price": 14760
+        },
+        {
+            "ota_hotel_id": "otel_palermo",
+            "master_id": "otel_palermo",
+            "latitude": 52.62168,
+            "longitude": 39.574265,
+            "rating": 7.6,
+            "price": 7526
+        },
+        {
+            "ota_hotel_id": "gostiny_dvor_minihotel_4",
+            "master_id": "gostiny_dvor_minihotel_4",
+            "latitude": 54.21127,
+            "longitude": 40.468323,
+            "rating": 8.6,
+            "price": 5545
+        },
+        {
+            "ota_hotel_id": "sportivnoturisticheskij_kompleks_priozernyij",
+            "master_id": "sportivnoturisticheskij_kompleks_priozernyij",
+            "latitude": 57.186504,
+            "longitude": 39.42887,
+            "rating": 6.7,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "gostinichnyi_kompleks_podsolnukhi",
+            "master_id": "gostinichnyi_kompleks_podsolnukhi",
+            "latitude": 55.07246,
+            "longitude": 38.95613,
+            "rating": 9.2,
+            "price": 7922
+        },
+        {
+            "ota_hotel_id": "otel_dali",
+            "master_id": "otel_dali",
+            "latitude": 55.741756,
+            "longitude": 38.02507,
+            "rating": 7.1,
+            "price": 10814
+        },
+        {
+            "ota_hotel_id": "s7_hotel_domodedovo",
+            "master_id": "s7_hotel_domodedovo",
+            "latitude": 55.41869,
+            "longitude": 37.842186,
+            "rating": 7.8,
+            "price": 17200
+        },
+        {
+            "ota_hotel_id": "ekootel_akterruza",
+            "master_id": "ekootel_akterruza",
+            "latitude": 55.632812,
+            "longitude": 36.307167,
+            "rating": 7.5,
+            "price": 10001
+        },
+        {
+            "ota_hotel_id": "ultrafiolet",
+            "master_id": "ultrafiolet",
+            "latitude": 55.697453,
+            "longitude": 37.924397,
+            "rating": 8.5,
+            "price": 12280
+        },
+        {
+            "ota_hotel_id": "chasy_buninskaya_alleya",
+            "master_id": "chasy_buninskaya_alleya",
+            "latitude": 55.540737,
+            "longitude": 37.517517,
+            "rating": 6.9,
+            "price": 7922
+        },
+        {
+            "ota_hotel_id": "_0x1fd91",
+            "master_id": "_0x1fd91",
+            "latitude": 56.981194,
+            "longitude": 32.63639,
+            "rating": 5,
+            "price": 14400
+        },
+        {
+            "ota_hotel_id": "nabat_palace_hotel",
+            "master_id": "nabat_palace_hotel",
+            "latitude": 55.469833,
+            "longitude": 37.85194,
+            "rating": 7.3,
+            "price": 21345
+        },
+        {
+            "ota_hotel_id": "moscow_holidays_kartmazovo_apart_hotel_spa",
+            "master_id": "moscow_holidays_kartmazovo_apart_hotel_spa",
+            "latitude": 55.616688,
+            "longitude": 37.392746,
+            "rating": 0,
+            "price": 13715
+        },
+        {
+            "ota_hotel_id": "gostinitsa_aerograd",
+            "master_id": "gostinitsa_aerograd",
+            "latitude": 55.089153,
+            "longitude": 38.917423,
+            "rating": 7.4,
+            "price": 14663
+        },
+        {
+            "ota_hotel_id": "gostinichnyij_kompleks_valentina",
+            "master_id": "gostinichnyij_kompleks_valentina",
+            "latitude": 55.047806,
+            "longitude": 43.253235,
+            "rating": 7.9,
+            "price": 19923
+        },
+        {
+            "ota_hotel_id": "aristokrat_8",
+            "master_id": "aristokrat_8",
+            "latitude": 55.843353,
+            "longitude": 38.656307,
+            "rating": 0,
+            "price": 9483
+        },
+        {
+            "ota_hotel_id": "straik",
+            "master_id": "straik",
+            "latitude": 56.85468,
+            "longitude": 37.37093,
+            "rating": 6.6,
+            "price": 6833
+        },
+        {
+            "ota_hotel_id": "chaika_25",
+            "master_id": "chaika_25",
+            "latitude": 55.61038,
+            "longitude": 37.341465,
+            "rating": 0,
+            "price": 13463
+        },
+        {
+            "ota_hotel_id": "butikotel_new_costa_nova_15_minut_ot_dme",
+            "master_id": "butikotel_new_costa_nova_15_minut_ot_dme",
+            "latitude": 55.397736,
+            "longitude": 37.771122,
+            "rating": 0,
+            "price": 14596
+        },
+        {
+            "ota_hotel_id": "zagorodnaya_baza_otdyiha_rosinka",
+            "master_id": "zagorodnaya_baza_otdyiha_rosinka",
+            "latitude": 55.63491,
+            "longitude": 36.339725,
+            "rating": 8.1,
+            "price": 33600
+        },
+        {
+            "ota_hotel_id": "hostel_rassvet",
+            "master_id": "hostel_rassvet",
+            "latitude": 54.913647,
+            "longitude": 37.40475,
+            "rating": 6.2,
+            "price": 7130
+        },
+        {
+            "ota_hotel_id": "lisiy_ostrov",
+            "master_id": "lisiy_ostrov",
+            "latitude": 59.98696,
+            "longitude": 42.693535,
+            "rating": 0,
+            "price": 13998
+        },
+        {
+            "ota_hotel_id": "skokovo_park",
+            "master_id": "skokovo_park",
+            "latitude": 55.757225,
+            "longitude": 36.826366,
+            "rating": 6.7,
+            "price": 23579
+        },
+        {
+            "ota_hotel_id": "scandy_home_apartotel",
+            "master_id": "scandy_home_apartotel",
+            "latitude": 55.56623,
+            "longitude": 37.497627,
+            "rating": 0,
+            "price": 12529
+        },
+        {
+            "ota_hotel_id": "gostinitsa_parus",
+            "master_id": "gostinitsa_parus",
+            "latitude": 55.93322,
+            "longitude": 37.84233,
+            "rating": 7.6,
+            "price": 13864
+        },
+        {
+            "ota_hotel_id": "pushkiny_minihotel",
+            "master_id": "pushkiny_minihotel",
+            "latitude": 55.912598,
+            "longitude": 37.55159,
+            "rating": 6.1,
+            "price": 10339
+        },
+        {
+            "ota_hotel_id": "astro_plaza_hotel",
+            "master_id": "astro_plaza_hotel",
+            "latitude": 55.544163,
+            "longitude": 37.701073,
+            "rating": 8.7,
+            "price": 18360
+        },
+        {
+            "ota_hotel_id": "gostinitsa_mir_na_karbyisheva",
+            "master_id": "gostinitsa_mir_na_karbyisheva",
+            "latitude": 55.787853,
+            "longitude": 37.96046,
+            "rating": 6.9,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "dobrye_sutki_na_ul_davydova_d5",
+            "master_id": "dobrye_sutki_na_ul_davydova_d5",
+            "latitude": 55.404255,
+            "longitude": 37.56094,
+            "rating": 0,
+            "price": 11460
+        },
+        {
+            "ota_hotel_id": "baza_otdykha_paradayz_marina_villadzh",
+            "master_id": "baza_otdykha_paradayz_marina_villadzh",
+            "latitude": 56.76705,
+            "longitude": 36.946007,
+            "rating": 0,
+            "price": 7922
+        },
+        {
+            "ota_hotel_id": "hotel_buta_2",
+            "master_id": "hotel_buta_2",
+            "latitude": 55.54202,
+            "longitude": 37.49242,
+            "rating": 0,
+            "price": 13864
+        },
+        {
+            "ota_hotel_id": "gostevoy_dom_viksa",
+            "master_id": "gostevoy_dom_viksa",
+            "latitude": 55.3237,
+            "longitude": 42.214855,
+            "rating": 0,
+            "price": 13996
+        },
+        {
+            "ota_hotel_id": "mini_dom_s_panoramnyimi_oknami",
+            "master_id": "mini_dom_s_panoramnyimi_oknami",
+            "latitude": 55.635292,
+            "longitude": 36.254967,
+            "rating": 0,
+            "price": 19806
+        },
+        {
+            "ota_hotel_id": "nova_hotel_18",
+            "master_id": "nova_hotel_18",
+            "latitude": 52.590893,
+            "longitude": 39.61705,
+            "rating": 0,
+            "price": 7130
+        },
+        {
+            "ota_hotel_id": "gulyajgorod",
+            "master_id": "gulyajgorod",
+            "latitude": 54.830338,
+            "longitude": 37.262753,
+            "rating": 8.8,
+            "price": 7130
+        },
+        {
+            "ota_hotel_id": "volzhskie_prostory",
+            "master_id": "volzhskie_prostory",
+            "latitude": 57.871876,
+            "longitude": 39.534805,
+            "rating": 0,
+            "price": 2400
+        },
+        {
+            "ota_hotel_id": "hotelsiti_domodedovo",
+            "master_id": "hotelsiti_domodedovo",
+            "latitude": 55.45489,
+            "longitude": 37.743374,
+            "rating": 0,
+            "price": 11086
+        },
+        {
+            "ota_hotel_id": "repin_2",
+            "master_id": "repin_2",
+            "latitude": 55.90342,
+            "longitude": 37.42594,
+            "rating": 10,
+            "price": 13961
+        },
+        {
+            "ota_hotel_id": "usadba_dobrolubovo_3",
+            "master_id": "usadba_dobrolubovo_3",
+            "latitude": 56.43709,
+            "longitude": 40.421467,
+            "rating": 8.6,
+            "price": 27500
+        },
+        {
+            "ota_hotel_id": "edinstvennyie_dvuhyarusnyie_apartamentyi_v_myitischi",
+            "master_id": "edinstvennyie_dvuhyarusnyie_apartamentyi_v_myitischi",
+            "latitude": 55.916855,
+            "longitude": 37.75818,
+            "rating": 8,
+            "price": 13987
+        },
+        {
+            "ota_hotel_id": "uyut_8",
+            "master_id": "uyut_8",
+            "latitude": 55.212383,
+            "longitude": 36.60547,
+            "rating": 8.5,
+            "price": 9200
+        },
+        {
+            "ota_hotel_id": "uyut_12",
+            "master_id": "uyut_12",
+            "latitude": 55.53672,
+            "longitude": 37.528458,
+            "rating": 6.6,
+            "price": 11883
+        },
+        {
+            "ota_hotel_id": "rgk_alekseevskij",
+            "master_id": "rgk_alekseevskij",
+            "latitude": 55.83024,
+            "longitude": 37.917,
+            "rating": 8.5,
+            "price": 8000
+        },
+        {
+            "ota_hotel_id": "palmira_garden_hotel_spa_palmira_garden",
+            "master_id": "palmira_garden_hotel_spa_palmira_garden",
+            "latitude": 55.55373,
+            "longitude": 37.69112,
+            "rating": 8.4,
+            "price": 38550
+        },
+        {
+            "ota_hotel_id": "dobrye_sutki_na_ul_50let_oktyabrya_d_146",
+            "master_id": "dobrye_sutki_na_ul_50let_oktyabrya_d_146",
+            "latitude": 55.374306,
+            "longitude": 37.53867,
+            "rating": 0,
+            "price": 12281
+        },
+        {
+            "ota_hotel_id": "miniotel_trikotazhkadom",
+            "master_id": "miniotel_trikotazhkadom",
+            "latitude": 56.31204,
+            "longitude": 38.13688,
+            "rating": 9.3,
+            "price": 32680
+        },
+        {
+            "ota_hotel_id": "eco_hotel_solnechnaya_na_oke",
+            "master_id": "eco_hotel_solnechnaya_na_oke",
+            "latitude": 54.82208,
+            "longitude": 37.242065,
+            "rating": 7.5,
+            "price": 15845
+        },
+        {
+            "ota_hotel_id": "provintsiya_hotel_4",
+            "master_id": "provintsiya_hotel_4",
+            "latitude": 51.455547,
+            "longitude": 42.007126,
+            "rating": 8.7,
+            "price": 7200
+        },
+        {
+            "ota_hotel_id": "hotel__spa_clever",
+            "master_id": "hotel__spa_clever",
+            "latitude": 56.336426,
+            "longitude": 36.73708,
+            "rating": 8.7,
+            "price": 15100
+        },
+        {
+            "ota_hotel_id": "konakovo_river_club_hotel_complex",
+            "master_id": "konakovo_river_club_hotel_complex",
+            "latitude": 56.7607,
+            "longitude": 36.743,
+            "rating": 7.3,
+            "price": 49275
+        },
+        {
+            "ota_hotel_id": "avatara_aparthotel",
+            "master_id": "avatara_aparthotel",
+            "latitude": 55.342182,
+            "longitude": 37.842052,
+            "rating": 0,
+            "price": 11091
+        },
+        {
+            "ota_hotel_id": "raiskoe_naslazhdenie",
+            "master_id": "raiskoe_naslazhdenie",
+            "latitude": 55.17678,
+            "longitude": 36.63361,
+            "rating": 0,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "apartotel_relaks",
+            "master_id": "apartotel_relaks",
+            "latitude": 55.49295,
+            "longitude": 37.58243,
+            "rating": 0,
+            "price": 12000
+        },
+        {
+            "ota_hotel_id": "solnechnaya_sistema_ryadom_s_sheremetyevo_lodging_house",
+            "master_id": "solnechnaya_sistema_ryadom_s_sheremetyevo_lodging_house",
+            "latitude": 55.917057,
+            "longitude": 37.413773,
+            "rating": 0,
+            "price": 12434
+        },
+        {
+            "ota_hotel_id": "dobryie_sosedi_hotel",
+            "master_id": "dobryie_sosedi_hotel",
+            "latitude": 55.659138,
+            "longitude": 37.197998,
+            "rating": 7.5,
+            "price": 1200
+        },
+        {
+            "ota_hotel_id": "lainer_hotel_2",
+            "master_id": "lainer_hotel_2",
+            "latitude": 55.960262,
+            "longitude": 37.33866,
+            "rating": 7.3,
+            "price": 11598
+        },
+        {
+            "ota_hotel_id": "oversleep",
+            "master_id": "oversleep",
+            "latitude": 54.730286,
+            "longitude": 35.226704,
+            "rating": 10,
+            "price": 2390
+        },
+        {
+            "ota_hotel_id": "baza_otdykha_sterzh",
+            "master_id": "baza_otdykha_sterzh",
+            "latitude": 57.191666,
+            "longitude": 32.60016,
+            "rating": 0,
+            "price": 4983
+        },
+        {
+            "ota_hotel_id": "ilarotel",
+            "master_id": "ilarotel",
+            "latitude": 55.914696,
+            "longitude": 37.58925,
+            "rating": 7.3,
+            "price": 8766
+        },
+        {
+            "ota_hotel_id": "petruhinoklub_minihotel",
+            "master_id": "petruhinoklub_minihotel",
+            "latitude": 54.9783,
+            "longitude": 37.5345,
+            "rating": 8.8,
+            "price": 17000
+        },
+        {
+            "ota_hotel_id": "golitsyingrad",
+            "master_id": "golitsyingrad",
+            "latitude": 55.614697,
+            "longitude": 36.959846,
+            "rating": 7.2,
+            "price": 7526
+        },
+        {
+            "ota_hotel_id": "vysokoe_club_hotel_",
+            "master_id": "vysokoe_club_hotel_",
+            "latitude": 54.7212,
+            "longitude": 32.1961,
+            "rating": 7.3,
+            "price": 19500
+        },
+        {
+            "ota_hotel_id": "inn_uyut_2",
+            "master_id": "inn_uyut_2",
+            "latitude": 52.604626,
+            "longitude": 39.581345,
+            "rating": 7.5,
+            "price": 11200
+        },
+        {
+            "ota_hotel_id": "na_promyshlennoj_hostel",
+            "master_id": "na_promyshlennoj_hostel",
+            "latitude": 54.67956,
+            "longitude": 39.627975,
+            "rating": 8.3,
+            "price": 1980
+        },
+        {
+            "ota_hotel_id": "s7_bityagovo_hotel",
+            "master_id": "s7_bityagovo_hotel",
+            "latitude": 55.386284,
+            "longitude": 37.739563,
+            "rating": 7.7,
+            "price": 15200
+        },
+        {
+            "ota_hotel_id": "greenway_park",
+            "master_id": "greenway_park",
+            "latitude": 55.089466,
+            "longitude": 36.59626,
+            "rating": 8.7,
+            "price": 15480
+        },
+        {
+            "ota_hotel_id": "edem_biznesotel",
+            "master_id": "edem_biznesotel",
+            "latitude": 55.88322,
+            "longitude": 37.361732,
+            "rating": 8.9,
+            "price": 17825
+        },
+        {
+            "ota_hotel_id": "hotel_dvoriki",
+            "master_id": "hotel_dvoriki",
+            "latitude": 55.501488,
+            "longitude": 37.57546,
+            "rating": 7.4,
+            "price": 8417
+        },
+        {
+            "ota_hotel_id": "gorka_hotel_2",
+            "master_id": "gorka_hotel_2",
+            "latitude": 55.739635,
+            "longitude": 37.002174,
+            "rating": 0,
+            "price": 27729
+        },
+        {
+            "ota_hotel_id": "minihotel_gostevoj_domik",
+            "master_id": "minihotel_gostevoj_domik",
+            "latitude": 58.736618,
+            "longitude": 29.862371,
+            "rating": 5.9,
+            "price": 8714
+        },
+        {
+            "ota_hotel_id": "valdai_club_tennis",
+            "master_id": "valdai_club_tennis",
+            "latitude": 57.948193,
+            "longitude": 33.497154,
+            "rating": 0,
+            "price": 21988
+        },
+        {
+            "ota_hotel_id": "gettsleep_sheremetyevo_airport_terminal_b",
+            "master_id": "gettsleep_sheremetyevo_airport_terminal_b",
+            "latitude": 55.98141,
+            "longitude": 37.41494,
+            "rating": 0,
+            "price": 15761
+        },
+        {
+            "ota_hotel_id": "hotelcity_hotel_2",
+            "master_id": "hotelcity_hotel_2",
+            "latitude": 55.94212,
+            "longitude": 37.48984,
+            "rating": 0,
+            "price": 11233
+        },
+        {
+            "ota_hotel_id": "sleepfly_minihotel",
+            "master_id": "sleepfly_minihotel",
+            "latitude": 55.410305,
+            "longitude": 37.90245,
+            "rating": 0,
+            "price": 20202
+        },
+        {
+            "ota_hotel_id": "vejk_hotel_1",
+            "master_id": "vejk_hotel_1",
+            "latitude": 56.765614,
+            "longitude": 36.741013,
+            "rating": 0,
+            "price": 35750
+        },
+        {
+            "ota_hotel_id": "asteriya_hotel_2",
+            "master_id": "asteriya_hotel_2",
+            "latitude": 53.837463,
+            "longitude": 34.40069,
+            "rating": 6.9,
+            "price": 7922
+        },
+        {
+            "ota_hotel_id": "pansionat_s_lecheniem_zarya",
+            "master_id": "pansionat_s_lecheniem_zarya",
+            "latitude": 54.996826,
+            "longitude": 38.134605,
+            "rating": 6.8,
+            "price": 27892
+        },
+        {
+            "ota_hotel_id": "miniotel_bonzhur_iuzhnoe_butovo",
+            "master_id": "miniotel_bonzhur_iuzhnoe_butovo",
+            "latitude": 55.552925,
+            "longitude": 37.55877,
+            "rating": 7.3,
+            "price": 9560
+        },
+        {
+            "ota_hotel_id": "hotel_city_30",
+            "master_id": "hotel_city_30",
+            "latitude": 55.898182,
+            "longitude": 38.064556,
+            "rating": 0,
+            "price": 17246
+        },
+        {
+            "ota_hotel_id": "dvoriki",
+            "master_id": "dvoriki",
+            "latitude": 55.501537,
+            "longitude": 37.574997,
+            "rating": 6.6,
+            "price": 10000
+        },
+        {
+            "ota_hotel_id": "dobry_sutki_apartment_bureau",
+            "master_id": "dobry_sutki_apartment_bureau",
+            "latitude": 55.417564,
+            "longitude": 37.49674,
+            "rating": 0,
+            "price": 11460
+        },
+        {
+            "ota_hotel_id": "oteliakhtklub_novyi_bereg",
+            "master_id": "oteliakhtklub_novyi_bereg",
+            "latitude": 55.974033,
+            "longitude": 37.66897,
+            "rating": 9,
+            "price": 18528
+        },
+        {
+            "ota_hotel_id": "kolizej_hotel",
+            "master_id": "kolizej_hotel",
+            "latitude": 55.928432,
+            "longitude": 36.95127,
+            "rating": 6.9,
+            "price": 9903
+        },
+        {
+            "ota_hotel_id": "ambassador_hotel_kaluga",
+            "master_id": "ambassador_hotel_kaluga",
+            "latitude": 54.563965,
+            "longitude": 36.362724,
+            "rating": 9.1,
+            "price": 14800
+        },
+        {
+            "ota_hotel_id": "city1",
+            "master_id": "city1",
+            "latitude": 55.9001,
+            "longitude": 38.06893,
+            "rating": 0,
+            "price": 16572
+        },
+        {
+            "ota_hotel_id": "noble_estate_of_the_mosolovs",
+            "master_id": "noble_estate_of_the_mosolovs",
+            "latitude": 54.150146,
+            "longitude": 36.961704,
+            "rating": 0,
+            "price": 8481
+        },
+        {
+            "ota_hotel_id": "smart_hotel_kdo_smolensk",
+            "master_id": "smart_hotel_kdo_smolensk",
+            "latitude": 54.797955,
+            "longitude": 32.03447,
+            "rating": 7.8,
+            "price": 7800
+        },
+        {
+            "ota_hotel_id": "apartotel_sweet_dreams_inn",
+            "master_id": "apartotel_sweet_dreams_inn",
+            "latitude": 55.134407,
+            "longitude": 37.528736,
+            "rating": 8.4,
+            "price": 15053
+        },
+        {
+            "ota_hotel_id": "zagorodnyij_klub_olhovka",
+            "master_id": "zagorodnyij_klub_olhovka",
+            "latitude": 55.372944,
+            "longitude": 36.686565,
+            "rating": 8.9,
+            "price": 12000
+        },
+        {
+            "ota_hotel_id": "villa_grande_12",
+            "master_id": "villa_grande_12",
+            "latitude": 55.379993,
+            "longitude": 36.758236,
+            "rating": 5.2,
+            "price": 10399
+        },
+        {
+            "ota_hotel_id": "miniotel_magazin_645km",
+            "master_id": "miniotel_magazin_645km",
+            "latitude": 50.67465,
+            "longitude": 40.045918,
+            "rating": 8,
+            "price": 6734
+        },
+        {
+            "ota_hotel_id": "usadba_grebnevo_2",
+            "master_id": "usadba_grebnevo_2",
+            "latitude": 55.951748,
+            "longitude": 38.08159,
+            "rating": 8.3,
+            "price": 22777
+        },
+        {
+            "ota_hotel_id": "rancho_hotel_4",
+            "master_id": "rancho_hotel_4",
+            "latitude": 56.267593,
+            "longitude": 37.52334,
+            "rating": 8.1,
+            "price": 15845
+        },
+        {
+            "ota_hotel_id": "marishkin_dom",
+            "master_id": "marishkin_dom",
+            "latitude": 56.427574,
+            "longitude": 40.42141,
+            "rating": 9.1,
+            "price": 80000
+        },
+        {
+            "ota_hotel_id": "vesta_aparthotel",
+            "master_id": "vesta_aparthotel",
+            "latitude": 55.92775,
+            "longitude": 37.812508,
+            "rating": 8,
+            "price": 7773
+        },
+        {
+            "ota_hotel_id": "gostinitsa_serebriannyi_bor",
+            "master_id": "gostinitsa_serebriannyi_bor",
+            "latitude": 58.58257,
+            "longitude": 35.769135,
+            "rating": 6.9,
+            "price": 4000
+        },
+        {
+            "ota_hotel_id": "aparthotel_palisad",
+            "master_id": "aparthotel_palisad",
+            "latitude": 55.68785,
+            "longitude": 37.35184,
+            "rating": 6.7,
+            "price": 23991
+        },
+        {
+            "ota_hotel_id": "hotel_snegiri",
+            "master_id": "hotel_snegiri",
+            "latitude": 52.62405,
+            "longitude": 38.49745,
+            "rating": 9.5,
+            "price": 19200
+        },
+        {
+            "ota_hotel_id": "apart_home_hotel_on_molodezhnaya_street",
+            "master_id": "apart_home_hotel_on_molodezhnaya_street",
+            "latitude": 55.152798,
+            "longitude": 37.468853,
+            "rating": 0,
+            "price": 14680
+        },
+        {
+            "ota_hotel_id": "vip_hotel_22",
+            "master_id": "vip_hotel_22",
+            "latitude": 55.387638,
+            "longitude": 39.02078,
+            "rating": 4.6,
+            "price": 7130
+        },
+        {
+            "ota_hotel_id": "boyarskaya_usadba_hotel",
+            "master_id": "boyarskaya_usadba_hotel",
+            "latitude": 56.253353,
+            "longitude": 37.53673,
+            "rating": 7.7,
+            "price": 17825
+        },
+        {
+            "ota_hotel_id": "cheremushki_hotel_2",
+            "master_id": "cheremushki_hotel_2",
+            "latitude": 56.314476,
+            "longitude": 46.54838,
+            "rating": 0,
+            "price": 7130
+        },
+        {
+            "ota_hotel_id": "sweet_hotel_3",
+            "master_id": "sweet_hotel_3",
+            "latitude": 55.64749,
+            "longitude": 37.32897,
+            "rating": 7.7,
+            "price": 15251
+        },
+        {
+            "ota_hotel_id": "gostinitsa_universitetskaia_2",
+            "master_id": "gostinitsa_universitetskaia_2",
+            "latitude": 52.54526,
+            "longitude": 39.577858,
+            "rating": 7,
+            "price": 3944
+        },
+        {
+            "ota_hotel_id": "sosny_health_resort_",
+            "master_id": "sosny_health_resort_",
+            "latitude": 52.824436,
+            "longitude": 41.50752,
+            "rating": 0,
+            "price": 9024
+        }
+    ],
+    "url": "https://ostrovok.ru/hotel/russia/central_federal_district_moscow_region_and_vicinity_neighborhood/?guests=1&map=true&distance=999&type_group=apart_hotel.hotel.hostel&dates=08.09.2023-12.09.2023",
+    "full_hotels_list": false
+}

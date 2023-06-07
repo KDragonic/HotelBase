@@ -2,6 +2,8 @@ import datetime
 import json
 import os
 import re
+import sys
+import traceback
 from urllib.parse import urlencode, urlparse, parse_qs, urlunparse
 import requests
 from selenium import webdriver
@@ -11,11 +13,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import threading
 import time
+import logging
+
+logging.basicConfig(filename= "logs/" + datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S") + ".log", level=logging.INFO, encoding='utf-8', format='[%(asctime)s][%(levelname)s] %(message)s')
 
 
 def generate_date_list(days):
     list = map(lambda x: datetime.datetime.strptime(x, "%d.%m.%Y"), ["08.09.2023", "12.09.2023", "16.09.2023"])
-               
+
     return list
 
 
@@ -89,6 +94,9 @@ chrome_options.add_argument('--ignore-certificate-errors')
 #Включаем кеш
 chrome_options.add_argument('--disk-cache-size=33554432')
 chrome_options.add_argument('--media-cache-size=33554432')
+
+#Выключить лишние логи
+chrome_options.add_argument('--log-level=3')
 
 # Создание экземпляра драйвера
 driver = webdriver.Chrome(chrome_options=chrome_options)
@@ -179,7 +187,9 @@ def get_selenium_data(url):
                             text_amenity = amenity.text
                             rooms[name]["amenity"].append(text_amenity)
 
-                print(f"({operation_counter}/{operation_counter_max}) Комнаты получены на дату {date.strftime('%d.%m.%Y')} и дней {days}, на {guests} гостей")
+                print(f"({operation_counter}/{operation_counter_max}) Комнаты получены на дату {date.strftime('%d.%m.%Y')} и дней {days}, на {guests} гостей\t\t\t", end="\r")
+                logging.info(f"({operation_counter}/{operation_counter_max}) Комнаты получены на дату {date.strftime('%d.%m.%Y')} и дней {days}, на {guests} гостей")
+
 
     return rooms, additional_values
 
@@ -224,7 +234,7 @@ def get_additional_values(url):
 
     return content
 
-def get_hotel(url_hotel):
+def get_hotel(url_hotel, hotel_id):
     parsed_url = urlparse(url_hotel)
     parsed_query = parse_qs(parsed_url.query)
     hotel_param = parsed_url.path.split('/')[-2]
@@ -370,11 +380,10 @@ def get_hotel(url_hotel):
 
     hotel_data.update(additional_data)
 
-    print(f"{hotel_data['debug']['d_time_s']} секунд")
+    print(f"Скачался за {hotel_data['debug']['d_time_s']}", end="                                                                   \n")
+    logging.info(f"Скачался за {hotel_data['debug']['d_time_s']}")
 
     return hotel_data
-
-folder_path = 'citys'
 
 urls = []
 
@@ -385,9 +394,9 @@ with open("slug.json", encoding='utf-8') as f:
         citys[obj["city"]] = obj["slug"]
 
 # Цикл для чтения каждого файла в папке
-for filename in os.listdir(folder_path):
+for filename in os.listdir('cities'):
     if filename.endswith('.json'):
-        with open(os.path.join(folder_path, filename), encoding='utf-8') as f:
+        with open(os.path.join('cities', filename), encoding='utf-8') as f:
             data = json.load(f)
             index, city = filename.split("_")
             city = city.split(".")[0]
@@ -400,9 +409,44 @@ for filename in os.listdir(folder_path):
                 }
                 urls.append(obj)
 
+with open("slug.json", encoding='utf-8') as f:
+    data = json.load(f)
+    for obj in data:
+        citys[obj["city"]] = obj["slug"]
 
-for url in urls:
-    data = get_hotel(url["url"])
+index_urls = 0
 
-    with open(f'hotels/{url["id_hotel"]}.json', 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False)
+there_are_already_hotels = []
+
+for filename in os.listdir('hotels'):
+    if filename.endswith('.json'):
+        there_are_already_hotels.append(filename.split(".")[0])
+
+print(f"Уже скачено {len(there_are_already_hotels)} отелей, нужно ещё {len(urls) - len(there_are_already_hotels)} скачать")
+
+while index_urls < len(urls):
+    try:
+        url = urls[index_urls]
+
+        if url["id_hotel"] in there_are_already_hotels:
+            index_urls += 1
+            print(f"\033[0;32m{url['id_hotel']}\033[0m уже есть")
+            logging.info(f"{url['id_hotel']} уже есть")
+            continue
+
+        print(f"\033[0;33m{url['id_hotel']}\033[0m скачивается")
+        logging.info(f"{url['id_hotel']} скачивается")
+
+        data = get_hotel(url["url"], url["id_hotel"])
+
+        index_urls += 1
+
+        with open(f'hotels/{url["id_hotel"]}.json', 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False)
+            logging.info(f"{url['id_hotel']} записан в файл")
+    except:
+        error_type, error_value, tb = sys.exc_info()
+        traceback_msg = traceback.format_tb(tb)[-1]
+        error = f"{error_type.__name__} - {error_value}\n {traceback_msg}"
+        logging.error(error)
+        print(error)
