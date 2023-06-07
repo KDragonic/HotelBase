@@ -1068,9 +1068,9 @@ citys = verification_list_citys.copy()
 
 files_list = []
 
-for filename in os.listdir("citys"):
+for filename in os.listdir("cities"):
     if filename.endswith(".json"):
-        with open("citys/" + filename, encoding="utf-8") as json_file:
+        with open("cities/" + filename, encoding="utf-8") as json_file:
             data = json.load(json_file)
             files_list.append(data["city"]["slug"])
 
