@@ -1154,7 +1154,12 @@ while index_city < len(citys):
         hotels_list.append(obj)
 
     if len(hotels_list) > 0:
-        with open(f"citys/{index_city}_{city['city']}.json", "w", encoding="utf-8") as file:
+        if is_full_hotels_list:
+            path = f"citys/full/{index_city}_{city['city']}.json"
+        else:
+            path = f"citys/no_full/{index_city}_{city['city']}.json"
+
+        with open(path, "w", encoding="utf-8") as file:
             try:
                 obj_json = {
                     "city": city,
