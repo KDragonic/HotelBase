@@ -29,6 +29,7 @@ def generate_date_range(start_day, days):
     second_day = first_day + datetime.timedelta(days=days)
     date_range = first_day.strftime(
         '%d.%m.%Y') + '-' + second_day.strftime('%d.%m.%Y')
+
     return date_range
 
 
@@ -446,7 +447,7 @@ while index_urls < len(urls):
             logging.info(f"{url['id_hotel']} записан в файл")
     except:
         error_type, error_value, tb = sys.exc_info()
-        traceback_msg = traceback.format_tb(tb)[-1]
+        traceback_msg = "".join(traceback.format_tb(tb))
         error = f"{error_type.__name__} - {error_value}\n {traceback_msg}"
         logging.error(error)
-        print(error)
+        print("\033[31m" + error + "\033[0m")
