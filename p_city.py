@@ -140,6 +140,8 @@ if not os.path.exists("cities/full/"):
 if not os.path.exists("cities/no_full/"):
     os.mkdir("cities/no_full/")
 
+if not os.path.exists("cities/empty/"):
+    os.mkdir("cities/empty/")
 
 while index_city < len(cities):
     if no_full_index != index_city:
@@ -170,6 +172,18 @@ while index_city < len(cities):
                 print(f"\t\033[0;31mНеудача: за 10 попыток не получен ни один отель\033[0m")
                 attempt = 0
                 index_city += 1
+
+                path = f"cities/empty/{index_city}_{city['city']}.json"
+                with open(path, "w", encoding="utf-8") as file:
+                    obj_json = {
+                        "city": city,
+                        "count": 0,
+                        "hotels": [],
+                        "url": url,
+                        "full_hotels_list": False,
+                    }
+                    json.dump(obj_json, file, ensure_ascii=False)
+
                 continue
 
             time_sleep = attempt * 0.2 if attempt <= 10 else 2
@@ -181,6 +195,17 @@ while index_city < len(cities):
             print(f"\t\033[0;31mНеудача: за 30 попыток не удалось получить отели\033[0m")
 
             if len(no_full_hotels_list) <= 0:
+                path = f"cities/empty/{index_city}_{city['city']}.json"
+                with open(path, "w", encoding="utf-8") as file:
+                    obj_json = {
+                        "city": city,
+                        "count": 0,
+                        "hotels": [],
+                        "url": url,
+                        "full_hotels_list": False,
+                    }
+                    json.dump(obj_json, file, ensure_ascii=False)
+
                 continue
 
     if len(no_full_hotels_list) > 0:
