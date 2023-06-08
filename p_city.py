@@ -230,6 +230,22 @@ while index_city < len(cities):
     else:
         hotels = data_row["map_hotels"]
 
+
+    if len(hotels) == 0:
+        path = f"cities/empty/{index_city}_{city['city']}.json"
+        with open(path, "w", encoding="utf-8") as file:
+            obj_json = {
+                "city": city,
+                "count": 0,
+                "hotels": [],
+                "url": url,
+                "full_hotels_list": False,
+            }
+            json.dump(obj_json, file, ensure_ascii=False)
+            
+            print(f"\t\033[0;32mФайл создан успеншо: {index_city}_{city['city']}.json\033[0m")
+            continue
+
     for hotel in hotels:
         obj = {
             "ota_hotel_id": hotel.get("ota_hotel_id"),
