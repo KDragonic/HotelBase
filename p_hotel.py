@@ -388,11 +388,11 @@ def get_hotel(url_hotel, hotel_id):
 
 urls = []
 
-citys = {}
+cities = {}
 with open("slug.json", encoding='utf-8') as f:
     data = json.load(f)
     for obj in data:
-        citys[obj["city"]] = obj["slug"]
+        cities[obj["city"]] = obj["slug"]
 
 # Цикл для чтения каждого файла в папке
 for filename in os.listdir('cities'):
@@ -403,7 +403,7 @@ for filename in os.listdir('cities'):
             city = city.split(".")[0]
 
             for hotel in data["hotels"]:
-                slug = citys[city]
+                slug = cities[city]
                 obj = {
                     "url": f"https://ostrovok.ru/hotel/{slug}/mid9287753/{hotel['ota_hotel_id']}/?dates=20.09.2023-29.09.2023&guests=1",
                     "id_hotel": hotel['ota_hotel_id']
@@ -413,7 +413,7 @@ for filename in os.listdir('cities'):
 with open("slug.json", encoding='utf-8') as f:
     data = json.load(f)
     for obj in data:
-        citys[obj["city"]] = obj["slug"]
+        cities[obj["city"]] = obj["slug"]
 
 index_urls = 0
 
