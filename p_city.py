@@ -122,6 +122,9 @@ attempt = 0
 
 files_list = []
 
+if not os.path.exists("cities/"):
+    os.mkdir("cities/")
+
 for filename in os.listdir("cities"):
     if filename.endswith(".json"):
         with open("cities/" + filename, encoding="utf-8") as json_file:
