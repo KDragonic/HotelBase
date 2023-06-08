@@ -125,15 +125,6 @@ files_list = []
 if not os.path.exists("cities/"):
     os.mkdir("cities/")
 
-for filename in os.listdir("cities"):
-    if filename.endswith(".json"):
-        with open("cities/" + filename, encoding="utf-8") as json_file:
-            data = json.load(json_file)
-            files_list.append(data["city"]["slug"])
-
-no_full_hotels_list = []
-no_full_index = 0
-
 if not os.path.exists("cities/full/"):
     os.mkdir("cities/full/")
 
@@ -142,6 +133,28 @@ if not os.path.exists("cities/no_full/"):
 
 if not os.path.exists("cities/empty/"):
     os.mkdir("cities/empty/")
+
+
+for filename in os.listdir("cities/full/"):
+    if filename.endswith(".json"):
+        with open("cities/full/" + filename, encoding="utf-8") as json_file:
+            data = json.load(json_file)
+            files_list.append(data["city"]["slug"])
+
+for filename in os.listdir("cities/no_full/"):
+    if filename.endswith(".json"):
+        with open("cities/no_full/" + filename, encoding="utf-8") as json_file:
+            data = json.load(json_file)
+            files_list.append(data["city"]["slug"])
+
+for filename in os.listdir("cities/empty/"):
+    if filename.endswith(".json"):
+        with open("cities/empty/" + filename, encoding="utf-8") as json_file:
+            data = json.load(json_file)
+            files_list.append(data["city"]["slug"])
+
+no_full_hotels_list = []
+no_full_index = 0
 
 while index_city < len(cities):
     if no_full_index != index_city:
@@ -154,7 +167,7 @@ while index_city < len(cities):
         continue
 
     city = cities[index_city]
-    url = f"https://ostrovok.ru/hotel/{city['slug']}/?guests=1&map=true?distance=999&dates=01.10.2023-04.10.2023&guests=1&price=one&type_group=hostel.hotel.apart_hotel.guesthouse.camping.glamping"
+    url = f"https://ostrovok.ru/hotel/{city['slug']}/?guests=1&map=true?distance=999&dates=01.10.2023-04.10.2023&price=one&type_group=hostel.hotel.apart_hotel.guesthouse.camping.glamping"
 
     if attempt <= 0:
         print(f"Запущен: {index_city + 1} -> {city['city']} -> https://ostrovok.ru/hotel/{city['slug']}/")
@@ -242,7 +255,7 @@ while index_city < len(cities):
                 "full_hotels_list": False,
             }
             json.dump(obj_json, file, ensure_ascii=False)
-            
+
             print(f"\t\033[0;32mФайл создан успеншо: {index_city}_{city['city']}.json\033[0m")
             continue
 
