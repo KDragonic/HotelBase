@@ -1,11 +1,17 @@
+import datetime
 import json
+import logging
 import os
 import re
+import sys
 from time import sleep
+import traceback
 from seleniumwire import webdriver  # Import from seleniumwire
 from seleniumwire.utils import decode
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
+logging.basicConfig(filename= "logs/p_city_" + datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S") + ".log", level=logging.INFO, encoding='utf-8', format='[%(asctime)s][%(levelname)s] %(message)s')
 
 # Create a new instance of the Chrome driver
 chrome_options = webdriver.ChromeOptions()
@@ -72,6 +78,7 @@ def get_ajaxs_url(url):
     body_obj = None
     body = None
     print("\tПолучение отелей:")
+    logging.info("Получение отелей")
     while (True):
         try:
             driver.get(url)
@@ -82,28 +89,41 @@ def get_ajaxs_url(url):
             for req in driver.requests:
                 if req.response:
                     if re.search("hotel/search/v2/site/serp\?session\=", req.url):
-                        # try:
+                        try:
                             body = decode(req.response.body, req.response.headers.get('Content-Encoding', 'identity')).decode('utf-8')
                             body_obj = json.loads(body)
                             search_finished = body_obj["search_finished"]
                             if search_finished == True:
                                 print(f"\t\t\033[0;32mОтелей {body_obj['total_av_hotels']} (Все)\033[0m")
+                                logging.info(f"Отелей {body_obj['total_av_hotels']} (Все)")
                                 return body_obj
                             else:
                                 if len(no_full_hotels_list) < len(body_obj["map_hotels"]):
                                     no_full_hotels_list = body_obj["map_hotels"]
 
                                 print(f"\t\t\033[0;33mОтелей {body_obj['total_av_hotels']} (Не полный)\033[0m")
-                        # except:
-                        #     print("\t\t\033[0;31mОшибка декодирования\033[0m")
+                                logging.info(f"Отелей {body_obj['total_av_hotels']} (Не польный)")
+                        except:
+                            error_type, error_value, tb = sys.exc_info()
+                            traceback_msg = "".join(traceback.format_tb(tb))
+                            error = f"{error_type.__name__} - {error_value}\n {traceback_msg}"
+                            logging.error(f"Ошибка декодирования")
+                            logging.error(error)
+                            print("\t\t\033[0;31mОшибка декодирования\033[0m")
 
             print("\t\t\033[0;31mНу удалость найти запрос финального поиска\033[0m")
+            logging.error(f"Ну удалость найти запрос финального поиска")
             break
-        except Exception as ex:
+        except:
+            error_type, error_value, tb = sys.exc_info()
+            traceback_msg = "".join(traceback.format_tb(tb))
+            error = f"{error_type.__name__} - {error_value}\n {traceback_msg}"
+            logging.error(f"Ошибка получения запросов")
+            logging.error(error)
             print("\t\t\033[0;31mОшибка получения запросов\033[0m")
-            print(ex)
 
     print("\t\t\033[0;31mНе получены отели\033[0m")
+    logging.error(f"Не получены отели")
     return None
 
 cities = []
@@ -157,140 +177,161 @@ no_full_hotels_list = []
 no_full_index = 0
 
 while index_city < len(cities):
-    if no_full_index != index_city:
-        no_full_hotels_list = []
-        no_full_index = index_city
+    try:
+        if no_full_index != index_city:
+            no_full_hotels_list = []
+            no_full_index = index_city
 
 
-    if cities[index_city]['slug'] in files_list:
-        index_city += 1
-        continue
+        if cities[index_city]['slug'] in files_list:
+            index_city += 1
+            continue
 
-    city = cities[index_city]
-    url = f"https://ostrovok.ru/hotel/{city['slug']}/?guests=1&map=true?distance=999&dates=01.10.2023-04.10.2023&price=one&type_group=hostel.hotel.apart_hotel.guesthouse.camping.glamping"
+        city = cities[index_city]
+        url = f"https://ostrovok.ru/hotel/{city['slug']}/?guests=1&map=true?distance=999&dates=01.10.2023-04.10.2023&price=one&type_group=hostel.hotel.apart_hotel.guesthouse.camping.glamping"
 
-    if attempt <= 0:
-        print(f"Запущен: {index_city + 1} -> {city['city']} -> https://ostrovok.ru/hotel/{city['slug']}/")
-    else:
-        print(f"\t\033[0;33mПопытка {attempt}: {index_city + 1} -> {city['city']} -> https://ostrovok.ru/hotel/{city['slug']}/\033[0m")
+        if attempt <= 0:
+            print(f"Запущен: {index_city + 1} -> {city['city']} -> https://ostrovok.ru/hotel/{city['slug']}/")
+            logging.info(f"Запущен: {index_city + 1} -> {city['city']} -> https://ostrovok.ru/hotel/{city['slug']}/")
+        else:
+            print(f"\t\033[0;33mПопытка {attempt}: {index_city + 1} -> {city['city']} -> https://ostrovok.ru/hotel/{city['slug']}/\033[0m")
+            logging.info(f"Попытка {attempt}: {index_city + 1} -> {city['city']} -> https://ostrovok.ru/hotel/{city['slug']}")
 
-    data_row = get_ajaxs_url(url)
+        data_row = get_ajaxs_url(url)
 
-    if data_row == None:
-        if attempt < 30:
-            attempt += 1
+        if data_row == None:
+            if attempt < 30:
+                attempt += 1
 
-            #Что за 10 попыток не получен ни один отель
-            if attempt > 10 and len(no_full_hotels_list) <= 0:
-                print(f"\t\033[0;31mНеудача: за 10 попыток не получен ни один отель\033[0m")
+                #Что за 10 попыток не получен ни один отель
+                if attempt > 10 and len(no_full_hotels_list) <= 0:
+                    print(f"\t\033[0;31mНеудача: за 10 попыток не получен ни один отель\033[0m")
+                    logging.info(f"Неудача: за 10 попыток не получен ни один отель")
+                    attempt = 0
+                    index_city += 1
+
+                    path = f"cities/empty/{index_city}_{city['city']}.json"
+                    with open(path, "w", encoding="utf-8") as file:
+                        obj_json = {
+                            "city": city,
+                            "count": 0,
+                            "hotels": [],
+                            "url": url,
+                            "full_hotels_list": False,
+                        }
+                        json.dump(obj_json, file, ensure_ascii=False)
+
+                    continue
+
+                time_sleep = attempt * 0.2 if attempt <= 10 else 2
+                sleep(time_sleep)
+                continue
+            else:
                 attempt = 0
                 index_city += 1
+                print(f"\t\033[0;31mНеудача: за 30 попыток не удалось получить отели\033[0m")
+                logging.info(f"Неудача: за 30 попыток не удалось получить отели")
 
-                path = f"cities/empty/{index_city}_{city['city']}.json"
-                with open(path, "w", encoding="utf-8") as file:
-                    obj_json = {
-                        "city": city,
-                        "count": 0,
-                        "hotels": [],
-                        "url": url,
-                        "full_hotels_list": False,
-                    }
-                    json.dump(obj_json, file, ensure_ascii=False)
+                if len(no_full_hotels_list) <= 0:
+                    path = f"cities/empty/{index_city}_{city['city']}.json"
+                    with open(path, "w", encoding="utf-8") as file:
+                        obj_json = {
+                            "city": city,
+                            "count": 0,
+                            "hotels": [],
+                            "url": url,
+                            "full_hotels_list": False,
+                        }
+                        json.dump(obj_json, file, ensure_ascii=False)
 
-                continue
+                    continue
 
-            time_sleep = attempt * 0.2 if attempt <= 10 else 2
-            sleep(time_sleep)
-            continue
-        else:
-            attempt = 0
-            index_city += 1
-            print(f"\t\033[0;31mНеудача: за 30 попыток не удалось получить отели\033[0m")
-
-            if len(no_full_hotels_list) <= 0:
-                path = f"cities/empty/{index_city}_{city['city']}.json"
-                with open(path, "w", encoding="utf-8") as file:
-                    obj_json = {
-                        "city": city,
-                        "count": 0,
-                        "hotels": [],
-                        "url": url,
-                        "full_hotels_list": False,
-                    }
-                    json.dump(obj_json, file, ensure_ascii=False)
-
-                continue
-
-    if len(no_full_hotels_list) > 0:
-        print(f"\t\033[0;33mНе полный список отелей сохранён из {len(no_full_hotels_list)} отелей\033[0m")
-    else:
-        print(f"\t\033[0;32mУдача: Отелей {len(data_row['map_hotels'])}\033[0m")
-
-    attempt = 0
-
-    index_city += 1
-
-    hotels_list = []
-
-    hotels = []
-
-    is_full_hotels_list = True
-
-    if data_row == None:
         if len(no_full_hotels_list) > 0:
-            hotels = no_full_hotels_list
-            is_full_hotels_list = False
-    else:
-        hotels = data_row["map_hotels"]
-
-
-    if len(hotels) == 0:
-        path = f"cities/empty/{index_city}_{city['city']}.json"
-        with open(path, "w", encoding="utf-8") as file:
-            obj_json = {
-                "city": city,
-                "count": 0,
-                "hotels": [],
-                "url": url,
-                "full_hotels_list": False,
-            }
-            json.dump(obj_json, file, ensure_ascii=False)
-
-            print(f"\t\033[0;32mФайл создан успеншо: {index_city}_{city['city']}.json\033[0m")
-            continue
-
-    for hotel in hotels:
-        obj = {
-            "ota_hotel_id": hotel.get("ota_hotel_id"),
-            "master_id": hotel.get("ota_hotel_id"),
-            "latitude": hotel.get("latitude"),
-            "longitude": hotel.get("longitude"),
-            "rating": hotel.get("rating"),
-            "price": hotel.get("price"),
-        }
-
-        hotels_list.append(obj)
-
-    if len(hotels_list) > 0:
-        if is_full_hotels_list:
-            path = f"cities/full/{index_city}_{city['city']}.json"
+            print(f"\t\033[0;33mНе полный список отелей сохранён из {len(no_full_hotels_list)} отелей\033[0m")
+            logging.info(f"Не полный список отелей сохранён из {len(no_full_hotels_list)} отелей")
         else:
-            path = f"cities/no_full/{index_city}_{city['city']}.json"
+            print(f"\t\033[0;32mУдача: Отелей {len(data_row['map_hotels'])}\033[0m")
+            logging.info(f"Удача: Отелей {len(data_row['map_hotels'])}")
 
-        with open(path, "w", encoding="utf-8") as file:
-            try:
+
+        attempt = 0
+
+        index_city += 1
+
+        hotels_list = []
+
+        hotels = []
+
+        is_full_hotels_list = True
+
+        if data_row == None:
+            if len(no_full_hotels_list) > 0:
+                hotels = no_full_hotels_list
+                is_full_hotels_list = False
+        else:
+            hotels = data_row["map_hotels"]
+
+
+        if len(hotels) == 0:
+            path = f"cities/empty/{index_city}_{city['city']}.json"
+            with open(path, "w", encoding="utf-8") as file:
                 obj_json = {
                     "city": city,
-                    "count": len(hotels_list),
-                    "hotels": hotels_list,
+                    "count": 0,
+                    "hotels": [],
                     "url": url,
-                    "full_hotels_list": is_full_hotels_list,
+                    "full_hotels_list": False,
                 }
                 json.dump(obj_json, file, ensure_ascii=False)
 
                 print(f"\t\033[0;32mФайл создан успеншо: {index_city}_{city['city']}.json\033[0m")
-            except:
-                print(f"\t\033[0;31mОшибка: файл не был создан {index_city}_{city['city']}.json\033[0m")
+                logging.info(f"Файл создан успеншо: {index_city}_{city['city']}.json")
+                continue
+
+        for hotel in hotels:
+            obj = {
+                "ota_hotel_id": hotel.get("ota_hotel_id"),
+                "master_id": hotel.get("ota_hotel_id"),
+                "latitude": hotel.get("latitude"),
+                "longitude": hotel.get("longitude"),
+                "rating": hotel.get("rating"),
+                "price": hotel.get("price"),
+            }
+
+            hotels_list.append(obj)
+
+        if len(hotels_list) > 0:
+            if is_full_hotels_list:
+                path = f"cities/full/{index_city}_{city['city']}.json"
+            else:
+                path = f"cities/no_full/{index_city}_{city['city']}.json"
+
+            with open(path, "w", encoding="utf-8") as file:
+                try:
+                    obj_json = {
+                        "city": city,
+                        "count": len(hotels_list),
+                        "hotels": hotels_list,
+                        "url": url,
+                        "full_hotels_list": is_full_hotels_list,
+                    }
+                    json.dump(obj_json, file, ensure_ascii=False)
+
+                    print(f"\t\033[0;32mФайл создан успеншо: {index_city}_{city['city']}.json\033[0m")
+                    logging.info(f"Файл создан успеншо: {index_city}_{city['city']}.json")
+                except:
+                    error_type, error_value, tb = sys.exc_info()
+                    traceback_msg = "".join(traceback.format_tb(tb))
+                    error = f"{error_type.__name__} - {error_value}\n {traceback_msg}"
+                    logging.error(f"Ошибка: файл не был создан {index_city}_{city['city']}.json")
+                    logging.error(error)
+                    print(f"\t\033[0;31mОшибка: файл не был создан {index_city}_{city['city']}.json\033[0m")
+                    logging.info(f"Ошибка: файл не был создан {index_city}_{city['city']}.json")
+    except:
+        error_type, error_value, tb = sys.exc_info()
+        traceback_msg = "".join(traceback.format_tb(tb))
+        error = f"{error_type.__name__} - {error_value}\n {traceback_msg}"
+        logging.error(error)
 
 
 
