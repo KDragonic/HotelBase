@@ -5,12 +5,14 @@ import os
 import re
 import sys
 from time import sleep
+import time
 import traceback
 from seleniumwire import webdriver  # Import from seleniumwire
 from seleniumwire.utils import decode
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+#Регулярное вырожение чтоб отсеить строки с этим словом ^.*\bCapturing\b.*$
 logging.basicConfig(filename= "logs/p_city_" + datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S") + ".log", level=logging.INFO, encoding='utf-8', format='[%(asctime)s][%(levelname)s] %(message)s')
 
 # Create a new instance of the Chrome driver
@@ -176,11 +178,16 @@ for filename in os.listdir("cities/empty/"):
 no_full_hotels_list = []
 no_full_index = 0
 
+timestep = None
+
 while index_city < len(cities):
     try:
         if no_full_index != index_city:
             no_full_hotels_list = []
             no_full_index = index_city
+
+            if timestep == None:
+                timestep = time.time()
 
 
         if cities[index_city]['slug'] in files_list:
@@ -219,6 +226,12 @@ while index_city < len(cities):
                             "url": url,
                             "full_hotels_list": False,
                         }
+
+                        if timestep != None:
+                            d_timestep = timestep - time.time()
+                            timestep = None
+                            print(f"Прошло времени {d_timestep} секунд")
+
                         json.dump(obj_json, file, ensure_ascii=False)
 
                     continue
@@ -235,6 +248,11 @@ while index_city < len(cities):
                 if len(no_full_hotels_list) <= 0:
                     path = f"cities/empty/{index_city}_{city['city']}.json"
                     with open(path, "w", encoding="utf-8") as file:
+                        if timestep != None:
+                            d_timestep = timestep - time.time()
+                            timestep = None
+                            print(f"Прошло времени {d_timestep} секунд")
+
                         obj_json = {
                             "city": city,
                             "count": 0,
@@ -244,6 +262,7 @@ while index_city < len(cities):
                         }
                         json.dump(obj_json, file, ensure_ascii=False)
 
+                    timestep = None
                     continue
 
         if len(no_full_hotels_list) > 0:
@@ -282,6 +301,11 @@ while index_city < len(cities):
                     "url": url,
                     "full_hotels_list": False,
                 }
+
+                if timestep != None:
+                    d_timestep = timestep - time.time()
+                    timestep = None
+                    print(f"Прошло времени {d_timestep} секунд")
                 json.dump(obj_json, file, ensure_ascii=False)
 
                 print(f"\t\033[0;32mФайл создан успеншо: {index_city}_{city['city']}.json\033[0m")
@@ -315,6 +339,12 @@ while index_city < len(cities):
                         "url": url,
                         "full_hotels_list": is_full_hotels_list,
                     }
+
+                    if timestep != None:
+                        d_timestep = timestep - time.time()
+                        timestep = None
+                        print(f"Прошло времени {d_timestep} секунд")
+
                     json.dump(obj_json, file, ensure_ascii=False)
 
                     print(f"\t\033[0;32mФайл создан успеншо: {index_city}_{city['city']}.json\033[0m")
