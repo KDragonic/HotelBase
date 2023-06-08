@@ -230,7 +230,7 @@ while index_city < len(cities):
                         if timestep != None:
                             d_timestep = timestep - time.time()
                             timestep = None
-                            print(f"Прошло времени {d_timestep} секунд")
+                            print(f"Прошло времени {-d_timestep} секунд")
 
                         json.dump(obj_json, file, ensure_ascii=False)
 
@@ -251,7 +251,7 @@ while index_city < len(cities):
                         if timestep != None:
                             d_timestep = timestep - time.time()
                             timestep = None
-                            print(f"Прошло времени {d_timestep} секунд")
+                            print(f"Прошло времени {-d_timestep} секунд")
 
                         obj_json = {
                             "city": city,
@@ -305,7 +305,7 @@ while index_city < len(cities):
                 if timestep != None:
                     d_timestep = timestep - time.time()
                     timestep = None
-                    print(f"Прошло времени {d_timestep} секунд")
+                    print(f"Прошло времени {-d_timestep} секунд")
                 json.dump(obj_json, file, ensure_ascii=False)
 
                 print(f"\t\033[0;32mФайл создан успеншо: {index_city}_{city['city']}.json\033[0m")
@@ -343,7 +343,7 @@ while index_city < len(cities):
                     if timestep != None:
                         d_timestep = timestep - time.time()
                         timestep = None
-                        print(f"Прошло времени {d_timestep} секунд")
+                        print(f"Прошло времени {-d_timestep} секунд")
 
                     json.dump(obj_json, file, ensure_ascii=False)
 
