@@ -88,6 +88,7 @@ chrome_options.add_argument('--log-level=3')
 driver = webdriver.Chrome(chrome_options=chrome_options)
 
 def get_selenium_data(url):
+    return_urls = []
     dates = [
             ["28.07.2023-01.08.2023", 4],
             ["28.08.2023-01.09.2023", 4],
@@ -103,7 +104,7 @@ def get_selenium_data(url):
     for date, days in dates:
             for guests in range(1, 5):
                 url = update_query_params(url, {"dates": date, "guests": guests})
-
+                return_urls.append(url)
                 operation_counter += 1
 
                 driver.get(url)
@@ -150,7 +151,6 @@ def get_selenium_data(url):
                 except:
                     rates = []
 
-                # rates = driver.find_elements(By.CLASS_NAME, "zenroomspage-b2c-rates")
 
                 for rate in rates:
                     name = rate.find_element(By.CLASS_NAME, "zenroomspagerate-name-title").text
@@ -180,7 +180,7 @@ def get_selenium_data(url):
                 logging.info(f"({operation_counter}/{operation_counter_max}) Комнаты получены на дату {date} и дней {days}, на {guests} гостей")
 
 
-    return rooms, additional_values
+    return rooms, additional_values, return_urls
 
 
 def get_additional_values(url):
@@ -275,7 +275,7 @@ def get_hotel(url_hotel, hotel_id):
 
     name = json_data["data"]["hotel"]["name"]
 
-    rooms_data_parser_selenium, additional_data = get_selenium_data(url_hotel)
+    rooms_data_parser_selenium, additional_data, return_urls = get_selenium_data(url_hotel)
 
     rooms = []
 
@@ -349,6 +349,7 @@ def get_hotel(url_hotel, hotel_id):
             "d_time_m": f"{round((end_time - start_time) / 60, 1)} минут",
             "d_time_s": f"{(end_time - start_time)} секунд",
         },
+        "urls": return_urls,
         "name_hotel": name,
         "address": {
             "street": street,
@@ -443,7 +444,6 @@ while index_urls < len(urls):
         logging.info(f"[{index_urls+1}/{len(urls)}] {url['city']} => {url['id_hotel']} скачивается")
 
         data = get_hotel(url["url"], url["id_hotel"])
-        data["url"] = url
 
         index_urls += 1
 
