@@ -14,72 +14,103 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 #Настроки
-simultaneous_parsing = 5
-
-
-
+simultaneous_parsing = 4
 
 #Регулярное вырожение чтоб отсеить строки с этим словом ^.*\bCapturing\b.*$
 logging.basicConfig(filename= "logs/p_city_" + datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S") + ".log", level=logging.INFO, encoding='utf-8', format='[%(asctime)s][%(levelname)s] %(message)s')
 
-# Create a new instance of the Chrome driver
-chrome_options = webdriver.ChromeOptions()
+def interceptor(request):
+    # Block PNG, JPEG and GIF images
+    list_end = [
+            "notifications",
+            '.png',
+            ".jpeg",
+            '.jpg',
+            '.gif'
+        ]
+    list_find = [
+        "google",
+        "ads",
+        "gsi/log",
+        'v1/covid_restrictions_from_blog',
+        'accounts.google.com/gsi/client',
+        'funnel-loader.js'
+        'www.googletagmanager.com/gtm.js',
+        'www.google-analytics.com/analytics.js',
+        'mc.yandex.ru/metrika/tag.js',
+        'cnt.worldota.net/ads.js',
+        'funnel.js',
+        'yandex.ru/ads/system/context.js',
+        'theme/theme.js',
+    ]
 
-# Отключение загрузки картинок
-prefs = {"profile.managed_default_content_settings.images": 2}
-chrome_options.add_experimental_option("prefs", prefs)
+    if request.path.endswith(list_end):
+        request.abort()
 
-# Отключение загрузки шрифтов и css
-chrome_options.add_argument('--disable-extensions')
-chrome_options.add_argument('--disable-infobars')
-chrome_options.add_argument('--disable-dev-shm-usage')
-chrome_options.add_argument('--disable-gpu')
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--disable-setuid-sandbox')
-chrome_options.add_argument('--disable-web-security')
-chrome_options.add_argument('--disable-features=VizDisplayCompositor')
-chrome_options.add_argument('--disable-logging')
-chrome_options.add_argument('--disable-logging-redirect')
-chrome_options.add_argument('--disable-background-networking')
-chrome_options.add_argument('--disable-breakpad')
-chrome_options.add_argument('--disable-client-side-phishing-detection')
-chrome_options.add_argument('--disable-component-update')
-chrome_options.add_argument('--disable-default-apps')
-chrome_options.add_argument('--disable-extensions-http-throttling')
-chrome_options.add_argument('--disable-extensions-file-access-check')
-chrome_options.add_argument('--disable-extensions-scheme-whitelist')
-chrome_options.add_argument('--disable-hang-monitor')
-chrome_options.add_argument('--disable-ipc-flooding-protection')
-chrome_options.add_argument('--disable-popup-blocking')
-chrome_options.add_argument('--disable-prompt-on-repost')
-chrome_options.add_argument('--disable-renderer-backgrounding')
-chrome_options.add_argument('--disable-sync')
-chrome_options.add_argument('--disable-translate')
-chrome_options.add_argument('--metrics-recording-only')
-chrome_options.add_argument('--mute-audio')
-chrome_options.add_argument('--no-first-run')
-chrome_options.add_argument('--safebrowsing-disable-auto-update')
-chrome_options.add_argument('--start-maximized')
-chrome_options.add_argument('--disable-webgl')
-chrome_options.add_argument('--disable-threaded-animation')
-chrome_options.add_argument('--disable-threaded-scrolling')
-chrome_options.add_argument('--disable-web-security')
-chrome_options.add_argument('--disable-xss-auditor')
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--ignore-certificate-errors')
-# chrome_options.add_argument('--headless')
-chrome_options.add_argument('--disk-cache=true')
-chrome_options.add_argument('--log-level=3')
+    if request.path.find(list_find) != -1:
+        request.abort()
 
-drivers = [webdriver.Chrome(chrome_options=chrome_options) for i in range(simultaneous_parsing)]
-# driver = webdriver.Chrome()
 
-# def interceptor(request):
-#     # Block PNG, JPEG and GIF images
-#     if request.path.endswith(('.png', ".jpeg", '.jpg', '.gif')):
-#         request.abort()
 
-# driver.request_interceptor = interceptor
+
+def create_webdriver():
+    # Create a new instance of the Chrome driver
+    chrome_options = webdriver.ChromeOptions()
+
+    # Отключение загрузки картинок
+    prefs = {"profile.managed_default_content_settings.images": 2}
+    chrome_options.add_experimental_option("prefs", prefs)
+
+    # Отключение загрузки шрифтов и css
+    chrome_options.add_argument('--disable-extensions')
+    chrome_options.add_argument('--disable-infobars')
+    chrome_options.add_argument('--disable-dev-shm-usage')
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-setuid-sandbox')
+    chrome_options.add_argument('--disable-web-security')
+    chrome_options.add_argument('--disable-features=VizDisplayCompositor')
+    chrome_options.add_argument('--disable-logging')
+    chrome_options.add_argument('--disable-logging-redirect')
+    chrome_options.add_argument('--disable-background-networking')
+    chrome_options.add_argument('--disable-breakpad')
+    chrome_options.add_argument('--disable-client-side-phishing-detection')
+    chrome_options.add_argument('--disable-component-update')
+    chrome_options.add_argument('--disable-default-apps')
+    chrome_options.add_argument('--disable-extensions-http-throttling')
+    chrome_options.add_argument('--disable-extensions-file-access-check')
+    chrome_options.add_argument('--disable-extensions-scheme-whitelist')
+    chrome_options.add_argument('--disable-hang-monitor')
+    chrome_options.add_argument('--disable-ipc-flooding-protection')
+    chrome_options.add_argument('--disable-popup-blocking')
+    chrome_options.add_argument('--disable-prompt-on-repost')
+    chrome_options.add_argument('--disable-renderer-backgrounding')
+    chrome_options.add_argument('--disable-sync')
+    chrome_options.add_argument('--disable-translate')
+    chrome_options.add_argument('--metrics-recording-only')
+    chrome_options.add_argument('--mute-audio')
+    chrome_options.add_argument('--no-first-run')
+    chrome_options.add_argument('--safebrowsing-disable-auto-update')
+    chrome_options.add_argument('--start-maximized')
+    chrome_options.add_argument('--disable-webgl')
+    chrome_options.add_argument('--disable-threaded-animation')
+    chrome_options.add_argument('--disable-threaded-scrolling')
+    chrome_options.add_argument('--disable-web-security')
+    chrome_options.add_argument('--disable-xss-auditor')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--ignore-certificate-errors')
+    # chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--disk-cache=true')
+    chrome_options.add_argument('--log-level=3')
+
+    driver = webdriver.Chrome(chrome_options=chrome_options)
+
+    driver.request_interceptor = interceptor
+
+    return driver
+
+drivers = [create_webdriver() for i in range(simultaneous_parsing)]
+
 
 def get_ajaxs_url(url, driver):
     global no_full_hotels_list
@@ -395,6 +426,6 @@ def split_list(lst, n):
 splitted_cities = split_list(cities, simultaneous_parsing)
 
 with concurrent.futures.ThreadPoolExecutor(max_workers=simultaneous_parsing) as executor:
-    futures = [executor.submit(while_city, splitted_cities[i], files_list, drivers[i]) for i in range(5)]
+    futures = [executor.submit(while_city, splitted_cities[i], files_list, drivers[i]) for i in range(simultaneous_parsing)]
 
 
