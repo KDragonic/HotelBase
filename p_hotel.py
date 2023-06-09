@@ -144,10 +144,9 @@ def get_selenium_data(url):
                     additional_values["title"] = driver.title
 
 
-
                 try:
                     # Ожидание появления элемента с классом zenroomspage-b2c-rates
-                    rates = driver.find_elements(By.CLASS_NAME, "zenroomspage-b2c-rates")
+                    rates = WebDriverWait(driver, timeout=3).until(lambda d: d.find_elements(By.CLASS_NAME, "zenroomspage-b2c-rates"))
                 except:
                     rates = []
 
@@ -195,9 +194,6 @@ def get_additional_values(url):
 
     for script in scripts:
         driver.execute_script(script.get_attribute('innerHTML'))
-
-    html = driver.page_source
-    soup = BeautifulSoup(html, 'lxml')
 
     try:
         title_stars = driver.find_element(By.CLASS_NAME, "zen-roomspage-title-stars")
