@@ -397,7 +397,7 @@ for filename in os.listdir('cities/full'):
         with open(os.path.join('cities/full', filename), encoding='utf-8') as f:
             data = json.load(f)
             index, city = filename.split("_", 1)
-            city = city.split(".")[0]
+            city = city.replace(".json", "")
 
             for hotel in data["hotels"]:
                 slug = cities[city]
