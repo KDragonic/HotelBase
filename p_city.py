@@ -105,7 +105,7 @@ def create_webdriver():
 
     driver = webdriver.Chrome(chrome_options=chrome_options)
 
-    driver.request_interceptor = interceptor
+    # driver.request_interceptor = interceptor
 
     return driver
 
