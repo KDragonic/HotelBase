@@ -157,6 +157,10 @@ if not os.path.exists("cities/empty/"):
     os.mkdir("cities/empty/")
 
 
+#Те города которые вернили что получили все отели но их 0
+if not os.path.exists("cities/full_empty/"):
+    os.mkdir("cities/full_empty/")
+
 for filename in os.listdir("cities/full/"):
     if filename.endswith(".json"):
         with open("cities/full/" + filename, encoding="utf-8") as json_file:
@@ -172,6 +176,12 @@ for filename in os.listdir("cities/no_full/"):
 for filename in os.listdir("cities/empty/"):
     if filename.endswith(".json"):
         with open("cities/empty/" + filename, encoding="utf-8") as json_file:
+            data = json.load(json_file)
+            files_list.append(data["city"]["slug"])
+
+for filename in os.listdir("cities/full_empty/"):
+    if filename.endswith(".json"):
+        with open("cities/full_empty/" + filename, encoding="utf-8") as json_file:
             data = json.load(json_file)
             files_list.append(data["city"]["slug"])
 
@@ -292,7 +302,7 @@ while index_city < len(cities):
 
 
         if len(hotels) == 0:
-            path = f"cities/empty/{index_city}_{city['city']}.json"
+            path = f"cities/full_empty/{index_city}_{city['city']}.json"
             with open(path, "w", encoding="utf-8") as file:
                 obj_json = {
                     "city": city,

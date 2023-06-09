@@ -396,7 +396,7 @@ for filename in os.listdir('cities/full'):
     if filename.endswith('.json'):
         with open(os.path.join('cities/full', filename), encoding='utf-8') as f:
             data = json.load(f)
-            index, city = filename.split("_")
+            index, city = filename.split("_", 1)
             city = city.split(".")[0]
 
             for hotel in data["hotels"]:
