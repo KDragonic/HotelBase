@@ -220,7 +220,7 @@ for filename in os.listdir("cities/full_empty/"):
             files_list.append(data["city"]["slug"])
 
 
-def while_city(cities, files_list, driver):
+def while_city(cities, mixing_id, files_list, driver):
     timestep = None
     no_full_hotels_list = []
     no_full_index = 0
@@ -244,11 +244,11 @@ def while_city(cities, files_list, driver):
             url = f"https://ostrovok.ru/hotel/{city['slug']}/?guests=1&map=true?distance=999&dates=01.10.2023-04.10.2023&price=one&type_group=hostel.hotel.apart_hotel.guesthouse.camping.glamping"
 
             if attempt <= 0:
-                print(f"Запущен: {index_city + 1} -> {city['city']} -> https://ostrovok.ru/hotel/{city['slug']}/")
-                logging.info(f"Запущен: {index_city + 1} -> {city['city']} -> https://ostrovok.ru/hotel/{city['slug']}/")
+                print(f"Запущен: {index_city + 1 + mixing_id} -> {city['city']} -> https://ostrovok.ru/hotel/{city['slug']}/")
+                logging.info(f"Запущен: {index_city + 1 + mixing_id} -> {city['city']} -> https://ostrovok.ru/hotel/{city['slug']}/")
             else:
-                print(f"\t\033[0;33mПопытка {attempt}: {index_city + 1} -> {city['city']} -> https://ostrovok.ru/hotel/{city['slug']}/\033[0m")
-                logging.info(f"Попытка {attempt}: {index_city + 1} -> {city['city']} -> https://ostrovok.ru/hotel/{city['slug']}")
+                print(f"\t\033[0;33mПопытка {attempt}: {index_city + 1 + mixing_id} -> {city['city']} -> https://ostrovok.ru/hotel/{city['slug']}/\033[0m")
+                logging.info(f"Попытка {attempt}: {index_city + 1 + mixing_id} -> {city['city']} -> https://ostrovok.ru/hotel/{city['slug']}")
 
             data_row = get_ajaxs_url(url, driver)
 
@@ -263,7 +263,7 @@ def while_city(cities, files_list, driver):
                         attempt = 0
                         index_city += 1
 
-                        path = f"cities/empty/{index_city}_{city['city']}.json"
+                        path = f"cities/empty/{index_city + mixing_id}_{city['city']}.json"
                         with open(path, "w", encoding="utf-8") as file:
                             obj_json = {
                             "city": city,
@@ -292,7 +292,7 @@ def while_city(cities, files_list, driver):
                     logging.info(f"Неудача: за 30 попыток не удалось получить отели")
 
                     if len(no_full_hotels_list) <= 0:
-                        path = f"cities/empty/{index_city}_{city['city']}.json"
+                        path = f"cities/empty/{index_city + mixing_id}_{city['city']}.json"
                         with open(path, "w", encoding="utf-8") as file:
                             if timestep != None:
                                 d_timestep = timestep - time.time()
@@ -338,7 +338,7 @@ def while_city(cities, files_list, driver):
 
 
             if len(hotels) == 0:
-                path = f"cities/full_empty/{index_city}_{city['city']}.json"
+                path = f"cities/full_empty/{index_city + mixing_id}_{city['city']}.json"
                 with open(path, "w", encoding="utf-8") as file:
                     obj_json = {
                     "city": city,
@@ -354,8 +354,8 @@ def while_city(cities, files_list, driver):
                         print(f"Прошло времени {-d_timestep} секунд")
                     json.dump(obj_json, file, ensure_ascii=False)
 
-                    print(f"\t\033[0;32mФайл создан успеншо: {index_city}_{city['city']}.json\033[0m")
-                    logging.info(f"Файл создан успеншо: {index_city}_{city['city']}.json")
+                    print(f"\t\033[0;32mФайл создан успеншо: {index_city + mixing_id}_{city['city']}.json\033[0m")
+                    logging.info(f"Файл создан успеншо: {index_city + mixing_id}_{city['city']}.json")
                     continue
 
             for hotel in hotels:
@@ -372,9 +372,9 @@ def while_city(cities, files_list, driver):
 
             if len(hotels_list) > 0:
                 if is_full_hotels_list:
-                    path = f"cities/full/{index_city}_{city['city']}.json"
+                    path = f"cities/full/{index_city + mixing_id}_{city['city']}.json"
                 else:
-                    path = f"cities/no_full/{index_city}_{city['city']}.json"
+                    path = f"cities/no_full/{index_city + mixing_id}_{city['city']}.json"
 
                 with open(path, "w", encoding="utf-8") as file:
                     try:
@@ -393,16 +393,16 @@ def while_city(cities, files_list, driver):
 
                         json.dump(obj_json, file, ensure_ascii=False)
 
-                        print(f"\t\033[0;32mФайл создан успеншо: {index_city}_{city['city']}.json\033[0m")
-                        logging.info(f"Файл создан успеншо: {index_city}_{city['city']}.json")
+                        print(f"\t\033[0;32mФайл создан успеншо: {index_city + mixing_id}_{city['city']}.json\033[0m")
+                        logging.info(f"Файл создан успеншо: {index_city + mixing_id}_{city['city']}.json")
                     except:
                         error_type, error_value, tb = sys.exc_info()
                         traceback_msg = "".join(traceback.format_tb(tb))
                         error = f"{error_type.__name__} - {error_value}\n {traceback_msg}"
-                        logging.error(f"Ошибка: файл не был создан {index_city}_{city['city']}.json")
+                        logging.error(f"Ошибка: файл не был создан {index_city + mixing_id}_{city['city']}.json")
                         logging.error(error)
-                        print(f"\t\033[0;31mОшибка: файл не был создан {index_city}_{city['city']}.json\033[0m")
-                        logging.info(f"Ошибка: файл не был создан {index_city}_{city['city']}.json")
+                        print(f"\t\033[0;31mОшибка: файл не был создан {index_city + mixing_id}_{city['city']}.json\033[0m")
+                        logging.info(f"Ошибка: файл не был создан {index_city + mixing_id}_{city['city']}.json")
         except:
             error_type, error_value, tb = sys.exc_info()
             traceback_msg = "".join(traceback.format_tb(tb))
@@ -426,6 +426,6 @@ def split_list(lst, n):
 splitted_cities = split_list(cities, simultaneous_parsing)
 
 with concurrent.futures.ThreadPoolExecutor(max_workers=simultaneous_parsing) as executor:
-    futures = [executor.submit(while_city, splitted_cities[i], files_list, drivers[i]) for i in range(simultaneous_parsing)]
+    futures = [executor.submit(while_city, splitted_cities[i], round(i*(len(cities) / simultaneous_parsing)), files_list, drivers[i]) for i in range(simultaneous_parsing)]
 
 
