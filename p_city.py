@@ -29,19 +29,19 @@ def interceptor(request):
             '.gif'
         ]
     list_find = [
-        "google",
-        "ads",
-        "gsi/log",
-        'v1/covid_restrictions_from_blog',
-        'accounts.google.com/gsi/client',
-        'funnel-loader.js'
-        'www.googletagmanager.com/gtm.js',
-        'www.google-analytics.com/analytics.js',
-        'mc.yandex.ru/metrika/tag.js',
-        'cnt.worldota.net/ads.js',
-        'funnel.js',
-        'yandex.ru/ads/system/context.js',
-        'theme/theme.js',
+        # "google",
+        # "ads",
+        # "gsi/log",
+        # 'v1/covid_restrictions_from_blog',
+        # 'accounts.google.com/gsi/client',
+        # 'funnel-loader.js'
+        # 'www.googletagmanager.com/gtm.js',
+        # 'www.google-analytics.com/analytics.js',
+        # 'mc.yandex.ru/metrika/tag.js',
+        # 'cnt.worldota.net/ads.js',
+        # 'funnel.js',
+        # 'yandex.ru/ads/system/context.js',
+        # 'theme/theme.js',
     ]
 
     if request.path.endswith(list_end):
