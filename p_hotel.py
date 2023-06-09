@@ -15,22 +15,7 @@ import threading
 import time
 import logging
 
-logging.basicConfig(filename= "logs/" + datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S") + ".log", level=logging.INFO, encoding='utf-8', format='[%(asctime)s][%(levelname)s] %(message)s')
-
-
-def generate_date_list(days):
-    list = map(lambda x: datetime.datetime.strptime(x, "%d.%m.%Y"), ["08.09.2023", "12.09.2023", "16.09.2023"])
-
-    return list
-
-
-def generate_date_range(start_day, days):
-    first_day = start_day
-    second_day = first_day + datetime.timedelta(days=days)
-    date_range = first_day.strftime(
-        '%d.%m.%Y') + '-' + second_day.strftime('%d.%m.%Y')
-
-    return date_range
+logging.basicConfig(filename = "logs/p_hotel_" + datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S") + ".log", level=logging.INFO, encoding='utf-8', format='[%(asctime)s][%(levelname)s] %(message)s')
 
 
 def update_query_params(url, new_values):
@@ -103,18 +88,21 @@ chrome_options.add_argument('--log-level=3')
 driver = webdriver.Chrome(chrome_options=chrome_options)
 
 def get_selenium_data(url):
-    dates = generate_date_list(3)
+    dates = [
+            ["28.07.2023-01.08.2023", 4],
+            ["28.08.2023-01.09.2023", 4],
+            ["05.10.2023-08.10.2023", 3]
+        ]
     rooms: dict[str, list] = {}
 
     additional_values = None
 
     operation_counter = 0
     operation_counter_max = 3 * 4
-    days = 4
 
-    for date in dates:
+    for date, days in dates:
             for guests in range(1, 5):
-                url = update_query_params(url, {"dates": generate_date_range(date, days), "guests": guests})
+                url = update_query_params(url, {"dates": date, "guests": guests})
 
                 operation_counter += 1
 
@@ -175,7 +163,7 @@ def get_selenium_data(url):
                             "search": [],
                         }
 
-                    rooms[name]["search"].append({"date": {"start": date.strftime("%d.%m.%Y"), "days": days}, "guests": guests})
+                    rooms[name]["search"].append({"date": {"start": date.split("-")[0], "days": days}, "guests": guests})
 
                     price = rate.find_elements(By.CLASS_NAME, "zenroomspage-b2c-rates-price-amount")[0].text
                     price = int(price.replace(" ", "").replace("₽", ""))
@@ -188,8 +176,8 @@ def get_selenium_data(url):
                             text_amenity = amenity.text
                             rooms[name]["amenity"].append(text_amenity)
 
-                print(f"({operation_counter}/{operation_counter_max}) Комнаты получены на дату {date.strftime('%d.%m.%Y')} и дней {days}, на {guests} гостей\t\t\t", end="\r")
-                logging.info(f"({operation_counter}/{operation_counter_max}) Комнаты получены на дату {date.strftime('%d.%m.%Y')} и дней {days}, на {guests} гостей")
+                print(f"({operation_counter}/{operation_counter_max}) Комнаты получены на дату {date} и дней {days}, на {guests} гостей\t\t\t", end="\r")
+                logging.info(f"({operation_counter}/{operation_counter_max}) Комнаты получены на дату {date} и дней {days}, на {guests} гостей")
 
 
     return rooms, additional_values
@@ -391,13 +379,22 @@ urls = []
 cities = {}
 with open("slug.json", encoding='utf-8') as f:
     data = json.load(f)
-    for obj in data:
-        cities[obj["city"]] = obj["slug"]
+    for slug in data:
+        slug : str
+        city = slug.split("/")[1]
+        cities[city] = slug
+
+
+if not os.path.exists("hotels/empty/"):
+    os.mkdir("hotels/empty/")
+
+if not os.path.exists("hotels/normal/"):
+    os.mkdir("hotels/normal/")
 
 # Цикл для чтения каждого файла в папке
-for filename in os.listdir('cities'):
+for filename in os.listdir('cities/full'):
     if filename.endswith('.json'):
-        with open(os.path.join('cities', filename), encoding='utf-8') as f:
+        with open(os.path.join('cities/full', filename), encoding='utf-8') as f:
             data = json.load(f)
             index, city = filename.split("_")
             city = city.split(".")[0]
@@ -405,15 +402,11 @@ for filename in os.listdir('cities'):
             for hotel in data["hotels"]:
                 slug = cities[city]
                 obj = {
+                    "city": city,
                     "url": f"https://ostrovok.ru/hotel/{slug}/mid9287753/{hotel['ota_hotel_id']}/?dates=20.09.2023-29.09.2023&guests=1",
                     "id_hotel": hotel['ota_hotel_id']
                 }
                 urls.append(obj)
-
-with open("slug.json", encoding='utf-8') as f:
-    data = json.load(f)
-    for obj in data:
-        cities[obj["city"]] = obj["slug"]
 
 index_urls = 0
 
@@ -423,6 +416,17 @@ for filename in os.listdir('hotels'):
     if filename.endswith('.json'):
         there_are_already_hotels.append(filename.split(".")[0])
 
+def find_files(path, extension):
+    list = []
+    for root, dirs, files in os.walk(path):
+        for file in files:
+            if file.endswith(extension):
+                list.append(file.split(".")[0])
+
+    return list
+
+there_are_already_hotels = find_files("hotels", '.json')
+
 print(f"Уже скачено {len(there_are_already_hotels)} отелей, нужно ещё {len(urls) - len(there_are_already_hotels)} скачать")
 
 while index_urls < len(urls):
@@ -431,19 +435,29 @@ while index_urls < len(urls):
 
         if url["id_hotel"] in there_are_already_hotels:
             index_urls += 1
-            print(f"\033[0;32m{url['id_hotel']}\033[0m уже есть")
-            logging.info(f"{url['id_hotel']} уже есть")
+            print(f"\033[0;32m[{index_urls}/{len(urls)}] {url['id_hotel']}\033[0m уже есть")
+            logging.info(f"[{index_urls}/{len(urls)}] {url['id_hotel']} уже есть")
             continue
 
-        print(f"\033[0;33m{url['id_hotel']}\033[0m скачивается")
-        logging.info(f"{url['id_hotel']} скачивается")
+        print(f"\033[0;33m[{index_urls+1}/{len(urls)}] {url['city']} => {url['id_hotel']}\033[0m скачивается")
+        logging.info(f"[{index_urls+1}/{len(urls)}] {url['city']} => {url['id_hotel']} скачивается")
 
         data = get_hotel(url["url"], url["id_hotel"])
+        data["url"] = url
 
         index_urls += 1
 
-        with open(f'hotels/{url["id_hotel"]}.json', 'w', encoding='utf-8') as f:
+        if len(data["rooms"]) == 0:
+            path_dir = f"hotels/empty/{url['city']}/"
+        else:
+            path_dir = f"hotels/normal/{url['city']}/"
+
+        if not os.path.exists(path_dir):
+            os.mkdir(path_dir)
+
+        with open(os.path.join(path_dir, f"{url['id_hotel']}.json"), 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False)
+            print(f"{os.path.join(path_dir, url['id_hotel'] + '.json')} записан в файл")
             logging.info(f"{url['id_hotel']} записан в файл")
     except:
         error_type, error_value, tb = sys.exc_info()
