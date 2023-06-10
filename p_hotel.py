@@ -419,13 +419,13 @@ def get_hotel(url_hotel, hotel_id, driver, logger : MyLog):
 
 urls = []
 
-cities = {}
-with open("slug.json", encoding='utf-8') as f:
-    data = json.load(f)
-    for slug in data:
-        slug: str
-        city = slug.split("/")[1]
-        cities[city] = slug
+# cities = {}
+# with open("slug.json", encoding='utf-8') as f:
+#     data = json.load(f)
+#     for slug in data:
+#         slug: str
+#         city = slug.split("/")[1]
+#         cities[city] = slug
 
 
 if not os.path.exists("hotels/empty/"):
@@ -443,7 +443,7 @@ for filename in os.listdir('cities/full'):
             city = city.replace(".json", "")
 
             for hotel in data["hotels"]:
-                slug = cities[city]
+                slug = f"russia/{city}"
                 obj = {
                     "city": city,
                     "url": f"https://ostrovok.ru/hotel/{slug}/mid9287753/{hotel['ota_hotel_id']}/?dates=20.09.2023-29.09.2023&guests=1",
