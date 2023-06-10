@@ -1,7 +1,10 @@
+import copy
 import datetime
 import json
 import os
 import re
+import subprocess
+import concurrent.futures
 import sys
 import traceback
 from urllib.parse import urlencode, urlparse, parse_qs, urlunparse
@@ -15,8 +18,42 @@ import threading
 import time
 import logging
 
-logging.basicConfig(filename = "logs/p_hotel_" + datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S") + ".log", level=logging.INFO, encoding='utf-8', format='[%(asctime)s][%(levelname)s] %(message)s')
+# Настроки
+simultaneous_parsing = 3
 
+class MyLog:
+    logger : logging.Logger
+
+    def __init__(self, id) -> None:
+        self.logger = self.create_logger(id)
+        # subprocess.Popen(['python', 'print_log.py', f'r_logs/logger_{id}.log'], stdin=subprocess.PIPE)
+
+    def create_logger(self, id):
+        # создаем логгер
+        logger = logging.getLogger(f"logger_{id}")
+        handler = logging.FileHandler(filename=f'r_logs/logger_{id}.log', mode='w', encoding='utf-8')
+        handler.setFormatter(logging.Formatter('%(message)s'))
+        logger.addHandler(handler)
+        logger.setLevel(logging.INFO)
+
+        return logger
+
+    def log(self, mes):
+        self.logger.info(mes)
+
+def split_list(lst, n):
+    """
+    Разделение списка на n подсписков примерно равной длины
+    """
+    size = len(lst) // n
+    remainder = len(lst) % n
+    result = []
+    start = 0
+    for i in range(n):
+        end = start + size + (i < remainder)
+        result.append(lst[start:end])
+        start = end
+    return result
 
 def update_query_params(url, new_values):
     parsed_url = urlparse(url)
@@ -31,70 +68,73 @@ def update_query_params(url, new_values):
 
     return updated_url
 
+def create_webdriver():
+    # Create a new instance of the Chrome driver
+    chrome_options = webdriver.ChromeOptions()
 
-chrome_options = webdriver.ChromeOptions()
+    # Отключение загрузки картинок
+    prefs = {"profile.managed_default_content_settings.images": 2}
+    chrome_options.add_experimental_option("prefs", prefs)
 
-# Отключение загрузки картинок
-prefs = {"profile.managed_default_content_settings.images": 2}
-chrome_options.add_experimental_option("prefs", prefs)
+    # Отключение загрузки шрифтов и css
+    chrome_options.add_argument('--disable-extensions')
+    chrome_options.add_argument('--disable-infobars')
+    chrome_options.add_argument('--disable-dev-shm-usage')
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-setuid-sandbox')
+    chrome_options.add_argument('--disable-web-security')
+    chrome_options.add_argument('--disable-features=VizDisplayCompositor')
+    chrome_options.add_argument('--disable-logging')
+    chrome_options.add_argument('--disable-logging-redirect')
+    chrome_options.add_argument('--disable-background-networking')
+    chrome_options.add_argument('--disable-breakpad')
+    chrome_options.add_argument('--disable-client-side-phishing-detection')
+    chrome_options.add_argument('--disable-component-update')
+    chrome_options.add_argument('--disable-default-apps')
+    chrome_options.add_argument('--disable-extensions-http-throttling')
+    chrome_options.add_argument('--disable-extensions-file-access-check')
+    chrome_options.add_argument('--disable-extensions-scheme-whitelist')
+    chrome_options.add_argument('--disable-hang-monitor')
+    chrome_options.add_argument('--disable-ipc-flooding-protection')
+    chrome_options.add_argument('--disable-popup-blocking')
+    chrome_options.add_argument('--disable-prompt-on-repost')
+    chrome_options.add_argument('--disable-renderer-backgrounding')
+    chrome_options.add_argument('--disable-sync')
+    chrome_options.add_argument('--disable-translate')
+    chrome_options.add_argument('--metrics-recording-only')
+    chrome_options.add_argument('--mute-audio')
+    chrome_options.add_argument('--no-first-run')
+    chrome_options.add_argument('--safebrowsing-disable-auto-update')
+    chrome_options.add_argument('--start-maximized')
+    chrome_options.add_argument('--disable-webgl')
+    chrome_options.add_argument('--disable-threaded-animation')
+    chrome_options.add_argument('--disable-threaded-scrolling')
+    chrome_options.add_argument('--disable-web-security')
+    chrome_options.add_argument('--disable-xss-auditor')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--ignore-certificate-errors')
+    # chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--disk-cache=true')
+    chrome_options.add_argument('--log-level=3')
 
-# Отключение загрузки шрифтов и css
-chrome_options.add_argument('--disable-extensions')
-chrome_options.add_argument('--disable-infobars')
-chrome_options.add_argument('--disable-dev-shm-usage')
-chrome_options.add_argument('--disable-gpu')
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--disable-setuid-sandbox')
-chrome_options.add_argument('--disable-web-security')
-chrome_options.add_argument('--disable-features=VizDisplayCompositor')
-chrome_options.add_argument('--disable-logging')
-chrome_options.add_argument('--disable-logging-redirect')
-chrome_options.add_argument('--disable-background-networking')
-chrome_options.add_argument('--disable-breakpad')
-chrome_options.add_argument('--disable-client-side-phishing-detection')
-chrome_options.add_argument('--disable-component-update')
-chrome_options.add_argument('--disable-default-apps')
-chrome_options.add_argument('--disable-extensions-http-throttling')
-chrome_options.add_argument('--disable-extensions-file-access-check')
-chrome_options.add_argument('--disable-extensions-scheme-whitelist')
-chrome_options.add_argument('--disable-hang-monitor')
-chrome_options.add_argument('--disable-ipc-flooding-protection')
-chrome_options.add_argument('--disable-popup-blocking')
-chrome_options.add_argument('--disable-prompt-on-repost')
-chrome_options.add_argument('--disable-renderer-backgrounding')
-chrome_options.add_argument('--disable-sync')
-chrome_options.add_argument('--disable-translate')
-chrome_options.add_argument('--metrics-recording-only')
-chrome_options.add_argument('--mute-audio')
-chrome_options.add_argument('--no-first-run')
-chrome_options.add_argument('--safebrowsing-disable-auto-update')
-chrome_options.add_argument('--start-maximized')
-chrome_options.add_argument('--disable-webgl')
-chrome_options.add_argument('--disable-threaded-animation')
-chrome_options.add_argument('--disable-threaded-scrolling')
-chrome_options.add_argument('--disable-web-security')
-chrome_options.add_argument('--disable-xss-auditor')
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--ignore-certificate-errors')
+    driver = webdriver.Chrome(chrome_options=chrome_options)
 
-#Включаем кеш
-chrome_options.add_argument('--disk-cache-size=33554432')
-chrome_options.add_argument('--media-cache-size=33554432')
+    # driver.request_interceptor = interceptor
 
-#Выключить лишние логи
-chrome_options.add_argument('--log-level=3')
+    return driver
 
-# Создание экземпляра драйвера
-driver = webdriver.Chrome(chrome_options=chrome_options)
+drivers = [create_webdriver() for i in range(simultaneous_parsing)]
 
-def get_selenium_data(url):
+def parser_hotel_rooms(url, driver, logger : MyLog):
     return_urls = []
     dates = [
             ["28.07.2023-01.08.2023", 4],
             ["28.08.2023-01.09.2023", 4],
             ["05.10.2023-08.10.2023", 3]
-        ]
-    rooms: dict[str, list] = {}
+    ]
+
+    retrun_rooms: dict[str, dict[str, list]] = {}
 
     additional_values = None
 
@@ -102,135 +142,142 @@ def get_selenium_data(url):
     operation_counter_max = 3 * 4
 
     for date, days in dates:
-            for guests in range(1, 5):
-                url = update_query_params(url, {"dates": date, "guests": guests})
-                return_urls.append(url)
-                operation_counter += 1
+        for guests in range(1, 5):
+            url = update_query_params(url, {"dates": date, "guests": guests})
+            return_urls.append(url)
+            operation_counter += 1
 
-                driver.get(url)
+            if additional_values == None:
+                additional_values, rooms = parser_room(
+                    url, driver, True, date, days, guests)
+            else:
+                _, rooms = parser_room(url, driver, False, date, days, guests)
 
-                driver.execute_script("return document.readyState") # ждем полной загрузки страницы
+            logger.log(f"[{operation_counter}/{operation_counter_max}] {date} | {guests} => {len(rooms)}")
+            # logging.info(f"[{operation_counter}/{operation_counter_max}] {date} | {guests} => {len(rooms)}")
 
-                scripts = driver.find_elements("xpath", "//script[@type='text/javascript']")
+            for key, val in rooms.items():
+                if not retrun_rooms.get(key):
+                    retrun_rooms[key] = {
+                        "price": [],
+                        "amenity": None,
+                        "search": [],
+                    }
 
-                for script in scripts:
-                    try:
-                        driver.execute_script(script.get_attribute('innerHTML'))
-                    except:
-                        pass
+                retrun_rooms[key]["price"].append(val["price"])
+                retrun_rooms[key]["search"].append(val["search"])
 
-                if additional_values == None:
-                    additional_values = {}
-                    try:
-                        title_stars = driver.find_element(By.CLASS_NAME, "zen-roomspage-title-stars")
-                        stars = title_stars.find_elements(By.CLASS_NAME, "zen-ui-stars-star")
-                        additional_values["stars_count"] = len(stars)
-                    except:
-                        additional_values["stars_count"] = 0
+                if retrun_rooms[key]["amenity"] == None:
+                    retrun_rooms[key]["amenity"] = val["amenity"]
 
-                    try:
-                        span_time_in_out = driver.find_elements(By.CLASS_NAME, "PolicyBlock__policyTableCell_checkInCheckOut--sezvV")
+    # [Название] Цена | Гостей => Количество захваченных поисков
+    logger.log(f"Информация об номерах [{len(retrun_rooms)}]:")
+    for key, val in retrun_rooms.items():
+        prices = [round(price["price"] / price["days"])
+                  for price in val["price"]]
+        max_price = max(prices)
 
-                        for obj in span_time_in_out:
-                            if obj.text.startswith("После"):
-                                additional_values["time_in"] = obj.text.replace("После", "").strip()
-                            if obj.text.startswith("До"):
-                                additional_values["time_out"] = obj.text.replace("До", "").strip()
-                        pass
-                    except:
-                        additional_values["time_in"] = "12:00"
-                        additional_values["time_out"] = "14:00"
+        guests = [search["guests"] for search in val["search"]]
+        max_guest = max(guests)
 
-                    additional_values["title"] = driver.title
+        logger.log(f"[{key}] ↑{max_price} | ↑{max_guest} => s{len(val['search'])}")
 
+    return retrun_rooms, additional_values, return_urls
 
-                try:
-                    # Ожидание появления элемента с классом zenroomspage-b2c-rates
-                    rates = WebDriverWait(driver, timeout=3).until(lambda d: d.find_elements(By.CLASS_NAME, "zenroomspage-b2c-rates"))
-                except:
-                    rates = []
+def parser_room(url, driver, get_additional_values: bool, date, days, guests):
+    rooms: dict[str, list] = {}
 
-
-                for rate in rates:
-                    name = rate.find_element(By.CLASS_NAME, "zenroomspagerate-name-title").text
-                    name = name.replace("\n", " ")
-
-                    if not rooms.get(name):
-                        rooms[name] = {
-                            "price": [],
-                            "amenity": [],
-                            "search": [],
-                        }
-
-                    rooms[name]["search"].append({"date": {"start": date.split("-")[0], "days": days}, "guests": guests})
-
-                    price = rate.find_elements(By.CLASS_NAME, "zenroomspage-b2c-rates-price-amount")[0].text
-                    price = int(price.replace(" ", "").replace("₽", ""))
-
-                    rooms[name]["price"].append({"price": price, "days": days})
-
-                    if len(rooms[name]["amenity"]) == 0:
-                        amenitys = rate.find_elements(By.CLASS_NAME, "zenroomspageroom-header-content-amenity")
-                        for amenity in amenitys:
-                            text_amenity = amenity.text
-                            rooms[name]["amenity"].append(text_amenity)
-
-                print(f"({operation_counter}/{operation_counter_max}) Комнаты получены на дату {date} и дней {days}, на {guests} гостей\t\t\t", end="\r")
-                logging.info(f"({operation_counter}/{operation_counter_max}) Комнаты получены на дату {date} и дней {days}, на {guests} гостей")
-
-
-    return rooms, additional_values, return_urls
-
-
-def get_additional_values(url):
-    content = {}
-    driver = webdriver.Chrome()
+    additional_values = None
 
     driver.get(url)
-    driver.execute_script("return document.readyState") # ждем полной загрузки страницы
 
-    # scripts = driver.find_elements_by_xpath("//script[@type='text/javascript']")
-    scripts = driver.find_elements("xpath", "//script[@type='text/javascript']")
+    # ждем полной загрузки страницы
+    driver.execute_script("return document.readyState")
+
+    scripts = driver.find_elements(
+        "xpath", "//script[@type='text/javascript']")
 
     for script in scripts:
-        driver.execute_script(script.get_attribute('innerHTML'))
+        try:
+            driver.execute_script(script.get_attribute('innerHTML'))
+        except:
+            pass
+
+    if additional_values == None:
+        additional_values = {}
+        try:
+            title_stars = driver.find_element(
+                By.CLASS_NAME, "zen-roomspage-title-stars")
+            stars = title_stars.find_elements(
+                By.CLASS_NAME, "zen-ui-stars-star")
+            additional_values["stars_count"] = len(stars)
+        except:
+            additional_values["stars_count"] = 0
+
+        try:
+            span_time_in_out = driver.find_elements(
+                By.CLASS_NAME, "PolicyBlock__policyTableCell_checkInCheckOut--sezvV")
+
+            for obj in span_time_in_out:
+                if obj.text.startswith("После"):
+                    additional_values["time_in"] = obj.text.replace(
+                        "После", "").strip()
+                if obj.text.startswith("До"):
+                    additional_values["time_out"] = obj.text.replace(
+                        "До", "").strip()
+            pass
+        except:
+            additional_values["time_in"] = "12:00"
+            additional_values["time_out"] = "14:00"
+
+        additional_values["title"] = driver.title
 
     try:
-        title_stars = driver.find_element(By.CLASS_NAME, "zen-roomspage-title-stars")
-        stars = title_stars.find_elements(By.CLASS_NAME, "zen-ui-stars-star")
-        content["stars_count"] = len(stars)
+        # Ожидание появления элемента с классом zenroomspage-b2c-rates
+        rates = WebDriverWait(driver, timeout=3).until(
+            lambda d: d.find_elements(By.CLASS_NAME, "zenroomspage-b2c-rates"))
     except:
-        content["stars_count"] = 0
+        rates = []
 
-    try:
-        span_time_in_out = driver.find_elements(By.CLASS_NAME, "PolicyBlock__policyTableCell_checkInCheckOut--sezvV")
+    for rate in rates:
+        name = rate.find_element(
+            By.CLASS_NAME, "zenroomspagerate-name-title").text
+        name = name.replace("\n", " ")
 
-        for obj in span_time_in_out:
-            if obj.text.startswith("После"):
-                content["time_in"] = obj.text.replace("После", "").strip()
-            if obj.text.startswith("До"):
-                content["time_out"] = obj.text.replace("До", "").strip()
-        pass
-    except:
-        content["time_in"] = "12:00"
-        content["time_out"] = "14:00"
+        if not rooms.get(name):
+            rooms[name] = {
+                "price": None,
+                "amenity": [],
+                "search": None,
+            }
 
-    content["title"] = driver.title
+        rooms[name]["search"] = {
+            "date": {"start": date, "days": days}, "guests": guests}
 
-    return content
+        price = rate.find_elements(
+            By.CLASS_NAME, "zenroomspage-b2c-rates-price-amount")[0].text
+        price = int(price.replace(" ", "").replace("₽", ""))
 
-def get_hotel(url_hotel, hotel_id):
-    parsed_url = urlparse(url_hotel)
-    parsed_query = parse_qs(parsed_url.query)
-    hotel_param = parsed_url.path.split('/')[-2]
+        rooms[name]["price"] = {"price": price, "days": days}
 
+        if len(rooms[name]["amenity"]) == 0:
+            amenitys = rate.find_elements(
+                By.CLASS_NAME, "zenroomspageroom-header-content-amenity")
+            for amenity in amenitys:
+                text_amenity = amenity.text
+                rooms[name]["amenity"].append(text_amenity)
+
+    return additional_values, rooms
+
+def get_hotel(url_hotel, hotel_id, driver, logger : MyLog):
     start_time = int(time.time())
 
     url = "https://ostrovok.ru/hotel/search/v2/site/hp/content"
     params = {
         "lang": "ru",
-        "hotel": hotel_param,
+        "hotel": hotel_id,
     }
+
     response = requests.get(url, params=params)
     json_data = response.json()
 
@@ -263,7 +310,6 @@ def get_hotel(url_hotel, hotel_id):
 
         images.append({
             "url": url,
-            "size": f"{w}x{h}",
         })
 
     latitude = json_data["data"]["hotel"]["latitude"]
@@ -271,13 +317,12 @@ def get_hotel(url_hotel, hotel_id):
 
     name = json_data["data"]["hotel"]["name"]
 
-    rooms_data_parser_selenium, additional_data, return_urls = get_selenium_data(url_hotel)
+    rooms_data_parser_selenium, additional_data, return_urls = parser_hotel_rooms(
+        url_hotel, driver, logger)
 
     rooms = []
 
     room_groups = json_data["data"]["hotel"]["room_groups"]
-
-    pattern = r"\\d{1,2}\\s*[мM][2²]"
 
     for room in room_groups:
         if not rooms_data_parser_selenium.get(room["name"]):
@@ -286,7 +331,7 @@ def get_hotel(url_hotel, hotel_id):
         date_room = {
             "name": room["name"],
             "size": room.get("size"),
-            "amenitie": [item for item in rooms_data_parser_selenium[room["name"]]["amenity"] if not re.search(pattern, item)],
+            "amenitie": [item for item in rooms_data_parser_selenium[room["name"]]["amenity"]],
             "search": rooms_data_parser_selenium[room["name"]]["search"],
             "visibility_area": {
                 "date": [],
@@ -294,19 +339,22 @@ def get_hotel(url_hotel, hotel_id):
             "rg_hash": room["rg_hash"],
         }
 
-        days_list = [search["date"]["days"] for search in rooms_data_parser_selenium[room["name"]]["search"]]
+        days_list = [search["date"]["days"]
+                     for search in rooms_data_parser_selenium[room["name"]]["search"]]
         guests = {
             "max": max(days_list) if days_list else None,
             "min": min(days_list) if days_list else None,
         }
 
-        days_list = [search["date"]["days"] for search in rooms_data_parser_selenium[room["name"]]["search"]]
+        days_list = [search["date"]["days"]
+                     for search in rooms_data_parser_selenium[room["name"]]["search"]]
         days = {
             "max": max(days_list) if days_list else None,
             "min": min(days_list) if days_list else None,
         }
 
-        guests_list = [search["guests"] for search in rooms_data_parser_selenium[room["name"]]["search"]]
+        guests_list = [search["guests"]
+                       for search in rooms_data_parser_selenium[room["name"]]["search"]]
         guests = {
             "max": max(guests_list) if guests_list else None,
         }
@@ -337,7 +385,6 @@ def get_hotel(url_hotel, hotel_id):
 
     end_time = int(time.time())
 
-
     hotel_data = {
         "debug": {
             "start_time": datetime.datetime.fromtimestamp(start_time).strftime("%d.%m.%Y %H:%M:%S"),
@@ -366,8 +413,7 @@ def get_hotel(url_hotel, hotel_id):
 
     hotel_data.update(additional_data)
 
-    print(f"Скачался за {hotel_data['debug']['d_time_s']}", end="                                                                   \n")
-    logging.info(f"Скачался за {hotel_data['debug']['d_time_s']}")
+    logger.log(f"Скачался за {hotel_data['debug']['d_time_s']}")
 
     return hotel_data
 
@@ -377,7 +423,7 @@ cities = {}
 with open("slug.json", encoding='utf-8') as f:
     data = json.load(f)
     for slug in data:
-        slug : str
+        slug: str
         city = slug.split("/")[1]
         cities[city] = slug
 
@@ -413,6 +459,7 @@ for filename in os.listdir('hotels'):
     if filename.endswith('.json'):
         there_are_already_hotels.append(filename.split(".")[0])
 
+
 def find_files(path, extension):
     list = []
     for root, dirs, files in os.walk(path):
@@ -422,42 +469,63 @@ def find_files(path, extension):
 
     return list
 
+
 there_are_already_hotels = find_files("hotels", '.json')
 
 print(f"Уже скачено {len(there_are_already_hotels)} отелей, нужно ещё {len(urls) - len(there_are_already_hotels)} скачать")
 
-while index_urls < len(urls):
-    try:
-        url = urls[index_urls]
+if not os.path.exists("r_logs/"):
+    os.mkdir("r_logs/")
 
-        if url["id_hotel"] in there_are_already_hotels:
+def while_hotel(urls, id, mixing_id, there_are_already_hotels, driver):
+    """Основной цикт получения отелей
+
+    Args:
+        `urls` (list): Список с url и slug\n
+        `id` (int): ID цикла\n
+        `mixing_id` (int): Смешение вывода index_urls\n
+        `there_are_already_hotels` (list): Отели который уже скачены
+    """
+    logger = MyLog(id)
+    index_urls = 0
+    while index_urls < len(urls):
+        try:
+            url = urls[index_urls]
+
+            if url["id_hotel"] in there_are_already_hotels:
+                index_urls += 1
+                logger.log(f"[{index_urls+mixing_id}/{len(urls)+mixing_id}] {url['id_hotel']} уже есть")
+                # logger.log(f"[{index_urls+mixing_id}/{len(urls)}] {url['id_hotel']} уже есть")
+                continue
+
+            logger.log(f"[{index_urls+mixing_id+1}/{len(urls)+mixing_id}] {url['city']} => {url['id_hotel']} скачивается")
+            # logger.log(
+            #     f"[{index_urls+mixing_id+1}/{len(urls)+mixing_id}] {url['city']} => {url['id_hotel']} скачивается")
+
+            data = get_hotel(url["url"], url["id_hotel"], driver, logger)
+
             index_urls += 1
-            print(f"\033[0;32m[{index_urls}/{len(urls)}] {url['id_hotel']}\033[0m уже есть")
-            logging.info(f"[{index_urls}/{len(urls)}] {url['id_hotel']} уже есть")
-            continue
 
-        print(f"\033[0;33m[{index_urls+1}/{len(urls)}] {url['city']} => {url['id_hotel']}\033[0m скачивается")
-        logging.info(f"[{index_urls+1}/{len(urls)}] {url['city']} => {url['id_hotel']} скачивается")
+            if len(data["rooms"]) == 0:
+                path_dir = f"hotels/empty/{url['city']}/"
+            else:
+                path_dir = f"hotels/normal/{url['city']}/"
 
-        data = get_hotel(url["url"], url["id_hotel"])
+            if not os.path.exists(path_dir):
+                os.mkdir(path_dir)
 
-        index_urls += 1
+            with open(os.path.join(path_dir, f"{url['id_hotel']}.json"), 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False)
+                logger.log(f"{os.path.join(path_dir, url['id_hotel'] + '.json')} записан в файл")
+                # logger.log(f"{url['id_hotel']} записан в файл")
+        except:
+            error_type, error_value, tb = sys.exc_info()
+            traceback_msg = "".join(traceback.format_tb(tb))
+            error = f"{error_type.__name__} - {error_value}\n {traceback_msg}"
+            # logger.log(error)
+            logger.log(error)
 
-        if len(data["rooms"]) == 0:
-            path_dir = f"hotels/empty/{url['city']}/"
-        else:
-            path_dir = f"hotels/normal/{url['city']}/"
+splitted_url = split_list(urls, simultaneous_parsing)
 
-        if not os.path.exists(path_dir):
-            os.mkdir(path_dir)
-
-        with open(os.path.join(path_dir, f"{url['id_hotel']}.json"), 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False)
-            print(f"{os.path.join(path_dir, url['id_hotel'] + '.json')} записан в файл")
-            logging.info(f"{url['id_hotel']} записан в файл")
-    except:
-        error_type, error_value, tb = sys.exc_info()
-        traceback_msg = "".join(traceback.format_tb(tb))
-        error = f"{error_type.__name__} - {error_value}\n {traceback_msg}"
-        logging.error(error)
-        print("\033[31m" + error + "\033[0m")
+with concurrent.futures.ThreadPoolExecutor(max_workers=simultaneous_parsing) as executor:
+    futures = [executor.submit(while_hotel, splitted_url[i], i, round(i*(len(urls) / simultaneous_parsing)), there_are_already_hotels, drivers[i]) for i in range(simultaneous_parsing)]
