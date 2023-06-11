@@ -434,6 +434,15 @@ if not os.path.exists("hotels/empty/"):
 if not os.path.exists("hotels/normal/"):
     os.mkdir("hotels/normal/")
 
+there_are_already_hotels = []
+
+for filename in os.listdir('hotels'):
+    if filename.endswith('.json'):
+        there_are_already_hotels.append(filename.split(".")[0])
+
+
+full_count_hotel = 0
+
 # Цикл для чтения каждого файла в папке
 for filename in os.listdir('cities/full'):
     if filename.endswith('.json'):
@@ -443,21 +452,17 @@ for filename in os.listdir('cities/full'):
             city = city.replace(".json", "")
 
             for hotel in data["hotels"]:
+                full_count_hotel += 1
                 slug = f"russia/{city}"
-                obj = {
-                    "city": city,
-                    "url": f"https://ostrovok.ru/hotel/{slug}/mid9287753/{hotel['ota_hotel_id']}/?dates=20.09.2023-29.09.2023&guests=1",
-                    "id_hotel": hotel['ota_hotel_id']
-                }
-                urls.append(obj)
+                if city not in there_are_already_hotels:
+                    obj = {
+                        "city": city,
+                        "url": f"https://ostrovok.ru/hotel/{slug}/mid9287753/{hotel['ota_hotel_id']}/?dates=20.09.2023-29.09.2023&guests=1",
+                        "id_hotel": hotel['ota_hotel_id']
+                    }
+                    urls.append(obj)
 
 index_urls = 0
-
-there_are_already_hotels = []
-
-for filename in os.listdir('hotels'):
-    if filename.endswith('.json'):
-        there_are_already_hotels.append(filename.split(".")[0])
 
 
 def find_files(path, extension):
@@ -472,7 +477,7 @@ def find_files(path, extension):
 
 there_are_already_hotels = find_files("hotels", '.json')
 
-print(f"Уже скачено {len(there_are_already_hotels)} отелей, нужно ещё {len(urls) - len(there_are_already_hotels)} скачать")
+print(f"Всего отелей {full_count_hotel}, уже скачено {len(there_are_already_hotels)}, нужно ещё {len(urls)} скачать")
 
 if not os.path.exists("r_logs/"):
     os.mkdir("r_logs/")
